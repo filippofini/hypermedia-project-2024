@@ -20,6 +20,5 @@ logs
 
 # Local env files
 .env
-database_access.env
 .env.*
 !.env.example
