@@ -1,6 +1,8 @@
 <template>
     <div class="page">
-    <TopBar />
+    <header>
+        <TopBar />
+    </header>
     <slot />
 
     </div>
@@ -13,4 +15,10 @@
         flex-direction: column;
         margin: 0;
     }
+
+    body {
+     margin: 0;
+    }
+
+
 </style>

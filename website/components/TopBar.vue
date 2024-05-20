@@ -54,9 +54,9 @@ export default {
   <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
   
-  header, nav, .topbar {
-  margin: 0;
-  padding: 0;
+  header {
+    max-width: 100%;
+
   }
 
 
