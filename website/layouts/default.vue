@@ -1,10 +1,8 @@
 <template>
     <div class="page">
-    <header>
         <TopBar />
-    </header>
-    <slot />
-
+        <slot />
+        <Footer />
     </div>
 </template>
 
