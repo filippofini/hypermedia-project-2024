@@ -5,5 +5,11 @@ export default defineNuxtConfig({
 
   supabase: {
     redirect: false
-  }
+  },
+
+  components: [
+    {path: '~/components',
+      pathPrefix: false,
+    }
+  ]
 })

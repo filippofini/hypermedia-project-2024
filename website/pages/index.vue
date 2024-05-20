@@ -1,7 +1,10 @@
 <script setup lang="ts">
 const route = useRoute()
-</script>
 
+//import TopBar from "../components/TopBar.vue";
+
+
+</script>
 <template>
   <div>
     <h1>Nuxt Routing set up successfully!</h1>
