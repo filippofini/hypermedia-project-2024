@@ -81,6 +81,12 @@ export default {
     text-decoration: none;
     font-size: 1.2vw; 
     font-family: 'Jost'; 
+    transition: color 0.3s ease;
   }
+
+  .navigation a:hover {
+    color: #6B5AA1; 
+    cursor: pointer;
+}
 
   </style>
