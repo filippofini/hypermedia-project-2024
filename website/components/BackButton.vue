@@ -1,24 +1,29 @@
 <template>  
     <button class="button-container">
-        <a href="" class="back-button" @click.prevent="$router.back()" role="button" aria-label="Back button">&#10554;</a>  
+        <a href="" class="back-button" @click.prevent="$router.back()" role="button" aria-label="Back button">
+            <img src="@/assets/bb_arrow.png"></img>
+        </a>  
     </button>
 </template>
 
 <style scoped>
     button {
-        border: none;        
+        border: solid;     
         cursor: pointer;
     }
 
     .button-container {        
         width: 7vh;
         height: 7vh;
-        margin: 0.5%;
+        min-width: 25px;
+        min-height: 25px;
+        margin: 1%;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        background-color:  #B96090;
+        background-color:  #B96090; 
+        border-color:#F2D3E7 ;
         transition: all 0.2s ease-out;
     }
 
@@ -28,9 +33,17 @@
         font-size: xx-large;
         border-radius: 50%;
         text-decoration: none;
-        
+
               
         
+    }
+
+    .back-button img{
+        object-fit: contain;   
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .button-container:hover {
