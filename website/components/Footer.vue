@@ -47,7 +47,7 @@
     }
 
     .instagram-footer, .facebook-footer, .twitter-footer{
-        width: 35px;
+        width: 50px;
         height: auto;
         position: relative;
         transition: 0.1 ease-in-out; 
@@ -67,8 +67,9 @@
         justify-content: space-around;
         flex-wrap: wrap;
         margin-top: 15px;
+        margin-bottom: 15px;
     }
-
+    
     .informations{
         display: flex;
         flex-direction: row;
@@ -98,7 +99,7 @@
 
         .informations{
             flex-direction: column-reverse;
-            gap: 0;
+            gap: 10px;
         }
 
         .address, .number, .email{
