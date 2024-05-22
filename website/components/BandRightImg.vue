@@ -1,18 +1,6 @@
 <script setup>
   const props = defineProps(['description', 'namebutton','imageName']);
-</script>
-
-<script>
-export default {
-name: 'BandRightImg',
- 
-computed: {
-    //----------------------------------------------------------------------------problem here
-    imageSrc() {
-      return `@/assets/img/${this.imageName}`;
-    }
-  }
-  }
+  const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
 </script>
 
 

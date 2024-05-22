@@ -1,19 +1,20 @@
 <template>
     <div class="avatar-with-name">
       <div class="avatar-container">
-        <img class="avatar-image" src="@/assets/img/nomeImmagine.jpg" alt="Avatar">
+        <img class="avatar-image" :src = "imageSrc" alt="Avatar">
       </div>
       <div class="name-container">{{ name }}</div>
     </div>
   </template>
 
 <script setup>
-const props = defineProps(['avatarSrc', 'name']);
+const props = defineProps(['avatarSrc', 'name', 'imageName']);
+const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
 </script>
 
 <script>
 export default {
-    name: 'RectList',
+    name: 'PersonOv',
 
   data() {
     return {

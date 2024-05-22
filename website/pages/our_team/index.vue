@@ -1,3 +1,3 @@
 <template>
-    <personOv name="pippo(Giuseppe)" />
+    <personOv name="pippo(Giuseppe)" imageName = "nomeImmagine.jpg" />
 </template>

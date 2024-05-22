@@ -1,10 +1,11 @@
 <script setup>
-const props = defineProps(['description', 'title']);
+const props = defineProps(['description', 'title', 'imageName']);
+const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
 </script>
 
 <template>
  <div class="image-container">
-        <img src="@/assets/img/nomeImmagine.jpg" alt="Description" class="image">
+        <img :src = "imageSrc" alt="Description" class="image">
         <div class="overlay">
             <div class="description">{{description}}</div>
         </div>
