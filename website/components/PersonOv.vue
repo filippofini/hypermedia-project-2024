@@ -1,15 +1,23 @@
 <template>
+  <nuxtLink :to = "link" :arial-label="`link to ${name} ${surname} page`">
     <div class="avatar-with-name">
       <div class="avatar-container">
         <img class="avatar-image" :src = "imageSrc" alt="Avatar">
       </div>
-      <div class="name-container">{{ name }}</div>
+      <span class="name-container">
+        {{name}} {{ surname }} 
+      </span>
+      <br/>
+      <div class="role">
+        {{ role }}
+      </div>
     </div>
+    </nuxtLink>
   </template>
 
 <script setup>
-const props = defineProps(['avatarSrc', 'name', 'imageName']);
-const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
+const props = defineProps(['id', 'name', 'surname', 'role', 'link']);
+const imageSrc = computed(()=>`https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/img_people/${props.id}.jpeg`);
 </script>
 
 <script>
@@ -34,6 +42,8 @@ export default {
   width: auto;
   margin: 2vw;
   width: 15vw;
+  font-size: 1.2vw;
+  transition: 0.3s ease;
 }
 
 .avatar-container {
@@ -42,12 +52,17 @@ export default {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
+  
 }
 
 .avatar-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
+}
+.avatar-with-name:hover{
+  transform: scale(1.1);
 }
 
 .name-container {
@@ -55,6 +70,16 @@ export default {
   font-family: Jost;
   font-weight: 500;
   font-size: 1.8vw;
+  display: inline-block;
+  position: relative;
+  color:black;
+}
+
+.role{
+  margin-top: 1vw;
+  font-family: Jost;
+  font-weight: 500;
+  color:black;
   display: inline-block;
   position: relative;
 }
@@ -70,7 +95,8 @@ export default {
   transition: width 0.3s ease; 
 }
 
+/* PER AVERE LA SOTTOLINEATURA FIGA CON  LA LINEA CHE ARRIVA DA SINISTRA VERSO DESTRA
 .name-container:hover::before {
   width: 100%;
-}
+}*/
 </style>
