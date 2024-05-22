@@ -34,7 +34,6 @@
         background-color: #B96090;
         flex-shrink: 0;
         margin-top: auto;
-        text-align: center;
         border-top: 5px solid #F2D3E7;
         min-height: 1vh;
         color: white;
@@ -93,6 +92,7 @@
 
         .bottom {
             flex-direction: column-reverse;
+            text-align: center;
             margin-top: 0; 
         }
 

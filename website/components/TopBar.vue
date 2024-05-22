@@ -66,6 +66,7 @@ export default {
     align-items: center;
     padding: 1vw 1vw;
     background-color: #B96090;
+    border-bottom: 5px solid #F2D3E7;
     color: white;
   }
   .navigation {
