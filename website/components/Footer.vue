@@ -1,18 +1,22 @@
 <template>
     <footer>
         <div class="bottom">
-                <div class="number">
-                    <h3>Number:</h3>
-                    <p>1-800-123-4567</p>
-                </div>
-                <div class="email">
-                    <h3>Email:</h3>
-                    <p>@example.com</p>
+            <div class="informations">
+                <div class="contacts">
+                    <div class="number">
+                        <b>Number</b>
+                        <p>1-800-123-4567</p>
+                    </div>
+                    <div class="email">
+                        <b>Email</b>
+                        <p>@example.com</p>
+                    </div>
                 </div>
                 <div class="address">
-                    <h3>Headquarters:</h3>
+                    <b>Headquarters</b>
                     <p>1234 Street Name, City Name, United States</p>
                 </div>
+            </div>    
 
             <div class="socials">
                 <a href="https://www.instagram.com" target=”_blank” aria-label="Link to Instagram"><img src="../assets/img/contacts/instagram_logo_hover.png" alt="Instagram Logo" class="instagram-footer"></a>
@@ -29,45 +33,78 @@
     footer{
         background-color: #B96090;
         flex-shrink: 0;
-        text-align: center;
         margin-top: auto;
+        text-align: center;
+        border-top: 5px solid #F2D3E7;
+        min-height: 1vh;
         color: white;
         font-family: 'Jost'; 
     }
 
-    .bottom {
-               
-        padding: 0px 20px 0px 20px;
-        margin-bottom: 10px;        
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        
-    }
-
     .socials{
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;   
-        max-width: 25%;
-             
-        
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-   
-
     .instagram-footer, .facebook-footer, .twitter-footer{
-        max-width:40%;
+        width: 35px;
         height: auto;
-        margin: 0 0;
-        padding: 0 0;        
+        position: relative;
+        transition: 0.1 ease-in-out; 
+        padding: 10px;
+    }
+
+    .instagram-footer:hover, .facebook-footer:hover, .twitter-footer:hover {
+        transform: scale(1.1);
+    }
+
+    .instagram-footer:active, .facebook-footer:active, .twitter-footer:active {
+        transform: scale(1);
+    }
+
+    .bottom {                
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+
+    .informations{
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
     }
 
     .number, .email, .address{
-        margin: 0;
-        padding: 0;
-        font-size: small;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+   .contacts{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 70px;  
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .bottom {
+            flex-direction: column-reverse;
+            margin-top: 0; 
+        }
+
+        .informations{
+            flex-direction: column-reverse;
+            gap: 0;
+        }
+
+        .address, .number, .email{
+            padding: 0; 
+        }
+
     }
 
 </style>
