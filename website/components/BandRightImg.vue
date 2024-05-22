@@ -1,25 +1,20 @@
+<script setup>
+  const props = defineProps(['description', 'namebutton','imageName']);
+</script>
+
 <script>
 export default {
 name: 'BandRightImg',
-
-props: {
-    namebutton: String,
-    description: String,
-    imageName: String,
-},
-
+ 
 computed: {
-    
-    //per importare immagini non funziona
+    //----------------------------------------------------------------------------problem here
     imageSrc() {
-    console.log(`@/assets/${this.imageName}`);
-    return `@/assets/${this.imageName}`;
+      return `@/assets/img/${this.imageName}`;
     }
-}
-
-}
-
+  }
+  }
 </script>
+
 
 <template>
     <div class = "containerBandRight">
@@ -32,7 +27,7 @@ computed: {
         </div>
 
         <div class="right-columnBandRight">
-            <img src = "@\assets\nomeImmagine.jpg" alt="Image description">
+            <img :src = "imageSrc" alt="Image description">
         </div>
         
         
@@ -60,10 +55,11 @@ computed: {
     flex-direction: column;
     justify-content: space-between;
     padding-right: 5vw;
+    padding-left: 1vw;
 
     min-height: 23vw;
-    min-width: 58vw;
-    max-width: 58vw;
+    min-width: 57vw;
+    max-width: 57vw;
 
     font-size: 1.2vw; 
     font-family: 'Jost'; 

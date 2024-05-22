@@ -1,32 +1,13 @@
-<script>
-export default {
-  name: 'BandLeftImg',
-
-  props: {
-    namebutton: String,
-    description: String,
-    imageName: String,
-  },
-
-  computed: {
-    //----------------------------------------------------------------------------problem here
-    //per importare immagini non funziona
-    imageSrc() {
-      console.log(`@/assets/${this.imageName}`);
-      return `website/assets/${this.imageName}`;
-    }
-  }
-
-}
-
+<script setup>
+  const props = defineProps(['description', 'namebutton','imageName']);
 </script>
 
 <template>
     <div class="container">
         <div class="left-column">
-          
+
           <!---------------------------------------------------------------------------problem here-->
-            <img src = "@\assets\nomeImmagine.jpg" alt="Image description">
+            <img :src = "'/img/imageName.jpg'" alt="Image description">
         </div>
         
         <div class="right-column">
@@ -63,8 +44,8 @@ export default {
     padding-left: 5vw;
 
     min-height: 23vw;
-    min-width: 58vw;
-    max-width: 58vw;
+    min-width: 57vw;
+    max-width: 57vw;
 
     font-size: 1.2vw; 
     font-family: 'Jost'; 
@@ -78,6 +59,7 @@ export default {
 
 .left-column img {
   min-width: 31vw; 
+  padding-left: 1vw;
   width: auto;
   height: auto;
   max-width: 31vw;
