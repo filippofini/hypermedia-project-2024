@@ -43,9 +43,9 @@
     <div class = "third_band">
       <div>See Also</div>
       <div class = "reccomendation">
-        <RectList :description = "project.small_desc" :title="project.title" :id = "project.image"></RectList>
-        <RectList :description = "project.small_desc" :title="project.title" :id = "project.image"></RectList>
-        <RectList :description = "project.small_desc" :title="project.title" :id = "project.image"></RectList>
+        <ProjectCard :description = "project.small_desc" :title="project.title" :id = "project.image"></ProjectCard>
+        <ProjectCard :description = "project.small_desc" :title="project.title" :id = "project.image"></ProjectCard>
+        <ProjectCard :description = "project.small_desc" :title="project.title" :id = "project.image"></ProjectCard>
       </div>
     </div>
 
