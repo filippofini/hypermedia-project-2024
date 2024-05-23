@@ -11,7 +11,7 @@ export default {
     <button class="buttonViolet">{{name_button}}</button>
 </template>
 
-<style>
+<style scoped>
 .buttonViolet{
     background-color: #52417D;
     padding: 1vw;

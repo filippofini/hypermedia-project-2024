@@ -1,4 +1,12 @@
 <template>
+    <div class="top">
+      <div class="test">
+      <BackButton />
+      </div>
+      <div class="center-title">
+      <div class = "title">Our team</div>
+      </div>
+    </div>
     <div id="sorting-selector-team">
         <label for="sorting-selector-team">Sort by:</label>
             <select class="menu" id="order" v-model="order">
@@ -57,8 +65,36 @@
   })
 </script>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+  .top{
+    display: flex;
+    flex-direction: row;
+    
+    margin: 2vw;
+  }
+  .test{
+    display: flex;
+    width: 10%;
+  }
+
+  .title {
+    font-family: Jost;
+    font-size: 3vw;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0vw;
+    display: flex;  
+    align-self: center;  
+
+  }
+  .center-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-right: 10%;
+  }
 
   #people-container {
     display: flex;

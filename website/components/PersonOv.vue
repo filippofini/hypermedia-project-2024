@@ -91,7 +91,6 @@ export default {
   height: 2px;
   bottom: -2px; 
   left: 0;
-  background-color: #333;
   transition: width 0.3s ease; 
 }
 

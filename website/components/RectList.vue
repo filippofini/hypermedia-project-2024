@@ -13,7 +13,7 @@ const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
     </div>
 </template>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
 
 
