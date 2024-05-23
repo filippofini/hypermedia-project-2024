@@ -1,11 +1,11 @@
 <script setup>
-const props = defineProps(['description', 'title', 'imageName']);
-const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
+const props = defineProps(['description', 'title', 'id']);
+//const imageSrc = computed(()=>`https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/img_people/${props.id}.jpeg`);
 </script>
 
 <template>
  <div class="image-container">
-        <img :src = "imageSrc" alt="Description" class="image">
+        <img :src = "id" alt="Description" class="image">
         <div class="overlay">
             <div class="description">{{description}}</div>
         </div>
