@@ -107,7 +107,7 @@
     max-width: 90vw;
   }
 
-  #sorting-selector-team, #sorting-selector-proj {
+  #sorting-selector-team {
       display: flex;
       font-family: Jost;
       flex-direction: row;
