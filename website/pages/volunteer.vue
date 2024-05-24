@@ -22,7 +22,9 @@
     </div>
 
     <div class="button">
-        <ButtonViolet name_button="Join us"/>
+        <NuxtLink to="/contact_us" aria-label="Link to contact us">
+            <ButtonViolet name_button="Join us"/>
+        </NuxtLink>
     </div>
 </template>
 
