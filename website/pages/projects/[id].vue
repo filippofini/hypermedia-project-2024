@@ -8,6 +8,11 @@
         <div class = "title">{{project.title}}</div>
       </div>
     </div> 
+    <!--previous and next link-->
+    <div class="prevnext">
+      <NuxtLink :to="'/projects/' + previouslink" :arial-label="`link to previous project`" class="link">Previous</NuxtLink>
+      <NuxtLink :to="'/projects/' + nextlink" :arial-label="`link to next project`" class="link">Next</NuxtLink>
+    </div>
 
     <!--PRIMA FASCIA-->
     <div class = "first_band">
@@ -43,9 +48,25 @@
     <div class = "third_band">
       <div>See Also</div>
       <div class = "reccomendation">
-        <ProjectCard :description = "project.small_desc" :title="project.title" :id = "project.image"></ProjectCard>
-        <ProjectCard :description = "project.small_desc" :title="project.title" :id = "project.image"></ProjectCard>
-        <ProjectCard :description = "project.small_desc" :title="project.title" :id = "project.image"></ProjectCard>
+        <ProjectCard 
+            :small_desc = "findProjectById(suggestedProject1).small_desc" 
+            :title="findProjectById(suggestedProject1).title" 
+            :id = "suggestedProject1" 
+            :link = "'/projects/' + suggestedProject1" 
+            :year = "findProjectById(suggestedProject1).year">
+        </ProjectCard>
+        <ProjectCard 
+            :small_desc = "findProjectById(suggestedProject2).small_desc" 
+            :title="findProjectById(suggestedProject2).title" 
+            :id = "suggestedProject2" :link = "'/projects/' + suggestedProject2" 
+            :year = "findProjectById(suggestedProject2).year">
+        </ProjectCard>
+        <ProjectCard 
+            :small_desc = "findProjectById(suggestedProject3).small_desc" 
+            :title="findProjectById(suggestedProject3).title" 
+            :id = "suggestedProject3" :link = "'/projects/' + suggestedProject3" 
+            :year = "findProjectById(suggestedProject3).year">
+        </ProjectCard>
       </div>
     </div>
 
@@ -53,29 +74,38 @@
 
 <script setup>
   
+  //fetch per il progetto specifico
   const route = useRoute();
   const data = await $fetch('/api/projects/' + route.params.id);
+
+  //fetch per il numero di progetti
+  const { data: projects } = await useFetch('/api/projects')
 
   //divido il risultato in lista progetto e lista persone
   const  project = data.Project;
   const  peopleforProject = data.People;
 
-  //console.log("Progetto: " + project);
-  //console.log("Persone: " + peopleforProject); 
   const supervisors = peopleforProject.filter(person => person.is_supervisor);
   const nonSupervisors = peopleforProject.filter(person => !person.is_supervisor);
   
-  console.log("supervisors: " + supervisors);
-  console.log("Team: " + nonSupervisors);
-  
+  //NUMERO DEI PROGETTI
+  const projectCount = Object.keys([...projects.value]).length;
 
-  //function to truncate the description
-  const truncatedDescription = (description) => {
-  if (description.length > 50) {
-    return description.slice(0, 50) + '...';
+  //link to the next and previous project
+  const nextlink = project.id_project + 1 > projectCount ? 1 : project.id_project + 1;
+  const previouslink = project.id_project - 1 < 1 ? projectCount : project.id_project - 1;
+ 
+  //link to suggested projects
+  const suggestedProject1 = project.id_project + 2 > projectCount ? project.id_project - projectCount + 2 : project.id_project + 2;
+  const suggestedProject2 = project.id_project + 3 > projectCount ? project.id_project - projectCount + 3 : project.id_project + 3;
+  const suggestedProject3 = project.id_project + 4 > projectCount ? project.id_project - projectCount + 4 : project.id_project + 4;
+  
+  const progettiLista = [...projects.value];
+  
+  //function to find the project by id
+  function findProjectById(id) {
+      return progettiLista.find(p => p.id_project === id);
   }
-  return description;
-  };
 
 </script>
 
@@ -83,6 +113,7 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
 
+  /*STILE INTESTAZIONE*/
   .top{
     display: flex;
     flex-direction: row;
@@ -111,6 +142,23 @@
 
   }
 
+  .prevnext{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vw;
+    background-color: #FFCDDC;
+  }
+
+  .link{
+    font-size: 1.2vw;
+    font-weight: 300;
+    text-align: left;
+    color:black;
+    text-decoration: none;
+  }
+
+  /*STILE PRIMA FASCIA*/
   .titoletti{
     display: flex;  
     flex-direction: column;
@@ -143,6 +191,8 @@
     gap:2vw;
     background-color: #FFFFFF;
   }
+
+  /*STILE SECONDA FASCIA*/
   .second_band{
     display: flex;
     padding: 2vw;
@@ -164,6 +214,7 @@
     background-color: #FFCDDC;
   }
 
+  /*STILE TERZA FASCIA*/
   .third_band{
     display: flex;
     flex-direction: column;
@@ -178,7 +229,7 @@
   .reccomendation{
     display: flex;
     flex-direction: row;
-    gap: 10vw;
+    gap: 5vw;
     align-content: center;
     align-self: center;
   }
