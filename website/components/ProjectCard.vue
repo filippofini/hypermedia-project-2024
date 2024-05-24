@@ -1,15 +1,15 @@
 <template>
-    <nuxtLink :to = "link" :arial-label="`link to ${title} page`">
+    <NuxtLink :to = "link" :arial-label="`link to ${title} page`">
         <div class="image-container">
-            <img class="image" :src = "imageSrc">
+            <img class="image" :src = "image">
             <div class="overlay-text">{{ small_desc }}</div>
             <div class="title">{{title}}</div>
         </div>
-    </nuxtLink>
+    </NuxtLink>
 </template>
 
 <script setup>
-    const props = defineProps(['id', 'title', 'link', 'year', 'small_desc']);
+    const props = defineProps(['id', 'title', 'link', 'year', 'small_desc', 'image']);
     const imageSrc = computed(()=>`https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/img_projects/${props.id}.jpeg`);
 </script>
 
@@ -25,6 +25,8 @@
     }
 
     .image {
+        border-radius: 10px;
+        border: 1px solid black;
         width: 100%;
         display: block;
         transition: transform 0.5s ease, filter 0.5s ease;
@@ -69,10 +71,11 @@
     }
 
     .overlay-text {
+        border-radius: 10px;
         font-family: Jost;
         font-size: 1.5vw;
         position: absolute;
-        bottom: 53px; /* Position the text at the bottom */
+        bottom: 17%; /* Position the text at the bottom */
         left: 50%;
         transform: translateX(-50%); /* Center the text horizontally */
         width: 100%; /* Ensure the text spans the entire width */
