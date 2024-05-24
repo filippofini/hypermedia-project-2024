@@ -29,6 +29,7 @@
           <input
             type="number"
             id="custom-amount"
+            min="1"
             v-model.number="customAmount"
             @input="clearSelectedAmount"
           />
