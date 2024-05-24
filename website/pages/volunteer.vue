@@ -16,9 +16,9 @@
     <div class ="container">
 
 
-        <ImageUpTextDown class="img-txt" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in iaculis nunc. Maecenas consectetur vehicula suscipit. Fusce sit amet odio sapien. Suspendisse in lectus venenatis, luctus neque eu, eleifend arcu. Cras venenatis at erat sed ornare. Duis maximus molestie laoreet. Aliquam vitae lacinia velit" imageName="nomeImmagine.jpg"/> 
-        <ImageUpTextDown class="img-txt" description="Sed sollicitudin consequat neque eu vehicula. Morbi sit amet ligula nibh. Curabitur gravida turpis nisi, sit amet suscipit nisl semper id. Suspendisse finibus dui ex, at viverra urna auctor at. Vivamus eu elit a tortor feugiat facilisis. Praesent arcu magna, bibendum nec feugiat vel, facilisis tristique quam" imageName="nomeImmagine.jpg"/> 
-        <ImageUpTextDown class="img-txt"  description="nothing to see here" imageName="nomeImmagine.jpg"/> 
+        <ImageUpTextDown class="img-txt" description="Become a vital part of our team and contribute to our mission of making a meaningful difference in the lives of others." imageName="/volunteer/volunteer1.png" title="Join our team"/> 
+        <ImageUpTextDown class="img-txt" description="Every contribution, no matter how small, plays a significant role in creating a greater impact than we could ever achieve alone" imageName="/volunteer/volunteer2.png" title="Combine our efforts"/> 
+        <ImageUpTextDown class="img-txt"  description="By standing together, we can advocate for change, support those in need, and work towards a shared vision of a better tomorrow" imageName="/volunteer/volunteer3.png" title="Unite for a common cause"/> 
     </div>
 
     </div>
@@ -72,6 +72,9 @@
         max-width: 100%;
         max-height: 100%;
         margin: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     } 
 
     .button{
@@ -98,7 +101,8 @@
     text-align: center;
     margin-top: 0vw;
     display: flex;  
-    align-self: center;  
+    align-self: center; 
+    color: white;  
 
   }
   .center-title{

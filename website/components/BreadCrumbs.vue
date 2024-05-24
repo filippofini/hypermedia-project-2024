@@ -26,6 +26,7 @@ export default {
         display: flex;
         flex-grow: row;
         font-size: 1.2vw; 
+        margin-top: 5px;
     }
     .links {        
         color: #000;

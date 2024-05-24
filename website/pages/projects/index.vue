@@ -1,4 +1,5 @@
 <template>
+    <BreadCrumbs :crumbs="BCrumbs"/>
     <div class="top">
         <div class="test">
             <BackButton />
@@ -51,6 +52,22 @@
       return projectsCopy;
     }
   });
+</script>
+
+<script>
+    export default {
+        computed: {
+            BCrumbs() {                
+                return [
+
+                    {
+                        label: 'home',
+                        url: '/',
+                    }
+                ];
+            }
+        }
+    }
 </script>
 
 <style scoped>

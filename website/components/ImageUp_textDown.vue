@@ -4,14 +4,15 @@
                 <img :src = "imageSrc" alt="Image description">
             </div>
 
-            <div>                
+            <div>
+                <h3 class="title"> {{title}} </h3>                
                 <p class="text"> {{description}} </p>  
             </div>   
     </div>
 </template>
 
 <script setup>
-  const props = defineProps(['description','imageName']);
+  const props = defineProps(['description','imageName','title']);
   const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
 </script>
 
@@ -27,9 +28,11 @@
 
     .content-container img{
         max-width: 25vw;
-        max-height: 12.5vw;
+        max-height: 16vw;
         min-width: 25vw;
-        min-height: 12.5vw;        
+        min-height: 12.5vw;
+        border-radius: 5px;
+        border: 1px solid black;       
     }
 
     .content-container p{
@@ -41,7 +44,16 @@
         font-family: 'Jost';
         max-width: 100%;
         text-align: center;
+        word-break: break-word;
+        
         
     }
 
+    .title{
+        font-family: 'Jost';
+        max-width: 100%;
+        text-align: center;
+        font-weight: bold;
+        
+    }
 </style>
