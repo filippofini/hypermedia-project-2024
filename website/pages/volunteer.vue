@@ -2,6 +2,8 @@
 
     <div class ="background-container">
 
+        <BreadCrumbs :crumbs="BCrumbs"/>
+
         <div class="top">
             <div class="test">
                 <BackButton />
@@ -27,6 +29,29 @@
         </NuxtLink>
     </div>
 </template>
+
+<script>
+    export default {
+        computed: {
+            BCrumbs() {                
+                return [
+
+                    {
+                        label: 'home',
+                        url: '/',
+                    },
+
+                    { 
+                        label: 'support us',
+                        url: '/support_us'
+
+                    }
+                    
+                ];
+            }
+        }
+    }
+</script>
 
 <style scoped>
     .background-container{        
@@ -84,6 +109,5 @@
     margin-right: 9%;
   }
      
-    
-
 </style>
+
