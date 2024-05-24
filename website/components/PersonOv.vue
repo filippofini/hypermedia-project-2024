@@ -1,5 +1,5 @@
 <template>
-  <nuxtLink :to = "link" :arial-label="`link to ${name} ${surname} page`">
+  <NuxtLink :to = "link" :arial-label="`link to ${name} ${surname} page`">
     <div class="avatar-with-name">
       <div class="avatar-container">
         <img class="avatar-image" :src = "imageSrc" alt="Avatar">
@@ -12,7 +12,7 @@
         {{ role }}
       </div>
     </div>
-    </nuxtLink>
+    </NuxtLink>
   </template>
 
 <script setup>
