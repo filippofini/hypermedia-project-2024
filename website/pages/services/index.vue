@@ -1,4 +1,5 @@
 <template>
+    <BreadCrumbs :crumbs="BCrumbs"/>
     <div class="top">
         <div class="test">
             <BackButton />
@@ -35,6 +36,22 @@
     else if (orderServ.value == "Z-A") //Reverse alphabetically
         return [...services.value].reverse()
   });
+</script>
+
+<script>
+    export default {
+        computed: {
+            BCrumbs() {                
+                return [
+
+                    {
+                        label: 'home',
+                        url: '/',
+                    }
+                ];
+            }
+        }
+    }
 </script>
 
 <style scoped>
