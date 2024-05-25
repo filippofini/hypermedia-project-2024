@@ -1,22 +1,24 @@
 <template>
-    <div class="top">
-      <div class="test">
+  <div class="top">
+    <div class="test">
       <BackButton />
-      </div>
-      <div class="center-title">
-      <div class = "title">Our team</div>
-      </div>
     </div>
-    <div id="sorting-selector-team">
-        <label for="sorting-selector-team">Sort by:</label>
-            <select class="menu" id="order" v-model="order">
-              <option value="Role">Role</option>
-              <option value="A-Z">A-Z</option>
-              <option value="Z-A">Z-A</option>
-            </select>
-        </div>
+    <div class="center-title">
+      <div class = "title">Our team</div>
+    </div>
+  </div>
+  <div class="introduction">placeholder</div>
 
-    <div id="people-container">
+  <div id="sorting-selector-team">
+    <label for="sorting-selector-team">Sort by:</label>
+    <select class="menu" id="order" v-model="order">
+      <option value="Role">Role</option>
+      <option value="A-Z">A-Z</option>
+      <option value="Z-A">Z-A</option>
+    </select>
+  </div>
+
+  <div id="people-container">
           <PersonOv v-for = "person of sorted" :id = "person.id" :name = "person.name" :surname= "person.surname" :role = "person.role" :link = "'/our_team/' + person.id" />
     </div>
 </template>
@@ -107,24 +109,34 @@
     max-width: 90vw;
   }
 
-  #sorting-selector-team, #sorting-selector-proj {
-      display: flex;
-      font-family: Jost;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-self: center;
-      margin: 1%;
-      gap: 10px;
-      font-size: 1.8vw;
-      font-weight: 500;
-      min-width: 20vw;
-      margin-top: 4vw;
+  #sorting-selector-team {
+    display: flex;
+    font-family: Jost;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: 1%;
+    gap: 10px;
+    font-size: 1.3vw;
+    font-weight: 500;
+    min-width: 17vw;
+    margin-top: 0vw;
 }
+
+.introduction {
+  margin: 6vw;
+  font-family: Jost;
+  font-size: 1.3vw;
+  text-align: center;
+  margin-top: 0vw;
+  display: flex;  
+  align-self: center;  
+  }
 
 .menu {
       border-radius: 5px;
-      border: none;
+      border: 1px solid black;
       font-size: 18px;
       font-family: inherit;
       padding: 0 2vh;
