@@ -1,176 +1,223 @@
 <template>
-        <v-form v-model="isFormValid" @submit.prevent>
-            <div class="personal-data">
-                <v-text-field
-                    class="form-elem"
-                    v-model="name"
-                    label="Name"
-                    autocomplete="Name"
-                    placeholder="Insert your Name"
-                    aria-label="Name input field"
-                ></v-text-field>
-            
-                <v-text-field
-                    class="form-elem"
-                    v-model="surname"
-                    label="Surname"
-                    autocomplete="Surname"
-                    placeholder="Insert your Surname"
-                    aria-label="Surname input field"
-                ></v-text-field>
-            </div>
-    
-            <v-text-field
-                class="form-elem"
-                v-model="number"
-                :rules="number_rules"
-                label="Phone Number"
-                autocomplete="Phone Number"
-                placeholder="Insert your Phone Number"
-                aria-label="Phone Number input field"
-            ></v-text-field>
-    
-            <v-text-field
-                class="form-elem"
-                v-model="email"
-                :rules="email_rules"
-                label="E-mail"
-                autocomplete="E-mail"
-                placeholder="Insert your E-mail"
-                aria-label="E-mail input field"
-            ></v-text-field>
-    
-            <v-textarea
-                class="form-text"
-                v-model="text"
-                :rules="text_rules"
-                label="Message"
-                autocomplete="Message"
-                placeholder="Insert your Message"
-                aria-label="Message input field"
-            ></v-textarea>
+    <form @submit.prevent="submit" novalidate>
+      <div class="personal-data">
+        <div class="form-elem">
+          <label for="name"></label>
+          <input 
+            type="text" 
+            id="name"
+            v-model="name"
+            placeholder="Name"
+            aria-label="Name input field"
+          />
+        </div>
+        
+        <div class="form-elem">
+          <label for="surname"></label>
+          <input 
+            type="text" 
+            id="surname" 
+            v-model="surname"
+            placeholder="Surname"
+            aria-label="Surname input field"
+          />
+        </div>
+      </div>
+      
+      <div class="form-elem">
+        <label for="number"></label>
+        <input 
+          type="text" 
+          id="number" 
+          v-model="number"
+          :class="{ 'is-invalid': numberErrors.length }"
+          @blur="validateNumber" 
+          placeholder="Number"
+          aria-label="Phone Number input field"
+        />
+        <div v-if="numberErrors.length" class="error-messages">
+          <p v-for="error in numberErrors" :key="error">{{ error }}</p>
+        </div>
+      </div>
+      
+      <div class="form-elem">
+        <label for="email"></label>
+        <input 
+          type="email" 
+          id="email"
+          v-model="email"  
+          :class="{ 'is-invalid': emailErrors.length }"
+          @blur="validateEmail" 
+          placeholder="Email"
+          aria-label="E-mail input field"
+        />
+        <div v-if="emailErrors.length" class="error-messages">
+          <p v-for="error in emailErrors" :key="error">{{ error }}</p>
+        </div>
+      </div>
+      
+      <div class="form-elem">
+        <label for="text"></label>
+        <textarea 
+          id="text"
+          v-model="text"
+          :class="{ 'is-invalid': textErrors.length }"
+          @blur="validateText" 
+          placeholder="Insert your message"
+          aria-label="Message input field"
+        ></textarea>
+        <div v-if="textErrors.length" class="error-messages">
+          <p v-for="error in textErrors" :key="error">{{ error }}</p>
+        </div>
+      </div>
+  
+      <button 
+        class="form-button" 
+        :disabled="!isFormValid"
+        type="submit"
+      >Submit</button>
+    </form>
+  </template>
 
-            <v-btn class="form-button"
-            :disabled="!isFormValid"
-            type="submit"
-            @click="submit()"
-            >Submit</v-btn>       
-    
-        </v-form>
- </template>
- 
- 
- 
- <script>
- export default {
-     data: () => ({
-         name: '',
-         surname: '',
-         number: '',
-         email: '',
-         text: '',
-         number_rules: [
-             value => {
-                 if (!value)
-                     return 'You must enter a Phone Number';
- 
-                 if (/^[0-9]{10}$/.test(value))
-                     return true;
-                 
-                 return 'Insert a valid Phone Number'
-             },
-         ],
-         email_rules: [
-             value => {
-                 if (!value)
-                     return 'You must enter an E-mail';
- 
-                 if (/^[0-9a-z.-]+@[0-9a-z.-]+\.[a-z]+$/i.test(value))
-                     return true;
-                 
-                 return 'Insert a valid e-mail'
-             },
-         ],
-         text_rules: [
-             value => {
-                 if (!value)       
-                     return 'The text message can\'t be empty'
- 
-                 if (/^\s*$/.test(value))
-                     return 'The text message can\'t contain only spaces'
- 
-                 return true
-             }
-         ],
-         dialog: false,
-         isFormValid: false,
-         ack: 0
-     }),
- 
-     methods: {
-         async submit () {
-             let temp = 0;
-             try {
-                 await $fetch('/api/contactForm', {
-                     method: "POST",
-                     body: {
-                         email: this.email,
-                         message: this.text
-                     }
-                 })
-                 
-                 temp = 1;
-             }
-             catch{
-                 temp = -1;
-             }
-             const self = this;
-             setTimeout(function() {
-                 self.$nextTick(function() {
-                     self.ack = temp
-                     if(temp==1) {
-                         self.email = null;
-                         self.text = null;
-                     }
-                 })
-             }, 2000);
-         }
-     }
- }
- </script>
+
+<script>
+export default {
+  data() {
+    return {
+      name: '',
+      surname: '',
+      number: '',
+      email: '',
+      text: '',
+      numberErrors: [],
+      emailErrors: [],
+      textErrors: [],
+      ack: 0
+    };
+  },
+  computed: {
+    isFormValid() {
+      return (
+        !this.numberErrors.length &&
+        !this.emailErrors.length &&
+        !this.textErrors.length &&
+        this.name &&
+        this.surname &&
+        this.number &&
+        this.email &&
+        this.text
+      );
+    }
+  },
+  methods: {
+    validateNumber() {
+      this.numberErrors = [];
+      if ((!/^[0-9]{10}$/.test(this.number)) || (!this.number))  this.numberErrors.push('Insert a valid Phone Number');
+    },
+    validateEmail() {
+      this.emailErrors = [];
+      if ((!/^[0-9a-z.-]+@[0-9a-z.-]+\.[a-z]+$/i.test(this.email)) || (!this.email)) this.emailErrors.push('Insert a valid e-mail');
+    },
+    validateText() {
+      this.textErrors = [];
+      if ((/^\s*$/.test(this.text)) || (!this.text)) this.textErrors.push('The text message can\'t be empty');
+    },
+    async submit() {
+      this.validateNumber();
+      this.validateEmail();
+      this.validateText();
+      
+      if (this.isFormValid) {
+        let temp = 0;
+        try {
+          await this.$fetch('/api/contactForm', {
+            method: "POST",
+            body: {
+              email: this.email,
+              message: this.text
+            }
+          });
+          temp = 1;
+        } catch {
+          temp = -1;
+        }
+        this.ack = temp;
+        if (temp === 1) {
+          this.resetForm();
+        }
+      }
+    },
+    resetForm() {
+      this.name = '';
+      this.surname = '';
+      this.number = '';
+      this.email = '';
+      this.text = '';
+    }
+  }
+};
+</script>
+
 
 <style scoped>
+.personal-data {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
 
-    .personal-data {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+.form-elem {
+  margin: 2%;
+  background-color: white;
+  border-radius: 10px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
 
-    .form-elem {
-        margin: 1.5%;
-        background-color: white;
-        border-radius: 10px;
-        height: 50px;
-    }
 
-    .form-button {
-        margin: 1.5%;
-        background-color: #52417D;
-        color: white;
-        border-radius: 10px;
-    }
 
-    .form-text {
-        margin: 1.5%;
-        background-color: white;
-        border-radius: 10px;
-        height: 100px;
-    }
 
-    .v-messages__message {
-  color: blue;
+
+
+
+
+.form-elem label {
+  margin-bottom: 5px;
+}
+
+
+
+
+.form-elem input,
+.form-elem textarea {
+  padding: 0px;
+  outline: none;
+}
+
+.form-elem input.is-invalid,
+.form-elem textarea.is-invalid {
+  border-color: red;
+}
+
+.error-messages {
+  color: red;
   font-size: 14px;
-  font-weight: bold;
+  margin-top: 5px;
+}
+
+.form-button {
+  margin: 1.5%;
+  padding: 10px 20px;
+  background-color: #52417D;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 </style>
