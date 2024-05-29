@@ -19,7 +19,7 @@
   </div>
 
   <div id="people-container">
-          <PersonOv v-for = "person of sorted" :id = "person.id" :name = "person.name" :surname= "person.surname" :role = "person.role" :link = "'/our_team/' + person.id" />
+          <PersonOv v-for = "person of sorted" :id = "person.id" :name = "person.name" :surname= "person.surname" :role = "person.role" :link = "'/our_team/'+ person.id" :image="person.image"/>
     </div>
 </template>
 

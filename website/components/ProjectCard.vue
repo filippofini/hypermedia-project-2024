@@ -10,7 +10,6 @@
 
 <script setup>
     const props = defineProps(['id', 'title', 'link', 'year', 'small_desc', 'image']);
-    const imageSrc = computed(()=>`https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/img_projects/${props.id}.jpeg`);
 </script>
 
 

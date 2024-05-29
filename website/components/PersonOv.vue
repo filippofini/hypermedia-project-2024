@@ -2,7 +2,7 @@
   <NuxtLink :to = "link" :arial-label="`link to ${name} ${surname} page`">
     <div class="avatar-with-name">
       <div class="avatar-container">
-        <img class="avatar-image" :src = "link" alt="Avatar">
+        <img class="avatar-image" :src = "image" alt="Avatar">
       </div>
       <span class="name-container">
         {{name}} {{ surname }} 
@@ -16,8 +16,8 @@
   </template>
 
 <script setup>
-const props = defineProps(['id', 'name', 'surname', 'role', 'link']);
-const imageSrc = computed(()=>`https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/img_people/${props.id}.jpeg`);
+const props = defineProps(['id', 'name', 'surname', 'role', 'link', 'image']);
+
 </script>
 
 <script>
