@@ -102,7 +102,7 @@
     margin-top: 0vw;
     display: flex;  
     align-self: center; 
-    color: white;  
+     
 
   }
   .center-title{
