@@ -8,7 +8,7 @@
         <p class = "textBandLeftNoButton"> {{description}} </p>
       </div> 
       <div class="right-columnBandLeftNoButton">
-        <img :src=imageName alt="Image description">
+        <img :src="imageName" alt="Image description">
       </div>
     </div>
 </template>
