@@ -1,5 +1,5 @@
 <script setup>
-  const props = defineProps(['description', 'namebutton','imageName']);
+  const props = defineProps(['description', 'namebutton','imageName', 'link']);
   const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
 </script>
 
@@ -10,7 +10,7 @@
             <p class = "textBandRight"> {{description}} </p>
             
             <div class = "buttonBandRight">
-                <ButtonViolet :name_button = "namebutton"></ButtonViolet>
+                <nuxtLink :to="link" class ="buttonBandRight"><ButtonViolet :name_button = "namebutton"></ButtonViolet></nuxtLink>
             </div>
         </div>
 
@@ -57,6 +57,7 @@
 .buttonBandRight{
     display: flex;
     flex-direction: row;
+    text-decoration: none;
 
 }
 .right-columnBandRight img {

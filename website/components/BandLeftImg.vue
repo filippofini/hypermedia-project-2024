@@ -1,5 +1,5 @@
 <script setup>
-  const props = defineProps(['description', 'namebutton','imageName']);
+  const props = defineProps(['description', 'namebutton','imageName', 'link']);
   const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
 </script>
 
@@ -15,7 +15,7 @@
             <p class="text"> {{description}} </p>
             
             <div class="button">
-                <ButtonViolet :name_button = "namebutton"></ButtonViolet>
+                <NuxtLink :to="link" class="button"><ButtonViolet :name_button = "namebutton"></ButtonViolet></NuxtLink>
             </div>
         </div>
     </div>
@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    text-decoration: none;
 }
 
 .container{

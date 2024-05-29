@@ -22,7 +22,7 @@
       </div>
 
       <div class="titoletti">
-        
+
         <div>Supervisor 
           <NuxtLink :to="'/our_team/' + supervisors[0].id" :arial-label="`link to ${supervisors[0].name} ${supervisors[0].surname} page`" class="info">
             <div class="info">{{supervisors[0].name}} {{supervisors[0].surname}}</div>
@@ -33,7 +33,7 @@
             {{ supervisor.name }} {{ supervisor.surname }}
           </div>
         </div> 
-        <div>Year <div class="info">{{project.year}}</div></div> 
+      <div>Year <div class="info">{{project.year}}</div></div> 
 
       </div>
     </div>
@@ -95,10 +95,20 @@
   const nextlink = project.id_project + 1 > projectCount ? 1 : project.id_project + 1;
   const previouslink = project.id_project - 1 < 1 ? projectCount : project.id_project - 1;
  
+  //function to get a random id of the project
+  function getRandomIntExcluding(max, num1, num2, num3) {
+    let randomNumber;
+    do {
+        randomNumber = Math.floor(Math.random() * max) + 1;
+    } while (randomNumber === num1 || randomNumber === num2 || randomNumber === num3);
+    
+    return randomNumber;
+}
+
   //link to suggested projects
-  const suggestedProject1 = project.id_project + 2 > projectCount ? project.id_project - projectCount + 2 : project.id_project + 2;
-  const suggestedProject2 = project.id_project + 3 > projectCount ? project.id_project - projectCount + 3 : project.id_project + 3;
-  const suggestedProject3 = project.id_project + 4 > projectCount ? project.id_project - projectCount + 4 : project.id_project + 4;
+  const suggestedProject1 = getRandomIntExcluding(projectCount, project.id_project, 0, 0);
+  const suggestedProject2 = getRandomIntExcluding(projectCount, project.id_project, suggestedProject1, 0);
+  const suggestedProject3 = getRandomIntExcluding(projectCount, project.id_project, suggestedProject1, suggestedProject2);
   
   const progettiLista = [...projects.value];
   
@@ -119,6 +129,8 @@
     flex-direction: row;
     background-color: #FFCDDC;
     padding: 2vw;
+    margin: 0vw;
+    border: 0vw;
   }
   .test{
     display: flex;
@@ -129,7 +141,7 @@
     align-items: center;
     justify-content: center;
     width: 90%;
-    margin-right: 10%;
+
   }
   .title {
     font-family: Jost;
@@ -148,6 +160,7 @@
     justify-content: space-between;
     padding: 2vw;
     background-color: #FFCDDC;
+    border: 0vw;
   }
 
   .link{

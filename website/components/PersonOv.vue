@@ -2,7 +2,7 @@
   <nuxtLink :to = "link" :arial-label="`link to ${name} ${surname} page`">
     <div class="avatar-with-name">
       <div class="avatar-container">
-        <img class="avatar-image" :src = "imageSrc" alt="Avatar">
+        <img class="avatar-image" :src = "link" alt="Avatar">
       </div>
       <span class="name-container">
         {{name}} {{ surname }} 
