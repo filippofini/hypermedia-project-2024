@@ -1,4 +1,5 @@
 <template>
+  <BreadCrumbs :crumbs="BCrumbs"/>
   <!--TOP OF THE PAGE-->
    <div class="top">
       <div class="test">
@@ -120,6 +121,32 @@
       return progettiLista.find(p => p.id_project === id);
   }
 
+</script>
+
+<script>
+export default {
+    computed: {
+        BCrumbs() {                
+            return [
+
+                {
+                    label: 'home',
+                    url: '/',
+                },
+
+                {
+                    label: 'all activities',
+                    url: '/activities',
+                },
+
+                {
+                    label: 'all projects',
+                    url: '/projects',
+                }
+            ];
+        }
+    }
+}
 </script>
 
 
