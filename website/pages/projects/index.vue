@@ -1,4 +1,5 @@
 <template>
+    <BreadCrumbs :crumbs="BCrumbs"/>
     <div class="top">
         <div class="test">
             <BackButton />
@@ -7,6 +8,8 @@
             <div class="title">Projects</div>
         </div>
     </div>
+    <div class="introduction">Welcome to our Projects Preview Page. Here, you'll find a comprehensive overview of our impactful initiatives aimed at supporting women victims of violence. From raising awareness through public installations to educating young minds in schools, each project is designed to foster a safer, more informed, and supportive community. Explore our diverse efforts to combat gender-based violence and discover how you can get involved in making a difference.</div>
+
     <div id="sorting-selector-projects">
         <label for="sorting-selector-projects">Sort by:</label>
         <select class="menu" id="orderProj" v-model="orderProj">
@@ -17,7 +20,7 @@
         </select>
     </div>
     <div id="projects-container">
-        <ProjectCard v-for = "project of sorted" :id = "project.id_project" :title  = "project.title" :link = "'/projects/' + project.id_project" :year = "project.year" :small_desc = "project.small_desc" />
+        <ProjectCard v-for = "project of sorted" :id = "project.id_project" :title  = "project.title" :link = "'/projects/' + project.id_project" :year = "project.year" :small_desc = "project.small_desc" :image = "project.image" />
     </div>
 </template>
 
@@ -51,6 +54,22 @@
   });
 </script>
 
+<script>
+    export default {
+        computed: {
+            BCrumbs() {                
+                return [
+
+                    {
+                        label: 'home',
+                        url: '/',
+                    }
+                ];
+            }
+        }
+    }
+</script>
+
 <style scoped>
     @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
     
@@ -82,6 +101,16 @@
         display: flex;  
         align-self: center;  
     }
+    
+    .introduction {
+        margin: 6vw;
+        font-family: Jost;
+        font-size: 1.3vw;
+        text-align: center;
+        margin-top: 0vw;
+        display: flex;  
+        align-self: center;  
+    }
 
     #sorting-selector-projects {
         display: flex;
@@ -92,10 +121,10 @@
         align-self: center;
         margin: 1%;
         gap: 10px;
-        font-size: 1.8vw;
+        font-size: 1.3vw;
         font-weight: 500;
-        min-width: 20vw;
-        margin-top: 4vw;
+        min-width: 17vw;
+        margin-top: 0vw;
     }
 
     #projects-container {
@@ -111,7 +140,7 @@
 
     .menu {
         border-radius: 5px;
-        border: none;
+        border: 1px solid black;
         font-size: 18px;
         font-family: inherit;
         padding: 0 2vh;
