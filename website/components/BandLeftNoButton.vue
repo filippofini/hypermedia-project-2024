@@ -1,6 +1,6 @@
 <script setup>
   const props = defineProps(['description','imageName']);
-  const imageSrc = computed(() => require(`@/assets/img/${props.imageName}`));
+  const imageSrc = computed(() => require(`${props.imageName}`));
 </script>
 
 <template>
