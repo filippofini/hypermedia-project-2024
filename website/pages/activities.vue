@@ -1,12 +1,16 @@
 <template>
+
+    <BreadCrumbs :crumbs="BCrumbs"/>
+
     <div class="top">
       <div class="test">
-      <BackButton />
+        <BackButton />
       </div>
       <div class="center-title">
-      <div class = "title">Activities</div>
+        <div class = "title">Activities</div>
       </div>
     </div>
+
     <div class="quickdescription">
         Welcome to the Activities page of our website,
          dedicated to the critical mission of ending violence against women. Here, 
@@ -43,9 +47,23 @@
 </template>
 
 <script>
+ export default {
+        computed: {
+            BCrumbs() {                
+                return [
+
+                    {
+                        label: 'home',
+                        url: '/'
+                    }
+                    
+                ];
+            }
+        }
+    }
 </script>
 
-<style>
+<style scoped>
 
 .top{
     display: flex;
