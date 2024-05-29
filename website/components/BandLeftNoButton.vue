@@ -1,5 +1,6 @@
 <script setup>
   const props = defineProps(['description','imageName']);
+  const imageSrc = computed(() => require(`@/assets/img/${props.imageName}`));
 </script>
 
 <template>
@@ -8,7 +9,7 @@
         <p class = "textBandLeftNoButton"> {{description}} </p>
       </div> 
       <div class="right-columnBandLeftNoButton">
-        <img :src=require(imageName) alt="Image description">
+        <img :src=imageSrc alt="Image description">
       </div>
     </div>
 </template>
