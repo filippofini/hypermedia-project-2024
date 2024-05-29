@@ -4,6 +4,8 @@
 </script>
 
 <template>
+
+    <BreadCrumbs :crumbs="BCrumbs"/>
     <div class="top">
         <div class="test">
             <BackButton />
@@ -28,6 +30,29 @@
     </div>
 </div>
 </template>
+
+<script>
+    export default {
+        computed: {
+            BCrumbs() {                
+                return [
+
+                    {
+                        label: 'home',
+                        url: '/',
+                    },
+
+                    { 
+                        label: 'support us',
+                        url: '/support_us'
+
+                    }
+                    
+                ];
+            }
+        }
+    }
+</script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
