@@ -53,19 +53,22 @@
             :title="findProjectById(suggestedProject1).title" 
             :id = "suggestedProject1" 
             :link = "'/projects/' + suggestedProject1" 
-            :year = "findProjectById(suggestedProject1).year">
+            :year = "findProjectById(suggestedProject1).year"
+            :image = "findProjectById(suggestedProject1).image">
         </ProjectCard>
         <ProjectCard 
             :small_desc = "findProjectById(suggestedProject2).small_desc" 
             :title="findProjectById(suggestedProject2).title" 
             :id = "suggestedProject2" :link = "'/projects/' + suggestedProject2" 
-            :year = "findProjectById(suggestedProject2).year">
+            :year = "findProjectById(suggestedProject2).year"
+            :image = "findProjectById(suggestedProject2).image">
         </ProjectCard>
         <ProjectCard 
             :small_desc = "findProjectById(suggestedProject3).small_desc" 
             :title="findProjectById(suggestedProject3).title" 
             :id = "suggestedProject3" :link = "'/projects/' + suggestedProject3" 
-            :year = "findProjectById(suggestedProject3).year">
+            :year = "findProjectById(suggestedProject3).year"
+            :image = "findProjectById(suggestedProject3).image">
         </ProjectCard>
       </div>
     </div>
@@ -158,7 +161,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2vw;
+    padding: 5.5vw;
     background-color: #FFCDDC;
     border: 0vw;
   }
@@ -198,7 +201,7 @@
   .first_band{
     display: flex;
     flex-direction: row;
-    padding: 2vw;
+    padding: 5.5vw;
     padding-top: 4vw;
     padding-bottom: 4vw;
     gap:2vw;
@@ -208,7 +211,7 @@
   /*STILE SECONDA FASCIA*/
   .second_band{
     display: flex;
-    padding: 2vw;
+    padding: 5.5vw;
     padding-top: 1vw;
     font-size: 1.2vw;
     font-weight: 300;
@@ -218,7 +221,7 @@
   }
   .ovProject{
     display: flex;
-    padding: 2vw;
+    padding: 5.5vw;
     padding-bottom: 0vw;
     font-size: 1.8vw;
     font-weight: 500;
@@ -231,10 +234,11 @@
   .third_band{
     display: flex;
     flex-direction: column;
-    padding: 2vw;
+    padding: 5.5vw;
     gap:2vw;
     font-size: 1.8vw;
     font-weight: 500;
+    
     text-align: center;
     font-family: Jost;
   }
@@ -242,7 +246,7 @@
   .reccomendation{
     display: flex;
     flex-direction: row;
-    gap: 5vw;
+    gap: 2vw;
     align-content: center;
     align-self: center;
   }

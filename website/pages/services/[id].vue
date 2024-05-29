@@ -47,7 +47,7 @@
       <div class = "third_band">
         <div>Our Testimonials</div>
         <div class = "testimonials">
-          <PersonOv v-for = "test of testimonials_final" :name="test.quote" :role="test.name" :link="test.image" ></PersonOv>
+          <PersonOv v-for = "test of testimonials_final" :name="test.quote" :role="test.name" :image="test.image" ></PersonOv>
         </div>
       </div>
   
@@ -55,22 +55,25 @@
       <div class = "third_band">
         <div>See Also</div>
         <div class = "reccomendation">
-          <ServiceCard 
+          <ProjectCard 
               :small_desc = "findServiceById(suggestedService1).small_desc" 
               :title="findServiceById(suggestedService1).title" 
               :id = "suggestedService1" 
-              :link = "'/services/' + suggestedService1" >
-          </ServiceCard>
-          <ServiceCard 
+              :link = "'/services/' + suggestedService1"
+              :image = "findServiceById(suggestedService1).image" >
+          </ProjectCard>
+          <ProjectCard 
               :small_desc = "findServiceById(suggestedService2).small_desc" 
               :title="findServiceById(suggestedService2).title" 
-              :id = "suggestedService2" :link = "'/services/' + suggestedService2" >
-          </ServiceCard>
-          <ServiceCard 
+              :id = "suggestedService2" :link = "'/services/' + suggestedService2" 
+              :image = "findServiceById(suggestedService2).image">
+          </ProjectCard>
+          <ProjectCard 
               :small_desc = "findServiceById(suggestedService3).small_desc" 
               :title="findServiceById(suggestedService3).title" 
-              :id = "suggestedService3" :link = "'/services/' + suggestedService3" >
-          </ServiceCard>
+              :id = "suggestedService3" :link = "'/services/' + suggestedService3"
+              :image = "findServiceById(suggestedService3).image" >
+          </ProjectCard>
         </div>
       </div>
       
@@ -179,7 +182,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding: 2vw;
+      padding: 5.5vw;
       background-color: #FFCDDC;
       border: 0vw;
     }
@@ -219,7 +222,7 @@
     .first_band{
       display: flex;
       flex-direction: row;
-      padding: 2vw;
+      padding: 5.5vw;
       padding-top: 4vw;
       padding-bottom: 4vw;
       gap:2vw;
@@ -229,7 +232,7 @@
     /*STILE SECONDA FASCIA*/
     .second_band{
       display: flex;
-      padding: 2vw;
+      padding: 5.5vw;
       padding-top: 1vw;
       font-size: 1.2vw;
       font-weight: 300;
@@ -239,7 +242,7 @@
     }
     .ovService{
       display: flex;
-      padding: 2vw;
+      padding: 5.5vw;
       padding-bottom: 0vw;
       font-size: 1.8vw;
       font-weight: 500;
@@ -252,7 +255,7 @@
     .third_band{
       display: flex;
       flex-direction: column;
-      padding: 2vw;
+      padding: 5.5vw;
       gap:2vw;
       font-size: 1.8vw;
       font-weight: 500;
@@ -263,7 +266,7 @@
     .reccomendation{
       display: flex;
       flex-direction: row;
-      gap: 5vw;
+      gap: 2vw;
       align-content: center;
       align-self: center;
     }
