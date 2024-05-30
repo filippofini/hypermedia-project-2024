@@ -163,12 +163,12 @@ export default {
 .personal-data {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .form-elem {
-  margin: 2%;
+  margin: 9px;
   background-color: white;
   border-radius: 10px;
   display: flex;

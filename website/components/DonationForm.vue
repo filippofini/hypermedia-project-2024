@@ -7,9 +7,10 @@
             :key="amount"
             type="button"
             @click="selectAmount(amount)"
-            :class="{'selected': selectedAmount === amount}"
+            :class="{'selected': selectedAmount === amount, 'predefined-button': true}"
+            :aria-pressed="selectedAmount === amount"
         >
-            {{ amount | currency }}
+            ${{ amount  }}
         </button>
         </div>
         <div class="predefined-amounts2">
@@ -18,22 +19,27 @@
             :key="amount"
             type="button"
             @click="selectAmount(amount)"
-            :class="{'selected': selectedAmount === amount}"
-        >
-          {{ amount | currency }}
+            :class="{'selected': selectedAmount === amount , 'predefined-button': true}"
+            :aria-pressed="selectedAmount === amount"
+          >
+            ${{ amount }}
         </button>
         </div>
     
         <div class="custom-amount">
           <label for="custom-amount"></label>
-          <input
-            type="number"
-            id="custom-amount"
-            min="1"
-            v-model.number="customAmount"
-            @input="clearSelectedAmount"
-          />
-        </div>
+          <div class="input-container">
+            <span class="currency-symbol">$</span>
+            <input
+              type="number"
+              id="custom-amount"
+              min="1"
+              v-model.number="customAmount"
+              @input="clearSelectedAmount"
+              aria-label="Custom amount input"
+            />
+          </div>
+          </div>
         <button type="submit" class="donate-button">Donate</button>
       </form>
     </div>
@@ -104,8 +110,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
   }
+
+  .predefined-button {
+  margin: 3px;
+  padding: 10px 20px;
+  width: 70px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
   .predefined-amounts1 button {
     margin: 3px;
@@ -176,5 +195,27 @@
   .donate-button:hover {
     transform: scale(1.1);
   }
+
+  .input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+  background-color: white;
+}
+
+.currency-symbol {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.input-container input {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
   </style>
   
