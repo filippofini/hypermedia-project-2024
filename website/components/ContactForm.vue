@@ -4,7 +4,7 @@
         <div class="form-elem">
           <label for="name"></label>
           <input 
-            type="text" 
+            type="text"
             id="name"
             v-model="name"
             placeholder="Name"
@@ -116,7 +116,7 @@ export default {
     },
     validateEmail() {
       this.emailErrors = [];
-      if ((!/^[0-9a-z.-]+@[0-9a-z.-]+\.[a-z]+$/i.test(this.email)) || (!this.email)) this.emailErrors.push('Insert a valid e-mail');
+      if ((!/^[0-9a-z.-]+@[0-9a-z.-]+\.[a-z]+$/i.test(this.email)) || (!this.email)) this.emailErrors.push('Insert a valid E-mail');
     },
     validateText() {
       this.textErrors = [];
@@ -163,36 +163,27 @@ export default {
 .personal-data {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .form-elem {
   margin: 2%;
   background-color: white;
   border-radius: 10px;
-  height: 100px;
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
-
-
-
-
-
-
-
-
-.form-elem label {
-  margin-bottom: 5px;
-}
-
-
-
 
 .form-elem input,
 .form-elem textarea {
-  padding: 0px;
+  padding: 5px;
   outline: none;
+}
+
+.form-elem textarea {
+  height: 100px;
 }
 
 .form-elem input.is-invalid,
@@ -203,21 +194,26 @@ export default {
 .error-messages {
   color: red;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .form-button {
   margin: 1.5%;
   padding: 10px 20px;
-  background-color: #52417D;
+  background-color: #B96090;
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 
+.form-button:hover {
+  transform: scale(1.05);
+}
+
 .form-button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+  transform: scale(1);
 }
 </style>

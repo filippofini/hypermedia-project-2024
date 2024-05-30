@@ -2,7 +2,7 @@
     <div class="container">
         <div class="contact-info">
             <h1> Contact Form </h1>
-            <p class="contact-text"> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>
+            <p class="contact-text"> Siamo qui per aiutarti! Se hai domande, richieste di informazioni o necessiti di assistenza, non esitare a contattarci. Compila il modulo sottostante con i tuoi dettagli e il nostro team di supporto ti risponderà il prima possibile. Ci impegniamo a fornirti un servizio rapido ed efficiente. Grazie per aver scelto di contattarci! </p>
             <h3 class="contact-mail">contact.mail@mail.com</h3>
             <div class="socials">
                 <a href="https://www.instagram.com" target=”_blank” aria-label="Link to Instagram"><img src="../assets/img/contacts/instagram_logo_hover.png" alt="Instagram Logo" class="instagram-footer"></a>
@@ -22,7 +22,7 @@
     .container{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         background-color: #FFCDDC;
     }
 
@@ -30,24 +30,34 @@
         display: flex;
         flex-direction: column;
         width: 50%;
+        margin: 40px;
     }
 
     .form{
         display: flex;
         flex-direction: column;
         background-color: #52417D;
+        padding: 10px;
+        border-radius: 20px;
         width: 50%;
-        border-radius: 10px;
+        margin: 40px;
+    }
+
+    h1{
+        margin-left: 20px;
+        margin-top: 20px;
     }
 
     .contact-text{
        max-width: 80%;
+       margin-top: 20px;
+       margin-left: 20px;
        word-break: break-word;
     }
 
     .contact-mail{
         margin-top: 60px;
-        width: 80%;
+        width: 90%;
         text-align: center;
     }
 
@@ -55,7 +65,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 80%;
+        width: 90%;
     }
 
     .instagram-footer, .facebook-footer, .twitter-footer{
