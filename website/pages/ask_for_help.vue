@@ -11,14 +11,11 @@
     </div>
 
     <div class ="button-container">
-        <NuxtLink to="/ask_for_help_for_me" aria-label="Link to ask for help for me">
-            <ButtonViolet name_button="Help for You"/>
-        </NuxtLink>
-        <NuxtLink to="/ask_for_help_for_another" aria-label="Link to ask for help for another">
-            <ButtonViolet name_button="Help for Another"/>
-        </NuxtLink>
+       
+        <ButtonViolet name_button="Help for You" link="/ask_for_help_for_me" aria_label="Link to ask for help for me"/>        
+        <ButtonViolet name_button="Help for Another" link="/ask_for_help_for_another" aria_label="Link to ask for help for another"/>
         
-    </div>
+     </div>
 
     <BandRightNoButton description="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" imageName="nomeImmagine.jpg"/>
     <BandLeftNoButton description="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"  />

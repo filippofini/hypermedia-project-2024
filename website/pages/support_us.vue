@@ -1,9 +1,9 @@
 <template>
     <BreadCrumbs :crumbs="BCrumbs"/>
 
-    <NuxtLink to="/volunteer" aria-label="Link to volunteer">
-        <ButtonViolet name_button="volunteer"/>
-    </NuxtLink>
+    
+    <ButtonViolet name_button="volunteer" link="/volunteer" aria_label="Link to volunteer"/>
+    
 
     
 </template>

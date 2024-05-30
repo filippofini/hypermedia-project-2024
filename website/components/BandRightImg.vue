@@ -1,5 +1,5 @@
 <script setup>
-  const props = defineProps(['description', 'namebutton','imageName', 'link']);
+  const props = defineProps(['description', 'namebutton','imageName', 'link','aria_label']);
   const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
 </script>
 
@@ -10,7 +10,7 @@
             <p class = "textBandRight"> {{description}} </p>
             
             <div class = "buttonBandRight">
-                <nuxtLink :to="link" class ="buttonBandRight"><ButtonViolet :name_button = "namebutton"></ButtonViolet></nuxtLink>
+                <div class="buttonBandRight"><ButtonViolet :name_button = "namebutton" :link="link" :aria_label="aria_label"></ButtonViolet></div>
             </div>
         </div>
 
