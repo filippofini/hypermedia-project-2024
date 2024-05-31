@@ -61,6 +61,7 @@
         <textarea 
           id="text"
           v-model="text"
+          rows="5" 
           :class="{ 'is-invalid': textErrors.length }"
           @blur="validateText" 
           placeholder="Insert your message"
@@ -183,7 +184,7 @@ export default {
 }
 
 .form-elem textarea {
-  height: 100px;
+  resize: none;
 }
 
 .form-elem input.is-invalid,
