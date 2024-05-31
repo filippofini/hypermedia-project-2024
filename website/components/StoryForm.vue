@@ -4,12 +4,31 @@
             <p>Leave your story</p>
         </div>
       <div class="form-container">
-        <form @submit.prevent="submitForm">
+        <form @submit.prevent="submitForm" novalidate>
           <label for="yourInfo">Your Info</label>
-          <input type="text" id="yourInfo" v-model="formData.yourInfo">
+          <input
+            type="text"
+            class="your-info"
+            v-model="formData.yourInfo"
+            :class="{ 'is-invalid': infoErrors.length }"
+            @blur="validateInfo"
+          >
+          <div v-if="infoErrors.length" class="error-messages">
+            <p v-for="error in infoErrors" :key="error">{{ error }}</p>
+          </div>
   
           <label for="yourStory">Your Story</label>
-          <textarea id="yourStory" v-model="formData.yourStory" rows="5" required></textarea>
+          <textarea
+            class="your-story"
+            v-model="formData.yourStory"
+            rows="5"
+            :class="{ 'is-invalid': textErrors.length }"
+            @blur="validateText"
+          >
+          </textarea>
+          <div v-if="textErrors.length" class="error-messages">
+            <p v-for="error in textErrors" :key="error">{{ error }}</p>
+          </div>
   
           <button type="submit">Send</button>
         </form>
@@ -24,12 +43,26 @@
         formData: {
           yourInfo: '',
           yourStory: ''
-        }
+        },
+        infoErrors: [],
+        textErrors: []
       }
     },
     methods: {
-      submitForm() {
-  
+      validateInfo() {
+      this.infoErrors = [];
+      if ((/^\s*$/.test(this.formData.yourInfo)) || (!this.formData.yourInfo)) this.infoErrors.push('Insert your info');
+    },
+      validateText() {
+      this.textErrors = [];
+      if ((/^\s*$/.test(this.formData.yourStory)) || (!this.formData.yourStory)) this.textErrors.push('The text message can\'t be empty');
+    },
+
+    async submitForm() {
+
+      this.validateInfo();
+      this.validateText();
+
         // Resetta il form
         this.formData.yourInfo = '';
         this.formData.yourStory = '';
@@ -45,7 +78,6 @@
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .title {
     font-family: Jost;
@@ -56,7 +88,8 @@
     text-align: center;
     }
   .form-container { 
-    max-width: 400px;
+    display: flex;
+    justify-content: center;
     border-radius: 5px;
     margin-bottom: 30px;
   }
@@ -66,8 +99,8 @@
     text-align: center;
   }
   .form-container input, .form-container textarea {
-    width: 100%;
-    padding: 8px;
+    padding: 10px;
+    width: 500px;
     border-radius: 10px;
     margin-top: 10px;
     background-color: white;
@@ -77,7 +110,7 @@
     }
   .form-container button {
     margin-top: 20px;
-    padding: 10px 100px;
+    padding: 10px 50px;
     border-radius: 1vw;
     background-color: #52417D;
     color: white;
@@ -88,5 +121,12 @@
   .form-container button:hover {
     transform: scale(1.05); 
   }
+  
+.error-messages {
+  color: red;
+  font-size: 14px;
+  padding: 10px;
+}
+
   </style>
   
