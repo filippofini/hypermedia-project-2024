@@ -21,7 +21,9 @@ export default {
 <style scoped>
 .buttonViolet{
     background-color: #52417D;
-    padding: 0.7vw 2vw;
+    
+    padding-left: 2vw;
+    padding-right: 2vw;
     font-size: 1.2vw; 
     font-family: 'Jost'; 
     display: table-cell;
@@ -31,8 +33,8 @@ export default {
     margin: 0;
     transition: background-color 0.3s ease;
     border-radius: 1vw;  
-    width: 10vw;
-    height: 5vw;
+    width: 9vw;
+    
     
 }
 
