@@ -3,7 +3,7 @@
         <ul>
             <li v-for="(item, index) in items" :key="index">
                 <div @click="toggle(index)" class="list-item">
-                    {{ item.title }}
+                    <span class="title">{{ item.title }}</span> 
                     <span class="arrow">{{ expandedIndex === index ? '▲' : '▼' }}</span>
                 </div>
                 <transition name="expand">
@@ -58,8 +58,9 @@ export default {
         text-align: center;
         color: white;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        position: relative;
         cursor: pointer;
     }
     .list-item:hover {
@@ -67,7 +68,13 @@ export default {
         color: black;
         border: 2px solid #52417D;
     }
+    .title {
+        flex-grow: 1;
+        text-align: center;
+    }
     .arrow {
+        position: absolute;
+        right: 10px;
         font-size: 18px;
         color: white;
         cursor: pointer;
