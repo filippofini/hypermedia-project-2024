@@ -119,38 +119,17 @@ export default {
       this.textErrors = [];
       if ((/^\s*$/.test(this.text)) || (!this.text)) this.textErrors.push('The text message can\'t be empty');
     },
-    async submit() {
+
+    submit() {
       this.validateNumber();
       this.validateEmail();
       this.validateText();
-      
+
       if (this.isFormValid) {
-        let temp = 0;
-        try {
-          await this.$fetch('/api/contactForm', {
-            method: "POST",
-            body: JSON.stringify({
-              name: this.name,
-              surname: this.surname,
-              number: this.number,
-              email: this.email,
-              message: this.text
-            }),
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          });
-          temp = 1;
-        } catch (error) {
-          console.error('Error:', error);
-          temp = -1;
-        }
-        this.ack = temp;
-        if (temp === 1) {
-          this.resetForm();
-        }
+        this.resetForm();
       }
     },
+    
     resetForm() {
       this.name = '';
       this.surname = '';

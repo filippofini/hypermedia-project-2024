@@ -4,12 +4,12 @@
             <p>Leave your story</p>
         </div>
       <div class="form-container">
-        <form @submit.prevent="submitForm" novalidate>
+        <form @submit.prevent="submitForm">
           <label for="yourInfo">Your Info</label>
           <input
             type="text"
             class="your-info"
-            v-model="formData.yourInfo"
+            v-model="yourInfo"
             :class="{ 'is-invalid': infoErrors.length }"
             @blur="validateInfo"
           >
@@ -20,7 +20,7 @@
           <label for="yourStory">Your Story</label>
           <textarea
             class="your-story"
-            v-model="formData.yourStory"
+            v-model="yourStory"
             rows="5"
             :class="{ 'is-invalid': textErrors.length }"
             @blur="validateText"
@@ -30,7 +30,10 @@
             <p v-for="error in textErrors" :key="error">{{ error }}</p>
           </div>
   
-          <button type="submit">Send</button>
+          <button
+            type="submit"
+            :disabled="!isFormValid"
+            >Send</button>
         </form>
       </div>
     </div>
@@ -40,32 +43,45 @@
   export default {
     data() {
       return {
-        formData: {
-          yourInfo: '',
-          yourStory: ''
-        },
+        yourInfo: '',
+        yourStory: '',
         infoErrors: [],
         textErrors: []
       }
     },
+    computed: {
+      isFormValid() {
+        return (
+          !this.infoErrors.length &&
+          !this.textErrors.length &&
+          this.yourInfo &&
+          this.yourStory
+        );
+      }
+    },
     methods: {
       validateInfo() {
-      this.infoErrors = [];
-      if ((/^\s*$/.test(this.formData.yourInfo)) || (!this.formData.yourInfo)) this.infoErrors.push('Insert your info');
-    },
+        this.infoErrors = [];
+        if ((/^\s*$/.test(this.yourInfo)) || (!this.yourInfo)) this.infoErrors.push('Insert your info');
+      },
       validateText() {
-      this.textErrors = [];
-      if ((/^\s*$/.test(this.formData.yourStory)) || (!this.formData.yourStory)) this.textErrors.push('The text message can\'t be empty');
-    },
+        this.textErrors = [];
+        if ((/^\s*$/.test(this.yourStory)) || (!this.yourStory)) this.textErrors.push('The text message can\'t be empty');
+      },
 
-    async submitForm() {
+      submitForm() {
 
-      this.validateInfo();
-      this.validateText();
-
-        // Resetta il form
-        this.formData.yourInfo = '';
-        this.formData.yourStory = '';
+        this.validateInfo();
+        this.validateText();
+  
+        if (this.isFormValid) {
+          this.resetForm();
+        }
+      },
+          
+      resetForm() {
+        this.yourInfo = '';
+        this.yourStory = '';
       }
     }
   }
@@ -119,14 +135,21 @@
     display: block;
   }
   .form-container button:hover {
+    background-color: #a14976;
     transform: scale(1.05); 
   }
+
+  .form-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: scale(1);
+  }
   
-.error-messages {
-  color: red;
-  font-size: 14px;
-  padding: 10px;
-}
+  .error-messages {
+    color: red;
+    font-size: 14px;
+    padding: 10px;
+  }
 
   </style>
   

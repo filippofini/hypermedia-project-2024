@@ -40,7 +40,11 @@
             />
           </div>
           </div>
-        <button type="submit" class="donate-button">Donate</button>
+        <button 
+          type="submit" 
+          class="donate-button"
+          :disabled="!isFormValid"
+        >Donate</button>
       </form>
     </div>
   </template>
@@ -57,6 +61,14 @@
         finalAmount: 0,
       };
     },
+    computed: {
+    isFormValid() {
+      return (
+        (this.selectedAmount && !this.customAmount) ||
+        (!this.selectedAmount && this.customAmount)
+      );
+    }
+  },
     methods: {
       selectAmount(amount) {
         this.selectedAmount = amount;
@@ -66,19 +78,13 @@
         this.selectedAmount = null;
       },
       handleSubmit() {
-        this.finalAmount = this.selectedAmount || this.customAmount;
-        if (this.finalAmount) {
-          this.submitted = true;
-          console.log(`Donated amount: ${this.finalAmount}`);
+        if (this.isFormValid) {
           this.resetForm();
-        } else {
-          alert("Please select or enter an amount.");
         }
       },
       resetForm() {
       this.selectedAmount = null;
       this.customAmount = null;
-      this.submitted = false;
     }
     },
     filters: {
@@ -191,9 +197,14 @@
     cursor: pointer;
     transition: background-color 0.2s;
   }
-  
+
   .donate-button:hover {
     transform: scale(1.1);
+  }
+  .donate-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: scale(1);
   }
 
   .input-container {
