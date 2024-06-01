@@ -25,6 +25,9 @@
                 </div>  
             </div>
         </div>
+
+        <NetflixCarousel :id = "route.params.id" act = "0"></NetflixCarousel>
+        <NetflixCarousel :id = "route.params.id" act = "1"></NetflixCarousel>
     </main> 
 </template>
 

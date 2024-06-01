@@ -1,8 +1,9 @@
 <template>
-  <div v-if = "props.act ==  '0'" class = "mainTitleCarousel">
+  <div class = "generalCarousel">
+  <div v-if = "props.act ==  '0' && !isServiceEmpty" class = "mainTitleCarousel">
     Services
   </div>
-  <div v-else class = "mainTitleCarousel">
+  <div v-if = "props.act == '1' && !isProjectEmpty" class = "mainTitleCarousel">
     Projects
   </div>
 
@@ -20,6 +21,7 @@
 
     </div>
   </div>
+  </div>
 </template>
 
 <script setup>
@@ -32,7 +34,8 @@
   const { data: projects } = await useFetch('/api/projectofPers');
 
   var collection = [];
-  
+  var isProjectEmpty = true;
+  var isServiceEmpty = true;
 
   //INSERISCO NELLA LISTA DA STAMPARE UNO TRA SERVIZI O PROGETTI
   if(props.act == '0'){
@@ -40,14 +43,14 @@
     for (const item of services.value) {
         if (item.id_worker == props.id && item.is_supervisor == true) {
             collection.push(item);
-            //console.log(item);
+            isServiceEmpty = false;
         }
     }
   }else{
     for (const item of projects.value) {
         if (item.id_worker == props.id && item.is_supervisor == true) {
             collection.push(item);
-            console.log(item);
+            isProjectEmpty = false;
         }
     }
   }
@@ -60,6 +63,10 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+.generalCarousel{
+  padding-left: 5.5vw;
+  padding-right:5.5vw;
+}
 
 .carousel {
   display: flex;
