@@ -101,7 +101,7 @@
     const serviceCount = Object.keys([...services.value]).length;
   
     //link to the next and previous service
-    const nextlink = service.service + 1 > serviceCount ? 1 : service.id_service + 1;
+    const nextlink = service.id_service + 1 > serviceCount ? 1 : service.id_service + 1;
     const previouslink = service.id_service - 1 < 1 ? serviceCount : service.id_service - 1;
     
     //function to get a random id of the service
