@@ -1,4 +1,5 @@
 <template>
+    <BreadCrumbs :crumbs="BCrumbs"/>
     <!--TOP OF THE PAGE-->
      <div class="top">
         <div class="test">
@@ -81,7 +82,7 @@
   </template>
   
   <script setup>
-    
+  
     //fetch per il servizio specifico
     const route = useRoute();
     const data = await $fetch('/api/services/' + route.params.id);
@@ -143,6 +144,31 @@
   
   </script>
   
+  <script>
+    export default {
+        computed: {
+            BCrumbs() {                
+                return [
+
+                    {
+                        label: 'home',
+                        url: '/',
+                    },
+
+                    {
+                        label: 'all activities',
+                        url: '/activities',
+                    },
+
+                    {
+                        label: 'all services',
+                        url: '/services'
+                    }
+                ];
+            }
+        }
+    }
+</script>
   
   <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');

@@ -1,6 +1,6 @@
 <script setup>
   const props = defineProps(['description','imageName']);
-  const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
+  
 </script>
 
 <template>

@@ -7,7 +7,7 @@
     <div class = "container-bandLeftNoButton">
        
         <div class="right-columnBandLeftNoButton">
-            <img :src = "imageSrc" alt="Image description">
+            <img src ="@/assets/img/nomeImmagine.jpg" alt="Image description">
         </div>
         <div class = "left-columnBandLeftNoButton">
             <p class = "textBandLeftNoButton"> {{description}} </p>
