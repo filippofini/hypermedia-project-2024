@@ -63,12 +63,15 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
+
 .generalCarousel{
   padding-left: 5.5vw;
   padding-right:5.5vw;
 }
 
 .carousel {
+  justify-content: center;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -110,7 +113,7 @@
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
   font-family: Jost;
 }
 
