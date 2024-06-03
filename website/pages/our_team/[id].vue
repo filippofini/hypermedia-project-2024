@@ -3,6 +3,7 @@
       <Title>{{ person.name }} {{ person.surname }}</Title>
     </Head>
     <main>  
+      <BreadCrumbs :crumbs="BCrumbs"/>
         <div class="test">
             <BackButton />
         </div>
@@ -25,18 +26,38 @@
                 </div>  
             </div>
         </div>
-
-        <NetflixCarousel :id = "route.params.id" act = "0"></NetflixCarousel>
-        <NetflixCarousel :id = "route.params.id" act = "1"></NetflixCarousel>
+        <div class="carousel-container">
+          <NetflixCarousel :id = "route.params.id" act = "0" class="projects-carousel"></NetflixCarousel>
+          <NetflixCarousel :id = "route.params.id" act = "1" class="services-carousel"></NetflixCarousel>
+        </div>
     </main> 
 </template>
 
 <script setup>
-  
-    const route = useRoute();
-    const person = await $fetch('/api/our_team/' + route.params.id);
+  const route = useRoute();
+  const person = await $fetch('/api/our_team/' + route.params.id);
+  const {data: peopleCount} = await useFetch('/api/peopleCount');
 
+  const nextLink = person.id + 1 > peopleCount.value ? 1 : person.id + 1;
+  const previousLink = person.id - 1 < 1 ? peopleCount.value : person.id - 1;
+</script>
 
+<script>
+export default {
+  computed: {
+    BCrumbs() {                
+      return [{
+        label: 'home',
+        url: '/',
+      },
+
+      {
+        label: 'our team',
+        url: '/our_team',
+      }];
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -76,7 +97,7 @@
 
   .image{
     border-radius: 50vw;
-    width: 40%
+    width: 37%
   }
 
 .person-container{
@@ -91,6 +112,10 @@
 .person-name-surname{
     font-size: 4vw;
     font-weight: 1000;
+}
+
+.carousel-container{
+  justify-content: center;
 }
 
 </style>
