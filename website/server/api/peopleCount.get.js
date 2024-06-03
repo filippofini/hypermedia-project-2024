@@ -1,0 +1,12 @@
+import { serverSupabaseClient } from '#supabase/server'
+
+export default  defineEventHandler(async (event) => {
+    const client = await serverSupabaseClient(event)
+
+    const { count, error } = await client.from('People').select('*', { count: 'exact', head: true });
+    if(error) {
+        throw createError({statusCode: 400, statusMessage: error.message})
+    }
+    console.log(count)
+    return count
+})
