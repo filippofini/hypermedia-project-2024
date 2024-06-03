@@ -82,6 +82,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         margin-bottom: 50px;
+        margin-top: 1vw;
         
     }
     .list{

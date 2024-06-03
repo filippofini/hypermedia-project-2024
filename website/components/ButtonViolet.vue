@@ -34,7 +34,7 @@ export default {
     transition: background-color 0.3s ease;
     border-radius: 1vw;  
     width: 9vw;
-    
+    height: 3.5vw;  
     
 }
 
