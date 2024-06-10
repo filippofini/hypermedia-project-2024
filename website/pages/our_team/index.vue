@@ -1,4 +1,5 @@
 <template>
+  <BreadCrumbs :crumbs="BCrumbs"/>
   <div class="top">
     <div class="test">
       <BackButton />
@@ -25,6 +26,8 @@
 
 
 <script setup>
+import BreadCrumbs from '~/components/BreadCrumbs.vue';
+
   //FETCH DELLE PERSONE
   const { data: people } = await useFetch('/api/our_team')
 
@@ -65,6 +68,22 @@
           { name: 'keywords', content: keywords }
       ]
   })
+</script>
+
+<script>
+    export default {
+        computed: {
+            BCrumbs() {                
+                return [
+
+                    {
+                        label: 'home',
+                        url: '/',
+                    }
+                ];
+            }
+        }
+    }
 </script>
 
 <style scoped>

@@ -47,6 +47,10 @@
                     {
                         label: 'home',
                         url: '/',
+                    },
+                    {
+                        label: 'all activities',
+                        url: '/activities',
                     }
                 ];
             }
