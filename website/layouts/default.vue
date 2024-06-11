@@ -2,10 +2,10 @@
 <template>
     <div class="page">
         <div class="bar-button-disposistion">            
-            <TopBar />
-                        
+            <TopBar />            
         </div>
         <slot />
+        <Chatbot />
         <Footer />
     </div>
 </template>
