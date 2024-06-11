@@ -17,6 +17,8 @@ export default defineEventHandler(async (event) => {
         console.log('Creating thread');
         thread = await openai.beta.threads.create();
       }
+
+      return "Vercel test."
       
       //Add the user message to the thread
       console.log("Adding user message")
