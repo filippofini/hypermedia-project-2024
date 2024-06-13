@@ -32,7 +32,7 @@
         display: flex;
         flex-direction: column;
         width: 50%;
-        margin: 40px;
+        margin: 3vw;
     }
 
     .form{
@@ -40,22 +40,10 @@
         display: flex;
         flex-direction: column;
         background-color: #52417D;
-        padding: 10px;
-        border-radius: 20px;
+        padding: 1vw;
+        border-radius:20px;
         width: 50%;
-        margin: 40px;
-    }
-
-    h1{
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-
-    .contact-text{
-       max-width: 80%;
-       margin-top: 20px;
-       margin-left: 20px;
-       word-break: break-word;
+        margin: 3vw;
     }
 
     .socials{
@@ -71,7 +59,7 @@
         height: auto;
         position: relative;
         transition: 0.1 ease-in-out; 
-        padding: 10px;
+        padding: 0.5vw;
         
     }
 
@@ -87,6 +75,7 @@
         font-family: Jost;
         font-size: 2.2vw;
         font-weight: 500;
+        margin-bottom: 2vw;
     }
 
 </style>

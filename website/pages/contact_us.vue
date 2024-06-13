@@ -43,7 +43,7 @@
       display: flex;
       flex-direction: column;
       font-family: Jost;
-      margin-left: 30px;
+      margin-left: 3vw;
       align-items: start;
    }
 

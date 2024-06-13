@@ -155,18 +155,18 @@ export default {
   font-family: Jost;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 1.5vw;
 }
 
 .form-elem-1 {
   font-family: Jost;
   position: relative;
-  margin: 10px 10px 0px 10px;
+  margin: 1vw 1vw 0vw 1vw;
   background-color: #f9f9f9;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 0.5vw;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex: 1;
  
@@ -175,12 +175,12 @@ export default {
 .form-elem-2 {
   font-family: Jost;
   position: relative;
-  margin: 10px;
+  margin: 1vw;
   background-color: #f9f9f9;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 0.5vw;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex: 1;
 }
@@ -189,7 +189,7 @@ export default {
 .form-elem-2 input, 
 .form-elem-2 textarea{
   font-family: Jost;
-  padding: 5px;
+  padding: 0.5vw;
   border-radius: 5px;
   outline: none;
   font-size: 15px;
@@ -235,22 +235,21 @@ export default {
   font-family: Jost;
   color: red;
   font-size: 14px;
-  margin-top: 8px;
-  padding: 5px;
+  padding: 0.5vw;
 }
 
 
 .form-button {
   font-family: Jost;
   display: inline-block;
-  margin: 10px;
-  padding: 10px 40px;
+  margin: 1vw;
+  padding: 1vw 3vw;
   background-color: #b96090;
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.3vw;
   transition: background-color 0.3s, transform 0.3s;
 }
 

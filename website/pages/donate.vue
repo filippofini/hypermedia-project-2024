@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 2%;
   }
 
   </style>

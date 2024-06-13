@@ -51,7 +51,8 @@
     }
 
     .button-spacing {
-        margin-top: 40px;
+        margin-top: 2vw;
     }
+
 
 </style>
