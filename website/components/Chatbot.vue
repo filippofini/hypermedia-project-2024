@@ -2,9 +2,6 @@
   <div @scroll="showButton()">
     <button @click="toggleChatbot" class="chatbot-button">
       <img src="../assets/img/chatbot.png" alt="Chat Icon" class="chat-icon"/>
-      <div class="ask-text">
-      Ask AI
-      </div>
     </button>
 
     <div v-if="isChatbotVisible" class="chatbot-container">
@@ -107,17 +104,18 @@ export default {
 
 <style scoped>
   .chatbot-button {
+    opacity: 0.5;
     z-index: 1;
     position: fixed;
     text-align: center;
-    width: 7vw;
-    height: 7vw;
+    width: 4vw;
+    height: 4vw;
     bottom: 3vw;
     right: 3.5vw;
     background-color: #52417D;
     color: white;
     border: none;
-    border-radius: 1vw;
+    border-radius: 10vw;
     cursor: pointer;
     transition: background-color 0.3s;
     display: flex;
@@ -131,6 +129,7 @@ export default {
   
   .chatbot-button:hover {
     background-color: #281e41;
+    opacity: 1.0
   }
 
   .chat-icon {
