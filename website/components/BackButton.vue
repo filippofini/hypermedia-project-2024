@@ -1,6 +1,6 @@
 <template>  
     <button class="button-container">
-        <a href="" class="back-button" @click.prevent="$router.back()" role="button" aria-label="Back button">
+        <a href="" class="b-button" @click.prevent="$router.back()" role="button" aria-label="Back button">
             <img src="@/assets/bb_arrow.png"></img>
         </a>  
     </button>
@@ -27,7 +27,7 @@
         transition: all 0.2s ease-out;
     }
 
-    .back-button {
+    .b-button {
         color: white;
         font-weight: bolder;
         font-size: xx-large;
@@ -38,7 +38,7 @@
         
     }
 
-    .back-button img{
+    .b-button img{
         object-fit: contain;   
         width: 90%;
         height: 90%;
