@@ -29,26 +29,7 @@
         width: 100%;
         display: block;
         transition: transform 0.5s ease, filter 0.5s ease;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-family: 'Jost'; 
-        width: 100%;
-        height: 100%;
-        font-size: 1.2vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        color: white;
-        text-align: center; 
-        padding: 1.3vw; 
-        box-sizing: border-box; 
+        object-fit: cover;
     }
 
     .title {

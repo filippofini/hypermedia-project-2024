@@ -1,7 +1,7 @@
 <template>
     <div class="cointeiner-double">
         <div class="double-sx">
-            <div class="title">
+            <div class="title-page-1-5">
                 <p>Donate</p>
             </div>
             <div class="description">
@@ -10,7 +10,7 @@
             <ButtonViolet class="button-spacing" name_button="Donate" link="/donate" aria_label="Link to donate"/>
         </div>
         <div class="double-dx">
-            <div class="title">
+            <div class="title-page-1-5">
                 <p>Volunteer</p>
             </div>
             <div class="description">
@@ -27,12 +27,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-    }
-    .title {
-        font-family: Jost;
-        font-size: 30px;
-        margin-bottom: 30px;
-    }   
+    } 
     .double-sx{
         display: flex;
         flex-direction: column;

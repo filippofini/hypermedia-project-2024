@@ -35,12 +35,21 @@ html, body {
     margin-top: 0vw;
 }
 
+.title-page-1-5{
+    font-family: Jost;
+    font-size: 2.2vw;
+    font-weight: 500;
+    text-align: center;
+}
+
 .title-page-2{
     font-family: Jost;
     font-size: 1.8vw;
     font-weight: 500;
     text-align: center;
 }
+
+
 
 .description{
     font-family: Jost;
@@ -58,6 +67,8 @@ html, body {
     display: flex;  
     align-self: center;  
 }
+
+
 
 .prev-next{
     font-family: Jost;

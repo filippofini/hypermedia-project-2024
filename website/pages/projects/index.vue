@@ -118,6 +118,7 @@
         flex-wrap: wrap;
         align-self: center;
         gap: 2vw;
+        padding-bottom: 2%;
         justify-content: center;
         max-width: 90vw;
     }
