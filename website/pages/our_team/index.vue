@@ -1,11 +1,11 @@
 <template>
   <BreadCrumbs :crumbs="BCrumbs"/>
-  <div class="top">
-    <div class="test">
+  <div class="top-container">
+    <div class="back-button">
       <BackButton />
     </div>
     <div class="center-title">
-      <div class = "title-page">Our team</div>
+    Our team
     </div>
   </div>
   <div class="introduction">placeholder</div>
@@ -87,24 +87,6 @@ import BreadCrumbs from '~/components/BreadCrumbs.vue';
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
-  .top{
-    display: flex;
-    flex-direction: row;
-    
-    margin: 2vw;
-  }
-  .test{
-    display: flex;
-    width: 10%;
-  }
-  .center-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin-right: 10%;
-  }
 
   #people-container {
     display: flex;

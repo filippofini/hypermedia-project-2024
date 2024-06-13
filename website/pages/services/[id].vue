@@ -1,12 +1,12 @@
 <template>
     <BreadCrumbs :crumbs="BCrumbs"/>
     <!--TOP OF THE PAGE-->
-     <div class="top">
-        <div class="test">
+     <div class="top-container">
+        <div class="back-button">
           <BackButton />
         </div>
         <div class="center-title">
-          <div class = "title-page">{{service.title}}</div>
+        {{service.title}}
         </div>
       </div> 
       <!--previous and next link-->
@@ -174,26 +174,12 @@
   @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
   
     /*STILE INTESTAZIONE*/
-    .top{
-      display: flex;
-      flex-direction: row;
+    .top-container{
       background-color: #FFCDDC;
       padding: 2vw;
       margin: 0vw;
       border: 0vw;
     }
-    .test{
-      display: flex;
-      width: 10%;
-    }
-    .center-title{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 90%;
-
-    }
-  
     .link{
       font-size: 1.2vw;
       font-weight: 300;
