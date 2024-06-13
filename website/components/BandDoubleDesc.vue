@@ -39,8 +39,6 @@
         justify-content: space-between;
         padding-right: 7vw;
         padding-left: 7vw;
-        font-size: 1.2vw; 
-        font-family: 'Jost'; 
         background-color: color;
         align-items: center;
         
@@ -55,11 +53,6 @@
         font-family: 'Jost'; 
         background-color: color;
         align-items: center;   
-    }
-
-    .description{
-        max-width: 100%;
-        word-break: break-word;
     }
 
     .button-spacing {

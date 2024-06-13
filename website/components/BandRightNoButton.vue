@@ -10,7 +10,7 @@
             <img src ="@/assets/img/nomeImmagine.jpg" alt="Image description">
         </div>
         <div class = "left-columnBandLeftNoButton">
-            <p class = "textBandLeftNoButton"> {{description}} </p>
+            <p class = "description"> {{description}} </p>
         </div> 
     </div>
 </template>
@@ -25,11 +25,6 @@
 }
 
 
-.textBandLeftNoButton
-{
-    max-width: 100%;
-    word-break: break-word;
-}
 
 .left-columnBandLeftNoButton{
     display: flex;
@@ -42,8 +37,6 @@
     min-width: 57vw;
     max-width: 57vw;
 
-    font-size: 1.2vw; 
-    font-family: 'Jost'; 
     background-color: color;
 
     

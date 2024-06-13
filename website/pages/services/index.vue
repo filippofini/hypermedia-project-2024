@@ -80,16 +80,6 @@
         margin-right: 10%;
     }
 
-    .introduction {
-        margin: 6vw;
-        font-family: Jost;
-        font-size: 1.3vw;
-        text-align: center;
-        margin-top: 0vw;
-        display: flex;  
-        align-self: center;  
-    }
-
     #sorting-selector-services {
         display: flex;
         font-family: Jost;
