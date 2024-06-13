@@ -187,6 +187,10 @@
       color:black;
       text-decoration: none;
     }
+
+    .link:hover{
+    text-decoration: underline;
+    }
   
     /*STILE PRIMA FASCIA*/
     .titoletti{

@@ -118,4 +118,16 @@ export default {
   justify-content: center;
 }
 
+.link{
+    font-family: Jost;
+    font-size: 1.2vw;
+    font-weight: 300;
+    text-align: left;
+    color:black;
+    text-decoration: none;
+  }
+.link:hover{
+    text-decoration: underline;
+  }
+
 </style>
