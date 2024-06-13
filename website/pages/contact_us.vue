@@ -9,8 +9,8 @@
       </div>
    </div>
    <div class="phone-number">
-      <h2>Call</h2>
-      <h1>123-456-7890</h1>
+      <div class="title-page-1-5">Call</div>
+      <div class="title-page">123-456-7890</div>
    </div>
    <BandLeftNoButton description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" imageName="nomeimmagine.jpg"/>
    <BandForm />
@@ -44,18 +44,7 @@
       flex-direction: column;
       font-family: Jost;
       margin-left: 30px;
-   }
-
-   h1 {
-      font-size: 30px;
-      font-weight: 1000;
-      font-family: Jost;
-   }
-
-   h2 {
-      font-size: 25px;
-      font-weight: 500;
-      font-family: Jost;
+      align-items: start;
    }
 
 </style>

@@ -43,6 +43,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
     ul {
         list-style-type: none;
         padding: 7px;   /* togliere se vogliamo fascia completa */
@@ -62,6 +64,9 @@ export default {
         align-items: center;
         position: relative;
         cursor: pointer;
+        font-family: Jost;
+        font-size: 1.3vw;
+        font-weight: 600;
     }
     .list-item:hover {
         background-color: #f1f1f1;
@@ -93,6 +98,8 @@ export default {
         transition: all 0.3s ease;
         max-height: 1000px; 
         overflow: hidden;
+        font-family: Jost;
+        font-size: 1.3vw;
     }
     .expand-enter-active, .expand-leave-active {
     transition: height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;

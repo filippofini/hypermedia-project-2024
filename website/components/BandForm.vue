@@ -1,9 +1,9 @@
 <template>
     <div class="container">
         <div class="contact-info">
-            <h1> Contact Form </h1>
-            <p class="contact-text"> Siamo qui per aiutarti! Se hai domande, richieste di informazioni o necessiti di assistenza, non esitare a contattarci. Compila il modulo sottostante con i tuoi dettagli e il nostro team di supporto ti risponderà il prima possibile. Ci impegniamo a fornirti un servizio rapido ed efficiente. Grazie per aver scelto di contattarci! </p>
-            <h3 class="contact-mail">contact.mail@mail.com</h3>
+            <div class="title"> Contact Form </div>
+            <p class="description"> Siamo qui per aiutarti! Se hai domande, richieste di informazioni o necessiti di assistenza, non esitare a contattarci. Compila il modulo sottostante con i tuoi dettagli e il nostro team di supporto ti risponderà il prima possibile. Ci impegniamo a fornirti un servizio rapido ed efficiente. Grazie per aver scelto di contattarci! </p>
+            <h3 class="title-page-2">contact.mail@mail.com</h3>
             <div class="socials">
                 <a href="https://www.instagram.com" target=”_blank” aria-label="Link to Instagram"><img src="../assets/img/contacts/instagram_logo_hover.png" alt="Instagram Logo" class="instagram-footer"></a>
                 <a href="https://www.facebook.com" target=”_blank” aria-label="Link to Facebook"><img src="../assets/img/contacts/facebook_logo_hover.png" alt="Facebook Logo" class="facebook-footer"></a>
@@ -58,25 +58,21 @@
        word-break: break-word;
     }
 
-    .contact-mail{
-        margin-top: 60px;
-        width: 90%;
-        text-align: center;
-    }
-
     .socials{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 90%;
+        gap: 1.3vw;
+        
     }
 
     .instagram-footer, .facebook-footer, .twitter-footer{
-        width: 50px;
+        width: 3.3vw;
         height: auto;
         position: relative;
         transition: 0.1 ease-in-out; 
         padding: 10px;
+        
     }
 
     .instagram-footer:hover, .facebook-footer:hover, .twitter-footer:hover {
@@ -85,6 +81,12 @@
 
     .instagram-footer:active, .facebook-footer:active, .twitter-footer:active {
         transform: scale(1);
+    }
+
+    .title{
+        font-family: Jost;
+        font-size: 2.2vw;
+        font-weight: 500;
     }
 
 </style>

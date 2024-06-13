@@ -52,11 +52,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-bottom: 50px;
-        margin-top: 1vw;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        
         
     }
     .list{
-        margin-bottom: 5vw;
+        margin-bottom: 3vw;
     }
   </style>

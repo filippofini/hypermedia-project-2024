@@ -5,8 +5,8 @@ const route = useRoute()
 
 </script>
 <template>
-  <div class="mainImage">
-    <img src = '@/assets/img/nomeImmagine.jpg'>
+  <div class="image-container">
+    <img src = '@/assets/img/nomeImmagine.jpg'  class="mainImage">
   </div>
   <BandTripleButton namebutton1="See all projects" link1 = "/projects/" namebutton2="See all services" link2 = "/services/" namebutton3="Activities" link3 = "/activities/" imageName = "nomeImmagine.jpg" description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"></BandTripleButton>
   <BandLeftImg namebutton="Ask for help" link = "/ask_for_help/" imageName = "nomeImmagine.jpg" description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"></BandLeftImg>
@@ -15,9 +15,14 @@ const route = useRoute()
 
 <style scoped>
 .mainImage{
+  
+  width: 60%;
+  
+}
+
+.image-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
 }
 </style>
