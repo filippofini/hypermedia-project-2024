@@ -47,14 +47,14 @@ export default {
 
     ul {
         list-style-type: none;
-        padding: 7px;   /* togliere se vogliamo fascia completa */
+        padding: 0.1vw;   
     }
     li {
         padding: 0;
-        margin-top: 3px;
+        margin-top:0.2vw;
     }
     .list-item {
-        padding: 17px;
+        padding: 0.9vw;
         background-color: #52417D;
         border: 2px solid #52417D;
         text-align: center;
@@ -79,8 +79,8 @@ export default {
     }
     .arrow {
         position: absolute;
-        right: 10px;
-        font-size: 18px;
+        right: 0.9vw;
+        font-size: 1.3vw;
         color: white;
         cursor: pointer;
         transition: color 0.3s;
@@ -89,12 +89,12 @@ export default {
         color: black;
     }
     .details {
-        padding: 10px 17px;
+        padding: 0.9vw 1vw;
         margin-top: -1px;
         background-color: #ececec;
         border: 2px solid #52417D;
         color: black;
-        margin-bottom: 5px;
+        margin-bottom: 0.2vw;
         transition: all 0.3s ease;
         max-height: 1000px; 
         overflow: hidden;
