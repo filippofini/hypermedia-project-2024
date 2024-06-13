@@ -1,11 +1,11 @@
 <template>
     <BreadCrumbs :crumbs="BCrumbs"/>
-    <div class="top">
-        <div class="test">
+    <div class="top-container">
+        <div class="back-button">
             <BackButton />
         </div>
         <div class="center-title">
-            <div class="title-page">Projects</div>
+        Projects
         </div>
     </div>
     <div class="introduction">Welcome to our Projects Preview Page. Here, you'll find a comprehensive overview of our impactful initiatives aimed at supporting women victims of violence. From raising awareness through public installations to educating young minds in schools, each project is designed to foster a safer, more informed, and supportive community. Explore our diverse efforts to combat gender-based violence and discover how you can get involved in making a difference.</div>
@@ -75,27 +75,7 @@
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
-    
-    .top {
-        display: flex;
-        flex-direction: row;
-        margin: 2vw;
-    }
-
-    .test{
-        display: flex;
-        width: 10%;
-    }
-
-    .center-title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-        margin-right: 10%;
-    }
-
+   
     #sorting-selector-projects {
         display: flex;
         font-family: Jost;

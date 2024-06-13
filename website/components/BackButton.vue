@@ -13,11 +13,8 @@
     }
 
     .button-container {        
-        width: 7vh;
-        height: 7vh;
-        min-width: 25px;
-        min-height: 25px;
-        margin: 1%;
+        width: 3vw;
+        height: 3vw;
         display: flex;
         justify-content: center;
         align-items: center;

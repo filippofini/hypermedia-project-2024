@@ -15,8 +15,8 @@ html, body {
 
 .back-button {
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 2vw;
+    top: 0.5vw;
 }
 
 .center-title{
