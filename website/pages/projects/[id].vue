@@ -182,6 +182,10 @@ export default {
     text-decoration: none;
   }
 
+  .link:hover{
+    text-decoration: underline;
+  }
+
   /*STILE PRIMA FASCIA*/
   .titoletti{
     display: flex;  
