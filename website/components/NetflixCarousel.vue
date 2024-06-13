@@ -82,7 +82,7 @@
   flex: 0 0 auto;
   scroll-snap-align: start;
   position: relative;
-  margin-right: 10px;
+  margin-right: 1.0;
 }
 
 .imageCarousel {
@@ -112,8 +112,8 @@
 .mainTitleCarousel {
   font-size: 2vw;
   font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2.0vw;
+  margin-bottom: 2.0vw;
   text-align: center;
   font-family: Jost;
 }
