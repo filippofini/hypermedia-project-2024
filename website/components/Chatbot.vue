@@ -7,7 +7,7 @@
     <div v-if="isChatbotVisible" class="chatbot-container">
       <div class="chatbot-header">
         <span>Chatbot</span>
-        <button @click="toggleChatbot" class="close-button">X</button>
+        <div class = "circle-close-button"><button @click="toggleChatbot" class="close-button">x</button></div>
       </div>
       <div class="chatbot-messages" ref="chatbotMessages">
         <div v-for="message in messages" :key="message.id" :class=" message.sender === 'You' ? 'user-message' : 'bot-message'">
@@ -103,6 +103,8 @@ export default {
 </script>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
   .chatbot-button {
     opacity: 0.5;
     z-index: 1;
@@ -147,7 +149,7 @@ export default {
     bottom: 3vw;
     right: 3.5vw;
     width: 40vw;
-    height: 45vw;
+    height: 90%;
     background-color: white;
     border: 0.1vw solid #ccc;
     border-radius: 1vw;
@@ -158,9 +160,10 @@ export default {
   }
 
   .chatbot-header {
+    font-family: Jost;
     font-size: 1.3vw;
     font-weight: bold;
-    height: 3vw;
+    height: 1.5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -176,13 +179,25 @@ export default {
     color: white;
     font-size: 1.5vw;
     cursor: pointer;
+    opacity: 1;
   }
-  
   .close-button:hover {
-    color: #FFCDDC;
+    color: #52417D;
   }
 
+  .circle-close-button{
+    border-radius: 100%;
+    background-color: #52417D;
+  }
+
+  .circle-close-button:hover{
+    background-color: #ffffff;
+    opacity: 0.5;
+  }
+
+
   .chatbot-messages {
+    font-family: Jost;
     flex: 1;
     padding: 1vw;
     overflow-y: auto;
@@ -240,6 +255,7 @@ export default {
   }
 
   .chatbot-input {
+    font-family: Jost;
     border: 0.1vw solid #ccc;
     padding: 1.5%;
     width: 85%;
