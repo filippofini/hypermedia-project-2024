@@ -17,13 +17,13 @@
   </div>
 
     <!--PRIMA FASCIA-->
-    <div class = "first_band">
+    <div class = "first-band">
       
       <div class="image">
         <img :src="project.image" alt="Project image" style="width:100%">
       </div>
 
-      <div class="titoletti">
+      <div class="titles">
 
         <div>Supervisor 
           <NuxtLink :to="'/our_team/' + supervisors[0].id" :arial-label="`link to ${supervisors[0].name} ${supervisors[0].surname} page`" class="info">
@@ -42,12 +42,12 @@
 
     <!--SECONDA FASCIA-->
     <div class="ovProject">Overview of the project</div>
-    <div class = "second_band">
+    <div class = "second-band">
       {{project.description}}
     </div>
 
     <!--TERZA FASCIA-->
-    <div class = "third_band">
+    <div class = "third-band">
       <div class = "title-page-2">See Also</div>
       <div class = "reccomendation">
         <ProjectCard 
@@ -171,7 +171,7 @@ export default {
   }
 
   /*STILE PRIMA FASCIA*/
-  .titoletti{
+  .titles{
     display: flex;  
     flex-direction: column;
     justify-content: space-evenly;
@@ -194,7 +194,7 @@ export default {
     width: 50%
   }
 
-  .first_band{
+  .first-band{
     display: flex;
     flex-direction: row;
     padding: 5.5vw;
@@ -205,7 +205,7 @@ export default {
   }
 
   /*STILE SECONDA FASCIA*/
-  .second_band{
+  .second-band{
     display: flex;
     padding: 5.5vw;
     padding-top: 1vw;
@@ -227,7 +227,7 @@ export default {
   }
 
   /*STILE TERZA FASCIA*/
-  .third_band{
+  .third-band{
     display: flex;
     flex-direction: column;
     padding: 5.5vw;

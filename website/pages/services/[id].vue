@@ -18,13 +18,13 @@
     </div>
   
       <!--PRIMA FASCIA-->
-      <div class = "first_band">
+      <div class = "first-band">
         
         <div class="image">
           <img :src="service.image" alt="Service image" style="width:100%">
         </div>
   
-        <div class="titoletti">
+        <div class="titles">
           
           <div>Supervisor 
             <NuxtLink :to="'/our_team/' + supervisors[0].id" :arial-label="`link to ${supervisors[0].name} ${supervisors[0].surname} page`" class="info">
@@ -42,12 +42,12 @@
   
       <!--SECONDA FASCIA-->
       <div class="ovService">Overview of the service</div>
-      <div class = "second_band">
+      <div class = "second-band">
         {{service.description}}
       </div>
 
       <!--FASCIA TESTIMONIALS-->
-      <div class = "third_band">
+      <div class = "third-band">
         <div class = "title-page-2">Our Testimonials</div>
         <div class = "testimonials">
           <PersonOv v-for = "test of testimonials_final" :name="test.quote" :role="test.name" :image="test.image" ></PersonOv>
@@ -55,7 +55,7 @@
       </div>
   
       <!--TERZA FASCIA-->
-      <div class = "third_band">
+      <div class = "third-band">
         <div class = "title-page-2">See Also</div>
         <div class = "reccomendation">
           <ProjectCard 
@@ -190,7 +190,7 @@
     }
   
     /*STILE PRIMA FASCIA*/
-    .titoletti{
+    .titles{
       display: flex;  
       flex-direction: column;
       justify-content: space-evenly;
@@ -213,7 +213,7 @@
       width: 50%
     }
   
-    .first_band{
+    .first-band{
       display: flex;
       flex-direction: row;
       padding: 5.5vw;
@@ -224,7 +224,7 @@
     }
   
     /*STILE SECONDA FASCIA*/
-    .second_band{
+    .second-band{
       display: flex;
       padding: 5.5vw;
       padding-top: 1vw;
@@ -246,7 +246,7 @@
     }
   
     /*STILE TERZA FASCIA E FASCIA TESTIMONIALS*/
-    .third_band{
+    .third-band{
       display: flex;
       flex-direction: column;
       padding: 5.5vw;
