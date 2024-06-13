@@ -9,16 +9,16 @@
                 <BackButton />
             </div>
             <div class="center-title">
-            <div class = "title">Become a volunteer</div>
+            <div class = "title-page">Become a volunteer</div>
         </div>
     </div>
      
     <div class ="container">
 
 
-        <ImageUpTextDown class="img-txt" description="Become a vital part of our team and contribute to our mission of making a meaningful difference in the lives of others." imageName="/volunteer/volunteer1.png" title="Join our team"/> 
-        <ImageUpTextDown class="img-txt" description="Every contribution, no matter how small, plays a significant role in creating a greater impact than we could ever achieve alone" imageName="/volunteer/volunteer2.png" title="Combine our efforts"/> 
-        <ImageUpTextDown class="img-txt"  description="By standing together, we can advocate for change, support those in need, and work towards a shared vision of a better tomorrow" imageName="/volunteer/volunteer3.png" title="Unite for a common cause"/> 
+        <ImageUpTextDown class="description" description="Become a vital part of our team and contribute to our mission of making a meaningful difference in the lives of others." imageName="/volunteer/volunteer1.png" title="Join our team"/> 
+        <ImageUpTextDown class="description" description="Every contribution, no matter how small, plays a significant role in creating a greater impact than we could ever achieve alone" imageName="/volunteer/volunteer2.png" title="Combine our efforts"/> 
+        <ImageUpTextDown class="description"  description="By standing together, we can advocate for change, support those in need, and work towards a shared vision of a better tomorrow" imageName="/volunteer/volunteer3.png" title="Unite for a common cause"/> 
     </div>
 
     </div>
@@ -65,17 +65,6 @@
       
         
     }
- 
-
-    .img-txt{      
-
-        max-width: 100%;
-        max-height: 100%;
-        margin: 1%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    } 
 
     .button{
         display: flex;        

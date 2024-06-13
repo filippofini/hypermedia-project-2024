@@ -1,11 +1,11 @@
 <template>
     <div id="app">
-        <div class="title">
+        <div class="title-page">
             <p>Leave your story</p>
         </div>
       <div class="form-container">
         <form @submit.prevent="submitForm">
-          <label for="yourInfo">Your Info</label>
+          <label for="yourInfo" class="title-page-2">Your Info</label>
           <input
             type="text"
             class="your-info"
@@ -17,7 +17,7 @@
             <p v-for="error in infoErrors" :key="error">{{ error }}</p>
           </div>
   
-          <label for="yourStory">Your Story</label>
+          <label for="yourStory" class="title-page-2">Your Story</label>
           <textarea
             class="your-story"
             v-model="yourStory"
@@ -95,14 +95,7 @@
     display: flex;
     flex-direction: column;
   }
-  .title {
-    font-family: Jost;
-    font-size: 30px;
-    font-weight: 500;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-    }
+  
   .form-container { 
     display: flex;
     justify-content: center;
