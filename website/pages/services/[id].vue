@@ -1,7 +1,8 @@
 <template>
-    <BreadCrumbs :crumbs="BCrumbs"/>
     <!--TOP OF THE PAGE-->
-     <div class="top-container">
+    <div class="zero-band">
+      <BreadCrumbs :crumbs="BCrumbs"/>
+      <div class="top-container">
         <div class="back-button">
           <BackButton />
         </div>
@@ -14,6 +15,7 @@
         <NuxtLink :to="'/services/' + previouslink" :arial-label="`link to previous service`" class="link">Previous</NuxtLink>
         <NuxtLink :to="'/services/' + nextlink" :arial-label="`link to next service`" class="link">Next</NuxtLink>
       </div>
+    </div>
   
       <!--PRIMA FASCIA-->
       <div class = "first_band">
@@ -171,14 +173,9 @@
 </script>
   
   <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
-  
-    /*STILE INTESTAZIONE*/
-    .top-container{
+
+    .zero-band{
       background-color: #FFCDDC;
-      padding: 2vw;
-      margin: 0vw;
-      border: 0vw;
     }
     .link{
       font-size: 1.2vw;
