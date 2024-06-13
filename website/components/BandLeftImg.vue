@@ -12,7 +12,7 @@
         </div>
         
         <div class="right-column">
-            <p class="text"> {{description}} </p>
+            <p class="description"> {{description}} </p>
             
             <div class="button">
                 <div class="button"><ButtonViolet :name_button = "namebutton" :link="link" :aria_label="aria_label"></ButtonViolet></div>
@@ -49,14 +49,6 @@
     min-width: 57vw;
     max-width: 57vw;
 
-    font-size: 1.2vw; 
-    font-family: 'Jost'; 
-}
-
-.text
-{
-  max-width: 100%;
-  word-break: break-word;
 }
 
 .left-column img {

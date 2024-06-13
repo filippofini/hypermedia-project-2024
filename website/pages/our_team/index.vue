@@ -132,16 +132,6 @@ import BreadCrumbs from '~/components/BreadCrumbs.vue';
     margin-top: 0vw;
 }
 
-.introduction {
-  margin: 6vw;
-  font-family: Jost;
-  font-size: 1.3vw;
-  text-align: center;
-  margin-top: 0vw;
-  display: flex;  
-  align-self: center;  
-  }
-
 .menu {
       border-radius: 5px;
       border: 1px solid black;

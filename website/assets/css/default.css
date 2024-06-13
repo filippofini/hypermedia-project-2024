@@ -5,6 +5,28 @@ html, body {
     padding: 0;
 }
 
+.top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2vw;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.center-title{
+    flex-grow: 1;
+    text-align: center;
+    font-family: Jost;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
 .title-page{
     font-family: Jost;
     font-size: 3vw;
@@ -24,6 +46,17 @@ html, body {
     font-family: Jost;
     font-size: 1.3vw;
     margin-top: 0vw;
+    word-break: break-word;
+}
+
+.introduction {
+    margin: 6vw;
+    font-family: Jost;
+    font-size: 1.3vw;
+    text-align: center;
+    margin-top: 0vw;
+    display: flex;  
+    align-self: center;  
 }
 
 .prev-next{

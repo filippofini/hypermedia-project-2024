@@ -7,7 +7,7 @@
 <template>
     <div class = "containerBandRight">
         <div class = "left-columnBandRight">
-            <p class = "textBandRight"> {{description}} </p>
+            <p class = "description"> {{description}} </p>
             
             <div class = "buttonBandRight">
                 <div class="buttonBandRight"><ButtonViolet :name_button = "namebutton" :link="link" :aria_label="aria_label"></ButtonViolet></div>
@@ -32,12 +32,6 @@
     background-color: #FFFFFF;
 }
 
-.textBandRight
-{
-    max-width: 100%;
-    word-break: break-word;
-}
-
 .left-columnBandRight{
     display: flex;
     flex-direction: column;
@@ -48,9 +42,6 @@
     min-height: 23vw;
     min-width: 57vw;
     max-width: 57vw;
-
-    font-size: 1.2vw; 
-    font-family: 'Jost'; 
 
     background-color: color;
 }
