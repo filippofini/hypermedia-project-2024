@@ -21,21 +21,21 @@ export default {
 <style scoped>
 .buttonViolet{
     background-color: #52417D;
-    
-    padding-left: 2vw;
-    padding-right: 2vw;
+    border: none;
     font-size: 1.2vw; 
     font-family: 'Jost'; 
-    display: table-cell;
-    vertical-align: middle;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     margin: 0;
     transition: background-color 0.3s ease;
     border-radius: 1vw;  
-    width: 9vw;
-    height: 3.5vw;  
-    
+    width: 10vw;
+    height: 3.5vw;
+    white-space: normal;
+    overflow: hidden;
+    line-height: 1.1;
 }
 
 .buttonViolet:hover {
