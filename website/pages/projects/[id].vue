@@ -1,7 +1,7 @@
 <template>
-  <BreadCrumbs :crumbs="BCrumbs"/>
-  <!--TOP OF THE PAGE-->
-   <div class="top-container">
+  <div class="zero-band">
+    <BreadCrumbs :crumbs="BCrumbs"/>
+    <div class="top-container">
       <div class="back-button">
         <BackButton />
       </div>
@@ -14,6 +14,7 @@
       <NuxtLink :to="'/projects/' + previouslink" :arial-label="`link to previous project`" class="link">Previous</NuxtLink>
       <NuxtLink :to="'/projects/' + nextlink" :arial-label="`link to next project`" class="link">Next</NuxtLink>
     </div>
+  </div>
 
     <!--PRIMA FASCIA-->
     <div class = "first_band">
@@ -153,11 +154,8 @@ export default {
 <style scoped>
 
   /*STILE INTESTAZIONE*/
-  .top-container{
+  .zero-band{   
     background-color: #FFCDDC;
-    padding: 2vw;
-    margin: 0vw;
-    border: 0vw;
   }
 
   .link{

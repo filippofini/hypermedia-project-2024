@@ -66,6 +66,7 @@ html, body {
     justify-content: space-between;
     padding-left: 2.0vw;
     padding-right: 2.0vw;
+    margin-bottom: 1.0vw;
     background-color: #FFCDDC;
     border: 0vw;
 }
