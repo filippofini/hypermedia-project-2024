@@ -90,8 +90,8 @@
   <style scoped>
   #app{
     background-color: #FFCDDC;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
     display: flex;
     flex-direction: column;
   }
@@ -109,7 +109,7 @@
   }
   .form-container input, .form-container textarea {
     padding: 10px;
-    width: 500px;
+    width: 50vw;
     border-radius: 10px;
     margin-top: 10px;
     background-color: white;
@@ -119,7 +119,7 @@
     }
   .form-container button {
     margin-top: 20px;
-    padding: 10px 50px;
+    padding: 1vw 5vw;
     border-radius: 1vw;
     background-color: #52417D;
     color: white;

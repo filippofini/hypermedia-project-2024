@@ -87,8 +87,8 @@
 
 .imageCarousel {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 30vw;
+  height: 20vw;
   object-fit: cover;
 }
 
