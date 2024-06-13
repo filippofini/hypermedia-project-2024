@@ -11,12 +11,8 @@
   },
   "dependencies": {
     "nuxt": "^3.11.2",
-    "openai": "^4.47.2",
-    "sass": "^1.77.2",
-    "vite-plugin-vuetify": "^2.0.3",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0",
-    "vuetify": "^3.6.7"
+    "openai": "^4.0.0",
+    "sass": "^1.77.2"
   },
   "devDependencies": {
     "@nuxtjs/supabase": "^1.2.2"

@@ -2,11 +2,11 @@
 export default defineNuxtConfig({
 
   css: [
-    'vuetify/styles/main.sass',
+    
 ],
 
 build: {
-    transpile: ["vuetify"],
+
 },
 
   devtools: { enabled: true },
