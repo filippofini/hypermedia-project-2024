@@ -1,6 +1,6 @@
 
 <template>
-    <div >
+    <div class = "page">
         <div class="bar-button-disposistion">            
             <TopBar />            
         </div>
@@ -9,12 +9,12 @@
         <Footer />
     </div>
 </template>
-<style scoped>
+<style >
     .page{
-        min-height: 100vh;
         display: flex;
         flex-direction: column;
         margin: 0;
+        padding: 0%;
     }
 
 

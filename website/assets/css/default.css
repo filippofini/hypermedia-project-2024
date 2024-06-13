@@ -1,1 +1,38 @@
-body{background-color: blue;}
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.title-page{
+    font-family: Jost;
+    font-size: 3vw;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0vw;
+}
+
+.title-page-2{
+    font-family: Jost;
+    font-size: 1.8vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+.description{
+    font-family: Jost;
+    font-size: 1.3vw;
+    margin-top: 0vw;
+}
+
+.prev-next{
+    font-family: Jost;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2.0vw;
+    padding-right: 2.0vw;
+    background-color: #FFCDDC;
+    border: 0vw;
+}

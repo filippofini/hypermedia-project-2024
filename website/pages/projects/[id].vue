@@ -6,11 +6,11 @@
         <BackButton />
       </div>
       <div class="center-title">
-        <div class = "title">{{project.title}}</div>
+        <div class = "title-page">{{project.title}}</div>
       </div>
     </div> 
     <!--previous and next link-->
-    <div class="prevnext">
+    <div class="prev-next">
       <NuxtLink :to="'/projects/' + previouslink" :arial-label="`link to previous project`" class="link">Previous</NuxtLink>
       <NuxtLink :to="'/projects/' + nextlink" :arial-label="`link to next project`" class="link">Next</NuxtLink>
     </div>
@@ -47,7 +47,7 @@
 
     <!--TERZA FASCIA-->
     <div class = "third_band">
-      <div>See Also</div>
+      <div class = "title-page-2">See Also</div>
       <div class = "reccomendation">
         <ProjectCard 
             :small_desc = "findProjectById(suggestedProject1).small_desc" 
@@ -172,25 +172,6 @@ export default {
     justify-content: center;
     width: 90%;
 
-  }
-  .title {
-    font-family: Jost;
-    font-size: 3vw;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 0vw;
-    display: flex;  
-    align-self: center;  
-
-  }
-
-  .prevnext{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5.5vw;
-    background-color: #FFCDDC;
-    border: 0vw;
   }
 
   .link{
