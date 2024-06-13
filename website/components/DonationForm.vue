@@ -194,6 +194,7 @@
     background-color: white;
     font-weight: bold;
     color: black;
+    border: none;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.2s;
