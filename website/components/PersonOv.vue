@@ -88,8 +88,8 @@ export default {
   content: '';
   position: absolute;
   width: 0;
-  height: 2px;
-  bottom: -2px; 
+  height: 0.2vw;
+  bottom: -0.2vw; 
   left: 0;
   transition: width 0.3s ease; 
 }

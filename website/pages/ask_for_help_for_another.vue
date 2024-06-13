@@ -46,7 +46,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-bottom: 50px;
+        margin-bottom: 2%;
         
     }
 

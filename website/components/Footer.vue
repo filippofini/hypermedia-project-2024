@@ -73,9 +73,9 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 100px;
-        padding-top: 15px;
-        padding-bottom: 10px;
+        gap: 10vw;
+        padding-top: 1.5vw;
+        padding-bottom: 1vw;
     }
 
    .contacts{
@@ -83,7 +83,7 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 30px;  
+        gap: 3.0vw;  
     }
 
     @media screen and (max-width: 768px) {
@@ -96,7 +96,7 @@
 
         .informations{
             flex-direction: column-reverse;
-            gap: 10px;
+            gap: 1.0vw;
             padding-bottom: 0;
         }
 
@@ -105,7 +105,7 @@
         }
 
         .socials{
-            margin-top: 15px;
+            margin-top: 1.5vw;
         }
     }
 

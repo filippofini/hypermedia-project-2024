@@ -100,25 +100,26 @@
     display: flex;
     justify-content: center;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 3.0vw;
   }
   .form-container label {
     display: block;
-    margin-top: 10px;
+    margin-top: 1.0vw;
     text-align: center;
   }
   .form-container input, .form-container textarea {
-    padding: 10px;
+    border: none;
+    padding: 1.0vw;
     width: 50vw;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 1.0vw;
     background-color: white;
   }
    .form-container textarea {
         resize: none;
     }
   .form-container button {
-    margin-top: 20px;
+    margin-top: 2.0vw;
     padding: 1vw 5vw;
     border-radius: 1vw;
     background-color: #52417D;
@@ -139,9 +140,9 @@
   }
   
   .error-messages {
+    font-family: Jost;
     color: red;
-    font-size: 14px;
-    padding: 10px;
+    font-size: 1.3vw;
   }
 
   </style>
