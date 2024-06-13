@@ -185,11 +185,11 @@
       font-weight: 300;
       text-align: left;
       color:black;
-      text-decoration: none;
+      text-decoration: underline;
     }
 
     .link:hover{
-    text-decoration: underline;
+    text-decoration: none;
     }
   
     /*STILE PRIMA FASCIA*/

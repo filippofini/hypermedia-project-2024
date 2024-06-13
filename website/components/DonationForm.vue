@@ -121,6 +121,7 @@
   .predefined-button {
   margin: 3px;
   padding: 10px 20px;
+  border: none;
   width: 70px;
   text-align: center;
   background-color: #f0f0f0;

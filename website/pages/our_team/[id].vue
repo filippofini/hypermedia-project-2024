@@ -88,7 +88,7 @@ export default {
     font-size: 1.8vw;
     font-weight: 300;
     text-align: left;
-    width: 50%;
+    height: 100%;
   }
 
   .person-info{
@@ -97,7 +97,7 @@ export default {
 
   .image{
     border-radius: 50vw;
-    width: 37%
+    width: 37%;
   }
 
 .person-container{
@@ -106,7 +106,9 @@ export default {
     padding: 5.5vw;
     padding-top: 4vw;
     padding-bottom: 4vw;
-    gap: 8vw;
+    gap: 10vw;
+    justify-content: center;
+    padding-right: 20vw;
 }
 
 .person-name-surname{
@@ -124,10 +126,10 @@ export default {
     font-weight: 300;
     text-align: left;
     color:black;
-    text-decoration: none;
+    text-decoration: underline;
   }
 .link:hover{
-    text-decoration: underline;
+    text-decoration: none;
   }
 
 </style>
