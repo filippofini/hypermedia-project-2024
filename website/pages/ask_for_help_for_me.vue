@@ -1,24 +1,24 @@
 <template>
    <BreadCrumbs :crumbs="BCrumbs"/> 
-   <div class="top">
-            <div class="test">
+   <div class="top-container">
+            <div class="back-button">
                 <BackButton />
             </div>
             <div class="center-title">
-                <div class = "title-page">Help for You</div>
+            Help for You
             </div>
         </div>
-        <DropdownList class="list"/>
+    
+    <DropdownList class="list"/>
 
-      <BandRightNoButton/>
-      <BandRightNoButton/>
-      <BandLeftNoButton/>
-      <BandRightNoButton/>
+    <BandRightNoButton/>
+    <BandRightNoButton/>
+    <BandLeftNoButton/>
+    <BandRightNoButton/>
 
-      <div class ="button-container">        
+    <div class ="button-container">        
         <ButtonViolet name_button="Services" link="/services" aria_label="Link to services"/>        
         <ButtonViolet name_button="Contact Us" link="/contact_us" aria_label="Link to contact us"/>       
-        
     </div>
 </template>
 
@@ -47,24 +47,6 @@
 </script>
 
 <style scoped>
-    .top{
-    display: flex;
-    flex-direction: row;
-    
-    margin: 2vw;
-  }
-  .test{
-    display: flex;
-    width: 10%;
-  }
-
-  .center-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin-right: 9%;
-  }
 
   .button-container{
         display: flex;

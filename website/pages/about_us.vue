@@ -1,12 +1,12 @@
 <template>
 
     <BreadCrumbs :crumbs="BCrumbs"/>
-    <div class="top">
-        <div class="test">
+    <div class="top-container">
+        <div class="back-button">
             <BackButton />
         </div>
         <div class="center-title">
-            <div class = "title">About Us</div>
+        About Us
         </div>
     </div>
     <div class="bands">
@@ -33,38 +33,3 @@ import BandRightNoButton from '~/components/BandRightNoButton.vue';
         }
     }
 </script>
-
-<style scoped>
-    .top{
-    display: flex;
-    flex-direction: row;
-    
-    margin: 2vw;
-  }
-  .test{
-    display: flex;
-    width: 10%;
-  }
-
-  .title {
-    font-family: Jost;
-    font-size: 3vw;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 0vw;
-    display: flex;  
-    align-self: center;   
-  }
-
-  .center-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin-right: 9%;
-    }
-
-    .bands{
-        
-    }
-</style>

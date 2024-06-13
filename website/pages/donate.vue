@@ -6,29 +6,29 @@
 <template>
 
     <BreadCrumbs :crumbs="BCrumbs"/>
-    <div class="top">
-        <div class="test">
-            <BackButton />
+    <div class="top-container">
+        <div class="back-button">
+          <BackButton />
         </div>
         <div class="center-title">
-            <div class = "title-page">Donate</div>
+        Donate
         </div>
     </div>
     <div class="cointainer-donation">
-    <div class="img-description">
+      <div class="img-description">
         <div class="img">
-            <img src="../assets/img/nomeImmagine.jpg" alt="La mia foto personale" />
+          <img src="../assets/img/nomeImmagine.jpg" alt="La mia foto personale" />
           <!--  <img :src = "imageSrc" alt="Image description"> -->
         </div>
         <div class="description">
-            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
           <!--  <p> {{description}} </p> -->
         </div>
     </div>
     <div class="donation-form">
-        <DonationForm />
+      <DonationForm />
     </div>
-</div>
+  </div>
 </template>
 
 <script>
@@ -55,23 +55,6 @@
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
-  .top{
-    display: flex;
-    flex-direction: row;
-    margin: 2vw;
-  }
-  .test{
-    display: flex;
-    width: 10%;
-  }
-  .center-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin-right: 10%;
-  }
 
   .img-description{
     display: flex;
