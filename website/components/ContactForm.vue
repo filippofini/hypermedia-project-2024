@@ -142,6 +142,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
 .personal-data {
   display: flex;
   flex-direction: row;
@@ -150,12 +152,14 @@ export default {
 }
 
 .button-container {
+  font-family: Jost;
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
 .form-elem-1 {
+  font-family: Jost;
   position: relative;
   margin: 10px 10px 0px 10px;
   background-color: #f9f9f9;
@@ -169,6 +173,7 @@ export default {
 }
 
 .form-elem-2 {
+  font-family: Jost;
   position: relative;
   margin: 10px;
   background-color: #f9f9f9;
@@ -183,6 +188,7 @@ export default {
 .form-elem-1 input,
 .form-elem-2 input, 
 .form-elem-2 textarea{
+  font-family: Jost;
   padding: 5px;
   border-radius: 5px;
   outline: none;
@@ -193,6 +199,7 @@ export default {
 .form-elem-1 input:focus,
 .form-elem-2 input:focus,
 .form-elem-2 textarea:focus {
+  font-family: Jost;
   border-color: #b96090;
   padding-top: 20px;
 }
@@ -200,6 +207,7 @@ export default {
 .form-elem-1 input:focus::placeholder,
 .form-elem-2 input:focus::placeholder,
 .form-elem-2 textarea:focus::placeholder {
+  font-family: Jost;
   font-size: 12px;
   transform: translateY(-20px); /* Move placeholder up */
   opacity: 0.7;
@@ -208,19 +216,23 @@ export default {
 .form-elem-1 input::placeholder,
 .form-elem-2 input::placeholder,
 .form-elem-2 textarea::placeholder {
+  font-family: Jost;
   transition: font-size 0.3s, transform 0.3s, opacity 0.3s;
 }
 
 .form-elem-2 textarea {
+  font-family: Jost;
   resize: none;
 }
 
 .form-elem-2 input.is-invalid,
 .form-elem-2 textarea.is-invalid {
+  font-family: Jost;
   border-color: red;
 }
 
 .error-messages {
+  font-family: Jost;
   color: red;
   font-size: 14px;
   margin-top: 8px;
@@ -229,6 +241,7 @@ export default {
 
 
 .form-button {
+  font-family: Jost;
   display: inline-block;
   margin: 10px;
   padding: 10px 40px;
@@ -242,11 +255,13 @@ export default {
 }
 
 .form-button:hover {
+  font-family: Jost;
   background-color: #a14976;
   transform: scale(1.05);
 }
 
 .form-button:disabled {
+  font-family: Jost;
   background-color: #ccc;
   cursor: not-allowed;
   transform: scale(1);

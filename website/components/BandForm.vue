@@ -28,6 +28,7 @@
     }
 
     .contact-info{
+        font-family: Jost;
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -35,6 +36,7 @@
     }
 
     .form{
+        font-family: Jost;
         display: flex;
         flex-direction: column;
         background-color: #52417D;
