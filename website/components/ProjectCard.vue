@@ -29,7 +29,7 @@
         width: 100%;
         display: block;
         transition: transform 0.5s ease, filter 0.5s ease;
-        object-fit: cover;
+        scale : 0.9;
     }
 
     .title {
@@ -55,17 +55,17 @@
         font-family: Jost;
         font-size: 1.5vw;
         position: absolute;
-        bottom: 17%; /* Position the text at the bottom */
+        bottom: 20%; /* Position the text at the bottom */
         left: 50%;
-        transform: translateX(-50%); /* Center the text horizontally */
-        width: 100%; /* Ensure the text spans the entire width */
-        height: 20%; 
+        transform: translateX(-50%); /* Center the text horizontally */     
         text-align: center; /* Center align the text */
         color: white; /* Change based on your design */
         background-color: rgba(0, 0, 0, 0.7); /* Optional: for better visibility */
         padding: 10px; /* Optional: for better visibility */
         opacity: 0; /* Hide the text initially */
         transition: opacity 0.5s ease; /* Smooth transition effect */
+        width: 86%;
+        height: 10%; 
     }
 
     .image-container:hover .overlay-text {
