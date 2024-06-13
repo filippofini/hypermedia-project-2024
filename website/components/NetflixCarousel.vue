@@ -86,6 +86,7 @@
 }
 
 .imageCarousel {
+  position: relative;
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -93,7 +94,7 @@
 
 .titleCarousel {
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
