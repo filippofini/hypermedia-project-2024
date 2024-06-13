@@ -6,11 +6,11 @@
           <BackButton />
         </div>
         <div class="center-title">
-          <div class = "title">{{service.title}}</div>
+          <div class = "title-page">{{service.title}}</div>
         </div>
       </div> 
       <!--previous and next link-->
-      <div class="prevnext">
+      <div class="prev-next">
         <NuxtLink :to="'/services/' + previouslink" :arial-label="`link to previous service`" class="link">Previous</NuxtLink>
         <NuxtLink :to="'/services/' + nextlink" :arial-label="`link to next service`" class="link">Next</NuxtLink>
       </div>
@@ -46,7 +46,7 @@
 
       <!--FASCIA TESTIMONIALS-->
       <div class = "third_band">
-        <div>Our Testimonials</div>
+        <div class = "title-page-2">Our Testimonials</div>
         <div class = "testimonials">
           <PersonOv v-for = "test of testimonials_final" :name="test.quote" :role="test.name" :image="test.image" ></PersonOv>
         </div>
@@ -54,7 +54,7 @@
   
       <!--TERZA FASCIA-->
       <div class = "third_band">
-        <div>See Also</div>
+        <div class = "title-page-2">See Also</div>
         <div class = "reccomendation">
           <ProjectCard 
               :small_desc = "findServiceById(suggestedService1).small_desc" 
@@ -193,25 +193,6 @@
       width: 90%;
 
     }
-    .title {
-      font-family: Jost;
-      font-size: 3vw;
-      font-weight: 600;
-      text-align: center;
-      margin-top: 0vw;
-      display: flex;  
-      align-self: center;  
-  
-    }
-  
-    .prevnext{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 5.5vw;
-      background-color: #FFCDDC;
-      border: 0vw;
-    }
   
     .link{
       font-size: 1.2vw;
@@ -283,10 +264,6 @@
       flex-direction: column;
       padding: 5.5vw;
       gap:2vw;
-      font-size: 1.8vw;
-      font-weight: 500;
-      text-align: center;
-      font-family: Jost;
     }
   
     .reccomendation{
@@ -303,7 +280,6 @@
       gap: 10vw;
       align-content: center;
       align-self: center;
-
     }
   
   </style>

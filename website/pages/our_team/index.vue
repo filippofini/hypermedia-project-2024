@@ -5,7 +5,7 @@
       <BackButton />
     </div>
     <div class="center-title">
-      <div class = "title">Our team</div>
+      <div class = "title-page">Our team</div>
     </div>
   </div>
   <div class="introduction">placeholder</div>
@@ -97,17 +97,6 @@ import BreadCrumbs from '~/components/BreadCrumbs.vue';
   .test{
     display: flex;
     width: 10%;
-  }
-
-  .title {
-    font-family: Jost;
-    font-size: 3vw;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 0vw;
-    display: flex;  
-    align-self: center;  
-
   }
   .center-title{
     display: flex;
