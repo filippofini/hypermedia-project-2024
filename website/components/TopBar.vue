@@ -64,7 +64,8 @@ export default {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1vw 1vw;
+    padding-left: 2vw;
+    padding-right:2vw;
     background-color: #B96090;
     border-bottom: 5px solid #F2D3E7;
     color: white;
