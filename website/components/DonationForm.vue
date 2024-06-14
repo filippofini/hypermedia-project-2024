@@ -101,7 +101,7 @@
   <style scoped>
   .app {
     max-width: 600px;
-    padding: 50px 20px;
+    padding: 4vw 3vw;
     font-family: Arial, sans-serif;
     background-color: #52417D;
   }
@@ -117,21 +117,6 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .predefined-button {
-  margin: 3px;
-  padding: 10px 20px;
-  border: none;
-  width: 70px;
-  text-align: center;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
   
   .predefined-amounts1 button {
     margin: 3px;
@@ -175,19 +160,14 @@
 
   .custom-amount {
     margin-bottom: 50px;
-    width: 224px;
+    width: 222px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
   }
   
-  .custom-amount input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+  
   
   .donate-button {
     padding: 10px 60px;
@@ -210,25 +190,22 @@
   }
 
   .input-container {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0 10px;
-  background-color: white;
-}
+    display: flex;
+    align-items: center;
+    background-color: white;
+  }
 
-.currency-symbol {
-  margin-right: 5px;
-  font-size: 16px;
-}
+  .currency-symbol {
+    margin-right: 5px;
+    font-size: 14px;
+  }
 
-.input-container input {
-  border: none;
-  width: 100%;
-  padding: 10px;
-  outline: none;
-}
+  .input-container input {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
 
   </style>
   

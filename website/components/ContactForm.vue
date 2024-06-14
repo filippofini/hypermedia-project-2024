@@ -162,26 +162,21 @@ export default {
   font-family: Jost;
   position: relative;
   margin: 1vw 1vw 0vw 1vw;
-  background-color: #f9f9f9;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   padding: 0.5vw;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex: 1;
- 
 }
 
 .form-elem-2 {
   font-family: Jost;
   position: relative;
   margin: 1vw;
-  background-color: #f9f9f9;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   padding: 0.5vw;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex: 1;
 }
 
@@ -191,8 +186,9 @@ export default {
   font-family: Jost;
   padding: 0.5vw;
   border-radius: 5px;
+  border-color: white;
   outline: none;
-  font-size: 15px;
+  font-size: 1vw;
   transition: border-color 0.3s, padding-top 0.3s;
 }
 
@@ -200,7 +196,6 @@ export default {
 .form-elem-2 input:focus,
 .form-elem-2 textarea:focus {
   font-family: Jost;
-  border-color: #b96090;
   padding-top: 20px;
 }
 
@@ -208,7 +203,7 @@ export default {
 .form-elem-2 input:focus::placeholder,
 .form-elem-2 textarea:focus::placeholder {
   font-family: Jost;
-  font-size: 12px;
+  font-size: 0.8vw;
   transform: translateY(-20px); /* Move placeholder up */
   opacity: 0.7;
 }
@@ -218,6 +213,7 @@ export default {
 .form-elem-2 textarea::placeholder {
   font-family: Jost;
   transition: font-size 0.3s, transform 0.3s, opacity 0.3s;
+  
 }
 
 .form-elem-2 textarea {
@@ -225,17 +221,12 @@ export default {
   resize: none;
 }
 
-.form-elem-2 input.is-invalid,
-.form-elem-2 textarea.is-invalid {
-  font-family: Jost;
-  border-color: red;
-}
 
 .error-messages {
   font-family: Jost;
   color: red;
-  font-size: 14px;
-  padding: 0.5vw;
+  font-size: 0.8vw;
+  padding-left: 0.5vw;
 }
 
 
