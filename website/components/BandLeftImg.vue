@@ -6,8 +6,6 @@
 <template>
     <div class="container">
         <div class="left-column">
-
-          <!---------------------------------------------------------------------------problem here-->
             <img :src = "imageSrc" alt="Image description">
         </div>
         
@@ -34,7 +32,7 @@
 .container{
     display: flex;
     flex-direction: row;
-    padding: 2vw;
+    padding: 2vw 5.5vw 2vw 5.5vw;
     background-color: #FFCDDC;
 }
 
@@ -44,20 +42,19 @@
     justify-content: space-between;
  
     padding-left: 5vw;
-
-    min-height: 23vw;
-    min-width: 57vw;
-    max-width: 57vw;
+    min-width: 56vw;
+    max-width: 56vw;
 
 }
 
 .left-column img {
-  min-width: 31vw; 
-  padding-left: 1vw;
-  width: auto;
-  height: auto;
-  max-width: 31vw;
-  max-height: 30vw;
+    width:100%;
 }
+
+.left-column {
+    align-self: center;
+    width: 100%;
+}
+
 
 </style>

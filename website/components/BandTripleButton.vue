@@ -30,7 +30,7 @@
 
 .containerBandRight{
     display: flex;
-    padding: 2vw;
+    padding: 2vw 5.5vw 2vw 5.5vw;
     flex-direction: row;
     background-color: #FFFFFF;
 }
@@ -42,11 +42,9 @@
     flex-direction: column;
     justify-content: space-between;
     padding-right: 5vw;
-    padding-left: 1vw;
-
-    min-height: 23vw;
-    min-width: 57vw;
-    max-width: 57vw;
+    min-width: 56vw;
+    max-width: 56vw;
+    
 
     background-color: color;
 }
@@ -59,13 +57,12 @@
 
 }
 .right-columnBandRight img {
-    max-width: 31vw;
-    max-height: 30vw;
+    width: 100%;
 }
 
 .right-columnBandRight{
-  min-width: 28vw; 
-  max-width: 28vw;
+  align-self: center;
+  width:100%;
 }
 
 </style>

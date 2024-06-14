@@ -22,6 +22,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
     .container{
         display: flex;
+        padding: 2vw 5.5vw 2vw 5.5vw;
         flex-direction: row;
         justify-content: center;
         background-color: #FFCDDC;
@@ -32,7 +33,7 @@
         display: flex;
         flex-direction: column;
         width: 50%;
-        margin: 3vw;
+        padding-right: 6vw;
     }
 
     .form{
@@ -43,7 +44,6 @@
         padding: 1vw;
         border-radius:20px;
         width: 50%;
-        margin: 3vw;
     }
 
     .socials{
