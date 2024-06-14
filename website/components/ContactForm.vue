@@ -10,7 +10,6 @@
           aria-label="Name input field"
         />
       </div>
-      
       <div class="form-elem-1">
         <input 
           type="text" 
@@ -172,7 +171,7 @@ export default {
 .form-elem-2 {
   font-family: Jost;
   position: relative;
-  margin: 1vw;
+  margin: 0vw 1vw 0vw 1vw;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -196,7 +195,7 @@ export default {
 .form-elem-2 input:focus,
 .form-elem-2 textarea:focus {
   font-family: Jost;
-  padding-top: 20px;
+  padding-top: 1.4vw;
 }
 
 .form-elem-1 input:focus::placeholder,
@@ -204,7 +203,7 @@ export default {
 .form-elem-2 textarea:focus::placeholder {
   font-family: Jost;
   font-size: 0.8vw;
-  transform: translateY(-20px); /* Move placeholder up */
+  transform: translateY(-1.4vw); /* Move placeholder up */
   opacity: 0.7;
 }
 
@@ -213,7 +212,6 @@ export default {
 .form-elem-2 textarea::placeholder {
   font-family: Jost;
   transition: font-size 0.3s, transform 0.3s, opacity 0.3s;
-  
 }
 
 .form-elem-2 textarea {
