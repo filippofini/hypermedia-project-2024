@@ -6,7 +6,7 @@
 <template>
     <div class="container">
         <div class="left-column">
-            <img :src = "imageSrc" alt="Image description">
+            <img :src = "imageSrc" width = "400" height = "300" alt="Image">
         </div>
         
         <div class="right-column">
@@ -49,6 +49,7 @@
 
 .left-column img {
     width:100%;
+    height: auto;
 }
 
 .left-column {

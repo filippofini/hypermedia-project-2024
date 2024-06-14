@@ -37,18 +37,6 @@ export default {
   }
   </script>
   
-  <!--
-  <nav class="nav-links" :class="{ 'show-menu': showMenu }">
-    <a href="#activities">Activities</a>
-    <a href="/projects">Projects</a>
-    <a href="/services">Services</a>
-    <a href="#ask_for_help">Ask for Help</a>
-    <a href="/our_team">Our Team</a>
-    <a href="#about_us">About us</a>
-    <a href="#contact_us">Contact us</a>
-    <a href="#support_us">Support us</a>
-  </nav>
-  -->
 
   
   <style scoped>
@@ -68,7 +56,7 @@ export default {
     padding-right:2vw;
     background-color: #B96090;
     border-bottom: 5px solid #F2D3E7;
-    color: white;
+    color: #000000;
   }
   .navigation {
     display: flex;
@@ -79,7 +67,7 @@ export default {
   }
 
   .navigation a {
-    color: white;
+    color: #000000;
     text-decoration: none;
     font-size: 1.2vw; 
     font-family: 'Jost'; 

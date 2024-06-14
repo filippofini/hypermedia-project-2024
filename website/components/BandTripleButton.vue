@@ -18,7 +18,7 @@
         </div>
 
         <div class="right-columnBandRight">
-            <img :src = "imageSrc" alt="Image description">
+            <img :src = "imageSrc" width = "400" height = "300" alt="Image">
         </div>
         
         
@@ -37,15 +37,12 @@
 
 
 .left-columnBandRight{
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-right: 5vw;
-    min-width: 56vw;
     max-width: 56vw;
     
-
     background-color: color;
 }
 .buttonBandRight{
@@ -58,6 +55,7 @@
 }
 .right-columnBandRight img {
     width: 100%;
+    height: auto;
 }
 
 .right-columnBandRight{

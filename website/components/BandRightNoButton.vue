@@ -7,7 +7,7 @@
     <div class = "container-bandLeftNoButton">
        
         <div class="right-columnBandLeftNoButton">
-            <img src ="@/assets/img/nomeImmagine.jpg" alt="Image description">
+            <img src ="@/assets/img/nomeImmagine.jpg" width = "400" height = "300" alt="Image">
         </div>
         <div class = "left-columnBandLeftNoButton">
             <p class = "description"> {{description}} </p>
@@ -41,6 +41,7 @@
 
 .right-columnBandLeftNoButton img {
     width:100%;
+    height: auto;
 }
 
 .right-columnBandLeftNoButton{

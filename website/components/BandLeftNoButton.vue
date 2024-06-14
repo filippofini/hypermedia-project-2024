@@ -9,7 +9,7 @@
         <p class = "description"> {{description}} </p>
       </div> 
       <div class="right-columnBandLeftNoButton">
-        <img src="@/assets/img/nomeImmagine.jpg" alt="Image description">
+        <img src="@/assets/img/nomeImmagine.jpg" width = "400" height = "300" alt="Image">
       </div>
     </div>
 </template>
@@ -37,6 +37,7 @@
 
 .right-columnBandLeftNoButton img {
     width: 100%;
+    height: auto;
 }
 
 .right-columnBandLeftNoButton{

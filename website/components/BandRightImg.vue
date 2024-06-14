@@ -15,7 +15,7 @@
         </div>
 
         <div class="right-columnBandRight">
-            <img :src = "imageSrc" alt="Image description">
+            <img :src = "imageSrc" width = "400" height = "300" alt="Image">
         </div>
         
         
@@ -50,6 +50,7 @@
 }
 .right-columnBandRight img {
     width:100%;
+    height: auto;
 }
 
 .right-columnBandRight{
