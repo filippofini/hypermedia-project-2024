@@ -1,7 +1,7 @@
 <template>
   <div @scroll="showButton()">
     <button @click="toggleChatbot" class="chatbot-button">
-      <img src="../assets/img/chatbot.png" alt="Chat Icon" class="chat-icon"/>
+      <img src="../assets/img/chatbot.png" alt="Chat Icon" class="chat-icon" width ="50" height = "50"/>
     </button>
 
     <div v-if="isChatbotVisible" class="chatbot-container">
@@ -137,6 +137,7 @@ export default {
   .chat-icon {
     width: 50%;
     height: 50%;
+    object-fit: cover;
   }
 
   .ask-text {

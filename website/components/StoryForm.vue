@@ -7,6 +7,7 @@
         <form @submit.prevent="submitForm">
           <label for="yourInfo" class="title-page-2">Your Info</label>
           <input
+            id="yourInfo"
             type="text"
             class="your-info"
             v-model="yourInfo"
@@ -19,6 +20,7 @@
   
           <label for="yourStory" class="title-page-2">Your Story</label>
           <textarea
+            id="yourStory"
             class="your-story"
             v-model="yourStory"
             rows="5"

@@ -50,7 +50,7 @@
       <div class = "third-band">
         <div class = "title-page-2">Our Testimonials</div>
         <div class = "testimonials">
-          <PersonOv v-for = "test of testimonials_final" :name="test.quote" :role="test.name" :image="test.image" ></PersonOv>
+          <PersonOv v-for = "test of testimonials_final" :name="test.quote" :role="test.name" :image="test.image" :testimonial="1"></PersonOv>
         </div>
       </div>
   

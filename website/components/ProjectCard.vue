@@ -2,7 +2,7 @@
     <NuxtLink :to = "link" :arial-label="`link to ${title} page`">
         <div class="image-container">
             <div class="center">
-                <img class="image" :src = "image">
+                <img class="image" :src = "image" alt = "project image">
                 <div class="overlay">
                     <div class="overlay-text">{{ small_desc }}</div>
                 </div>

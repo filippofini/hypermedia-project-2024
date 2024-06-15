@@ -1,5 +1,6 @@
 <template>
-  <NuxtLink :to = "link" :arial-label="`link to ${name} ${surname} page`">
+  <!--SE SONO DELLE PERSONE STAMPO QUESTO-->
+  <NuxtLink v-if = "props.testimonial == '0'" :to = "link" :arial-label="`link to ${name} ${surname} page`">
     <div class="avatar-with-name">
       <div class="avatar-container">
         <img class="avatar-image" :src = "image" alt="Avatar">
@@ -13,10 +14,24 @@
       </div>
     </div>
     </NuxtLink>
+
+    <!--SE SONO I TESTIMONIAL STAMPO QUESTO-->
+    <div  v-else class="avatar-with-name">
+      <div class="avatar-container">
+        <img class="avatar-image" :src = "image" alt="Avatar">
+      </div>
+      <span class="name-container">
+        {{name}} {{ surname }} 
+      </span>
+      <br/>
+      <div class="role">
+        {{ role }}
+      </div>
+    </div>
   </template>
 
 <script setup>
-const props = defineProps(['id', 'name', 'surname', 'role', 'link', 'image']);
+const props = defineProps(['id', 'name', 'surname', 'role', 'link', 'image', 'testimonial']);
 
 </script>
 

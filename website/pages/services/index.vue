@@ -11,7 +11,7 @@
     <div class="introduction">placeholder</div>
 
     <div id="sorting-selector-services">
-        <label for="sorting-selector-services">Sort by:</label>
+        <label for="orderServ">Sort by:</label>
         <select class="menu" id="orderServ" v-model="orderServ">
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>

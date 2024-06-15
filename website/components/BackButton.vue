@@ -1,7 +1,7 @@
 <template>  
     <button class="button-container">
-        <a href="" class="b-button" @click.prevent="$router.back()" role="button" aria-label="Back button">
-            <img src="@/assets/bb_arrow.png"></img>
+        <a href="" class="b-button" @click.prevent="$router.back()" role="button" aria-label="Back button" >
+            <img src="@/assets/bb_arrow.png" alt = "back button" ></img>
         </a>  
     </button>
 </template>

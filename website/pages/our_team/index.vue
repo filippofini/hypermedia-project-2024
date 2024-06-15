@@ -11,7 +11,7 @@
   <div class="introduction">placeholder</div>
 
   <div id="sorting-selector-team">
-    <label for="sorting-selector-team">Sort by:</label>
+    <label for="order">Sort by:</label>
     <select class="menu" id="order" v-model="order">
       <option value="Role">Role</option>
       <option value="A-Z">A-Z</option>
@@ -20,7 +20,7 @@
   </div>
 
   <div id="people-container">
-          <PersonOv v-for = "person of sorted" :id = "person.id" :name = "person.name" :surname= "person.surname" :role = "person.role" :link = "'/our_team/'+ person.id" :image="person.image"/>
+          <PersonOv v-for = "person of sorted" :id = "person.id" :name = "person.name" :surname= "person.surname" :role = "person.role" :link = "'/our_team/'+ person.id" :image="person.image" testimonial = "0"/>
     </div>
 </template>
 

@@ -11,7 +11,7 @@
     <div class="introduction">Welcome to our Projects Preview Page. Here, you'll find a comprehensive overview of our impactful initiatives aimed at supporting women victims of violence. From raising awareness through public installations to educating young minds in schools, each project is designed to foster a safer, more informed, and supportive community. Explore our diverse efforts to combat gender-based violence and discover how you can get involved in making a difference.</div>
 
     <div id="sorting-selector-projects">
-        <label for="sorting-selector-projects">Sort by:</label>
+        <label for="orderProj">Sort by:</label>
         <select class="menu" id="orderProj" v-model="orderProj">
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>
