@@ -109,7 +109,6 @@ export default {
 
 .carousel-container{
   justify-content: center;
-  padding-bottom: 2%;
 }
 
 .link{

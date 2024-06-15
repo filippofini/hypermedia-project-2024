@@ -45,8 +45,7 @@
   .button-container{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        margin-bottom: 2%;
+        justify-content: space-evenly;        
         
     }
 

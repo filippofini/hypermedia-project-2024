@@ -14,7 +14,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 2%;
-    margin-bottom: 2%;
     font-family: 'Jost';
 }
 .map{

@@ -93,7 +93,6 @@
   #app{
     background-color: #FFCDDC;
     margin-top: 4vw;
-    margin-bottom: 4vw;
     display: flex;
     flex-direction: column;
   }

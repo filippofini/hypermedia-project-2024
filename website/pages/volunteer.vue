@@ -65,7 +65,7 @@
     .button{
         display: flex;        
         justify-content: center;        
-        margin: 2%;
+        margin-top: 2%;
     }
 
 </style>

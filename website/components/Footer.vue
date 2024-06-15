@@ -1,27 +1,29 @@
 <template>
-    <footer>
-        <div class="bottom">
-            <div class="informations">
-                <div class="number">
-                    <b>Number</b>
-                    <p>1-800-123-4567</p>
+    
+        <footer>
+            <div class="bottom">
+                <div class="informations">
+                    <div class="number">
+                        <b>Number</b>
+                        <p>1-800-123-4567</p>
+                    </div>
+                    <div class="email">
+                        <b>Email</b>
+                        <p>@example.com</p>
+                    </div>
+                    <div class="address">
+                        <b>Headquarters</b>
+                        <p>1234 Street Name, City Name, United States</p>
+                    </div> 
                 </div>
-                <div class="email">
-                    <b>Email</b>
-                    <p>@example.com</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com" target=”_blank” aria-label="Link to Instagram"><img src="../assets/img/contacts/instagram_logo_hover.png" width = "512" height = "512" alt="Instagram Logo" class="instagram-footer"></a>
+                    <a href="https://www.facebook.com" target=”_blank” aria-label="Link to Facebook"><img src="../assets/img/contacts/facebook_logo_hover.png" width = "512" height = "512" alt="Facebook Logo" class="facebook-footer"></a>
+                    <a href="https://twitter.com/home" target=”_blank” aria-label="Link to Twitter"><img src="../assets/img/contacts/twitter_logo_hover.png" width = "512" height = "512" alt="Twitter Logo" class="twitter-footer"></a>
                 </div>
-                <div class="address">
-                    <b>Headquarters</b>
-                    <p>1234 Street Name, City Name, United States</p>
-                </div> 
             </div>
-            <div class="socials">
-                <a href="https://www.instagram.com" target=”_blank” aria-label="Link to Instagram"><img src="../assets/img/contacts/instagram_logo_hover.png" width = "512" height = "512" alt="Instagram Logo" class="instagram-footer"></a>
-                <a href="https://www.facebook.com" target=”_blank” aria-label="Link to Facebook"><img src="../assets/img/contacts/facebook_logo_hover.png" width = "512" height = "512" alt="Facebook Logo" class="facebook-footer"></a>
-                <a href="https://twitter.com/home" target=”_blank” aria-label="Link to Twitter"><img src="../assets/img/contacts/twitter_logo_hover.png" width = "512" height = "512" alt="Twitter Logo" class="twitter-footer"></a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    
 </template>
 
 <style scoped>
@@ -33,6 +35,7 @@
         color: #000000;
         font-family: 'Jost';
         font-size: 0.9vw;
+        margin-top: 2%;
     }
 
     b{

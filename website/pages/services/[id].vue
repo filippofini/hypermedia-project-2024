@@ -249,7 +249,7 @@
     .third-band{
       display: flex;
       flex-direction: column;
-      padding: 5.5vw;
+      padding-top: 5.5vw;
       gap:2vw;
     }
   

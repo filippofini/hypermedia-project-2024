@@ -230,11 +230,10 @@ export default {
   .third-band{
     display: flex;
     flex-direction: column;
-    padding: 5.5vw;
+    padding-top: 5.5vw;
     gap:2vw;
     font-size: 1.8vw;
     font-weight: 500;
-    padding-bottom: 2%;
     text-align: center;
     font-family: Jost;
   }
