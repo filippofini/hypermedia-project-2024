@@ -57,5 +57,24 @@
     align-self: center;
     width:100%;
 }
+@media screen and (max-width: 800px) {
+    .containerBandRight{
+            display: flex;            
+            flex-direction: column-reverse;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;            
+    }
+    .left-columnBandRight{
+        padding-right: 0;
+        margin-top: 2%;
+        text-align: center ;
+    }
+    .buttonBandRight{
+        
+        justify-content: center;
+        margin-top: 2%;
+    }
+}
 
 </style>

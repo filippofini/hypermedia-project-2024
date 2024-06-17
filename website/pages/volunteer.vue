@@ -68,5 +68,14 @@
         margin-top: 2%;
     }
 
+    @media screen and (max-width: 800px) {
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+    }
+
 </style>
 

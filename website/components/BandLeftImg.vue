@@ -57,5 +57,23 @@
     width: 100%;
 }
 
-
+@media screen and (max-width: 800px) {
+    .container{
+            display: flex;            
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;            
+    }
+    .right-column{
+        padding-right: 0;
+        margin-top: 2%;
+        text-align: center ;
+    }
+    .button{
+        
+        justify-content: center;
+        margin-top: 2%;
+    }
+}
 </style>

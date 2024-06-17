@@ -47,4 +47,15 @@
       align-items: start;
    }
 
+   @media screen and (max-width: 800px) {
+        .phone-number{
+            display: flex;            
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Jost;
+        }
+
+    }
+
 </style>

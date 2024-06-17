@@ -14,7 +14,7 @@
         Donate
         </div>
     </div>
-    <div class="cointainer-donation">
+    <div class="container-donation">
       <div class="img-description">
         <div class="img">
           <img src="../assets/img/nomeImmagine.jpg" alt="La mia foto personale" />
@@ -24,11 +24,11 @@
           <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
           <!--  <p> {{description}} </p> -->
         </div>
+      </div>
+      <div class="donation-form">
+        <DonationForm />
+      </div>
     </div>
-    <div class="donation-form">
-      <DonationForm />
-    </div>
-  </div>
 </template>
 
 <script>
@@ -79,11 +79,22 @@
     width: 50%;
   }
   
-  .cointainer-donation{
+  .container-donation{
     display: flex;
     flex-direction: row;
     justify-content: center;
     
   }
+
+  @media screen and (max-width: 800px) {
+        .container-donation{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
 
   </style>

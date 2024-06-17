@@ -1,5 +1,5 @@
 <template>
-    <div class="cointeiner-double">
+    <div class="container-double">
         <div class="double-sx">
             <div class="title-page-1-5">
                 <p>Donate</p>
@@ -23,7 +23,7 @@
 
 
 <style scoped>
-    .cointeiner-double{
+    .container-double{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -52,6 +52,17 @@
 
     .button-spacing {
         margin-top: 2vw;
+    }
+
+    @media screen and (max-width: 800px) {
+        .container-double{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
     }
 
 

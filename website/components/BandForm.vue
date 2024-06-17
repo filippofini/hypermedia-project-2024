@@ -78,4 +78,22 @@
         margin-bottom: 2vw;
     }
 
+    @media screen and (max-width: 800px) {
+        .container{
+            display: flex;            
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;            
+        }
+        .title,.description,.title-page-2{
+            text-align: center;
+            
+        }
+        .contact-info{
+            padding-right: 0;
+        }       
+
+    }
+
 </style>

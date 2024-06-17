@@ -48,5 +48,19 @@
     width: 100%;
     align-self: center;
 }
+@media screen and (max-width: 800px) {
+    .container-bandLeftNoButton{
+            display: flex;            
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;            
+    }
+    .left-columnBandLeftNoButton{
+        padding-left: 0;
+        margin-top: 2%;
+        text-align: center ;
+    }
+}
 </style>
 

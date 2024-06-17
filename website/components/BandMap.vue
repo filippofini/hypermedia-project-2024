@@ -42,4 +42,16 @@
     text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+    .map-container{
+        display: flex;            
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;            
+    }
+    .map-description{
+        margin-bottom: 2%;
+    }
+}
+
 </style>
