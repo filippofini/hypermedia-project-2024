@@ -122,5 +122,22 @@ export default {
 .link:hover{
     text-decoration: none;
   }
+  @media screen and (max-width: 800px) {
+    .person-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-right: 0;
+        gap:0;
+        margin-bottom: 2%;
+        padding: 0;
+
+    }
+    .person-title{
+        align-self: center;
+        padding-top: 2vw;
+    }
+  }
 
 </style>

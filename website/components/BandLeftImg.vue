@@ -66,7 +66,7 @@
             align-items: center;            
     }
     .right-column{
-        padding-right: 0;
+        padding-left: 0;
         margin-top: 2%;
         text-align: center ;
     }

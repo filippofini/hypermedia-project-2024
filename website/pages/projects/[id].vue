@@ -246,4 +246,37 @@ export default {
     align-self: center;
   }
 
+  @media screen and (max-width: 800px) {
+
+    @media screen and (max-width: 800px) {
+    .first-band{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding: 0;
+
+    }
+    .titles{
+        text-align: center;
+        
+    }
+    .info{
+        text-align: center;
+    }
+
+    .second-band{
+        text-align: center;
+    }
+
+    .ovProject{
+        text-align: center;
+        justify-content: center;
+    }
+  }
+
+  }
+
 </style>

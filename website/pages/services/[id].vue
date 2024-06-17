@@ -268,5 +268,52 @@
       align-content: center;
       align-self: center;
     }
+
+
+
+@media screen and (max-width: 800px) {
+  .first-band{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      padding: 0;
+
+  }
+  .titles{
+      text-align: center;
+      
+  }
+  .info{
+      text-align: center;
+  }
+
+  .second-band{
+      text-align: center;
+  }
+
+  .ovService{
+      text-align: center;
+      justify-content: center;
+  }
+  .testimonials{
+      display: flex;
+      flex-direction: column;
+      gap: 2%;
+      align-content: center;
+      align-self: center;
+    }
+    .reccomendation{
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+      align-content: center;
+      align-self: center;
+    }
+}
+
+
   
-  </style>
+</style>

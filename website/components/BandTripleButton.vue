@@ -62,5 +62,26 @@
   align-self: center;
   width:100%;
 }
+@media screen and (max-width: 800px) {
+
+    .right-columnBandRight img {
+        display: none;
+        
+
+    }
+    .left-columnBandRight{
+        justify-content: center;
+        align-self: center;
+        padding-right: 0;
+        padding: 0;
+        margin-top: 2%;
+    }
+
+    .containerBandRight{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
 
 </style>

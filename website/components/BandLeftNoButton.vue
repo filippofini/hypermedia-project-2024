@@ -56,6 +56,7 @@
         .left-columnBandLeftNoButton{
             margin-top: 2%;
             padding-right: 0;
+            text-align: center ;
         }        
 
     }
