@@ -7,6 +7,6 @@ export default  defineEventHandler(async (event) => {
     if(error) {
         throw createError({statusCode: 400, statusMessage: error.message})
     }
-    console.log(count)
+    
     return count
 })

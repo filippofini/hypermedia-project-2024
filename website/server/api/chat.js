@@ -3,6 +3,7 @@ import OpenAI from 'openai';
 const openai = new OpenAI();
 let assistant;
 let thread;
+const bot = process.env.OPENAI_ASSISTANT_ID;
 
 export default defineEventHandler(async (event) => {
   //return "This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. "
@@ -13,12 +14,12 @@ export default defineEventHandler(async (event) => {
       //Get the assistant and create the thread
       if (!assistant || !thread) {
         console.log('Getting assistant');
-        assistant = await openai.beta.assistants.retrieve(process.env.OPENAI_ASSISTANT_ID);
+        assistant = await openai.beta.assistants.retrieve(bot);
         console.log('Creating thread');
         thread = await openai.beta.threads.create();
       }
 
-      return "Vercel test."
+      return "Vercel test";
       
       //Add the user message to the thread
       console.log("Adding user message")
