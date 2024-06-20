@@ -42,6 +42,7 @@ export default {
       messages: [{ id: 1, sender: 'Bot', text: 'Hello! How can I help you today?' }],
       messageId: 1,
       isSending: false,
+      errorMessage: "",
     };
   },
 
@@ -274,7 +275,6 @@ export default {
     width: 85%;
     border-radius: 10px;
     margin-right: 1vw;
-    font-size: 2vh;
   }
 
   .user-chat {
@@ -317,6 +317,9 @@ export default {
       min-height: 42px;
     }
 
+    .chatbot-input {
+      font-size: 3vh;
+    }
 
   }
 </style>
