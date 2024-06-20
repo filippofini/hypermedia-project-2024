@@ -1,7 +1,7 @@
 <template>
     <div class="content-container">            
             <div>
-                <img :src = "imageSrc" alt="Image description">
+                <img :src = "imageName" alt="Image description">
             </div>
 
             <div>

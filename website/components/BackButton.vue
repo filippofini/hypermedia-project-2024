@@ -15,6 +15,9 @@
     .button-container {        
         width: 3vw;
         height: 3vw;
+        min-width: 40px;
+        min-height: 40px;
+
         display: flex;
         justify-content: center;
         align-items: center;

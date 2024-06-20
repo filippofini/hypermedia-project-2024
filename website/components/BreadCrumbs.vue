@@ -25,7 +25,7 @@ export default {
     .alignment {
         display: flex;
         flex-grow: row;
-        font-size: 1.2vw; 
+        font-size: 2.5vh; 
         margin-top: 10px;
         margin-left: 2vw;
         font-weight: bold;

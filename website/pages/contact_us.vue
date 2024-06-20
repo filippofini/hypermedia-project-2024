@@ -12,7 +12,7 @@
       <div class="title-page-1-5">Call</div>
       <div class="title-page">123-456-7890</div>
    </div>
-   <BandLeftNoButton description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" imageName="nomeimmagine.jpg"/>
+   <BandLeftNoButton description="To reach us from Milano Centrale, exit the station and take Metro Line 2 (Green) towards Assago/Abbiategrasso. Get off at Piola Station. Exit the station and walk along Via Giovanni Pacini, then turn right onto Via Edoardo Bassini. Continue straight until you reach Piazza Leonardo da Vinci. The main entrance of Politecnico di Milano will be on your right. The total travel time is approximately 15-20 minutes." imageName="https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/contact_us/polimi.jpg"/>
    <BandForm />
    <BandMap />
 </template>

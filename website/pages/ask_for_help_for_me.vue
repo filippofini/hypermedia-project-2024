@@ -11,10 +11,8 @@
     
     <DropdownList class="list"/>
 
-    <BandRightNoButton/>
-    <BandRightNoButton/>
-    <BandLeftNoButton/>
-    <BandRightNoButton/>
+    <BandRightNoButton description = "If you recognize yourself in any of the above cases or are unsure about your situation, please feel free to contact us. You can reach out to us using any of our provided contact methods. We're here to help and support you."/>
+    <BandLeftNoButton description = "If you find yourself in any of these situations or if you're feeling unsure or unsafe, please don't hesitate to reach out to us. Our services are here to support you whenever you need assistance. Your safety and well-being are important to us, and we are here to help in any way we can."/>
 
     <div class ="button-container">        
         <ButtonViolet name_button="Services" link="/services" aria_label="Link to services"/>        
