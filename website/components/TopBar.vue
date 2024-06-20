@@ -7,7 +7,7 @@
         <!-- Desktop elements -->
         <ul v-if="!mobile" class="navigation">
           <ul v-for="link in links" :key="link.path">
-            <NuxtLink class="landmark":to="link.path":aria-label="`Link to ${link.title}`">{{ link.title }}</NuxtLink>
+            <div><NuxtLink class="landmark":to="link.path":aria-label="`Link to ${link.title}`">{{ link.title }}</NuxtLink></div>
           </ul>
         </ul>
 
@@ -126,9 +126,9 @@
     justify-content: space-between; /* Add this line */
     padding-left: 2vw;
     padding-right: 2vw;
-    background-color: #b96090;
-    border-bottom: 5px solid #f2d3e7;
-    color: #000000;
+    background-color: #643173;
+    border-bottom: 5px solid #A78BCA;
+    color: #ffffff;
   }
 
   .navigation {
@@ -140,7 +140,7 @@
   }
 
   .navigation a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 2.2vh;
     font-family: "Jost";
@@ -148,7 +148,7 @@
   }
 
   .navigation a:hover {
-    color: #6b5aa1;
+    color: #A78BCA;
     cursor: pointer;
   }
 
@@ -185,7 +185,7 @@
     left: 0;
     margin-top: 0;
     z-index: 500;
-    border-right: 5px solid #b96090;
+    border-right: 5px solid #643173;
   }
 
   .mobile-nav-enter-active, .mobile-nav-leave-active {
@@ -207,7 +207,7 @@
   .close-cross {
     font-size: 4vh;
     text-align: center;
-    color: black;
+    color: #ffffff;
     transition: 0.3s;
     cursor: pointer;
     padding-top: 3vh;
@@ -248,7 +248,7 @@
   }
 
   .landmark-mobile {
-    color: #6b5aa1;
+    color: #A78BCA;
     font-family: "Jost";
     font-size: 2.5vh;
     text-decoration: none;
@@ -259,7 +259,7 @@
   }
 
   .landmark-mobile:hover {
-    color: #000000;
+    color: #ffffff;
     transform: translateY(-5px);
   }
 </style>

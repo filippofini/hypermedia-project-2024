@@ -55,8 +55,8 @@ export default {
     }
     .list-item {
         padding: 0.9vw;
-        background-color: #52417D;
-        border: 2px solid #52417D;
+        background-color: #B6244F;
+        border: 2px solid #B6244F;
         text-align: center;
         color: white;
         display: flex;
@@ -71,7 +71,7 @@ export default {
     .list-item:hover {
         background-color: #f1f1f1;
         color: black;
-        border: 2px solid #52417D;
+        border: 2px solid #B6244F;
     }
     .title {
         flex-grow: 1;
@@ -92,7 +92,7 @@ export default {
         padding: 0.9vw 1vw;
         margin-top: -1px;
         background-color: #ececec;
-        border: 2px solid #52417D;
+        border: 2px solid #B6244F;
         color: black;
         margin-bottom: 0.2vw;
         transition: all 0.3s ease;

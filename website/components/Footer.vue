@@ -29,10 +29,10 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
     footer{
-        background-color: #B96090;
+        background-color: #643173;
         flex-shrink: 0;
-        border-top: 5px solid #F2D3E7;
-        color: #000000;
+        border-top: 5px solid #A78BCA;
+        color: #ffffff;
         font-family: 'Jost';
         font-size: 0.9vw;
         margin-top: 2%;

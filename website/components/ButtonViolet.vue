@@ -20,7 +20,7 @@ export default {
 
 <style scoped>
 .buttonViolet{
-    background-color: #52417D;
+    background-color: #B6244F;
     border: none;
     font-size: 2.3vh; 
     font-family: 'Jost'; 
@@ -46,7 +46,7 @@ export default {
 }
 
 .buttonViolet:hover {
-  background-color: #7D5BA6;
+  background-color: #871b3b;
   cursor: pointer;
 }
 .linkStyle{

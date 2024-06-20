@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: row;
     padding: 2vw 5.5vw 2vw 5.5vw;
-    background-color: #FFCDDC;
+    background-color: #A78BCA;
 }
 
 .right-column{
