@@ -1,5 +1,6 @@
 <script setup>
   const props = defineProps(['description','imageName']);
+  const imageSrc = computed(()=>`/_nuxt/assets/img/${props.imageName}`);
   
 </script>
 
@@ -9,7 +10,7 @@
         <p class = "description"> {{description}} </p>
       </div> 
       <div class="right-columnBandLeftNoButton">
-        <img src="@/assets/img/nomeImmagine.jpg" width = "400" height = "300" alt="Image">
+        <img :src = "imageSrc" width = "400" height = "300" alt="Image">
       </div>
     </div>
 </template>

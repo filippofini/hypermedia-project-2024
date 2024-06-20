@@ -25,7 +25,7 @@
 .button{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     text-decoration: none;
 }
 

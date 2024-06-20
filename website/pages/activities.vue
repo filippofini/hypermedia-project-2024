@@ -27,7 +27,7 @@
         partners. Our projects are driven by the latest research and best practices in the field, ensuring that we make a
         tangible impact on the livesof women and girls." 
         namebutton="Projects" 
-        imageName ="nomeImmagine.jpg"
+        imageName ="activities_project.jpg"
         link = "/projects/"
         aria_label="link to projects">
     </BandLeftImg>
@@ -42,7 +42,7 @@
         groups create a space for mutual understanding and healing. All our services are confidential, compassionate, and tailored to meet 
         the unique needs of each individual, empowering women to reclaim their lives and move toward a future free from violence."
         namebutton="Services" 
-        imageName ="nomeImmagine.jpg" 
+        imageName ="activities_service.jpg" 
         link = "/services/"
         aria_label="link to services"/>
     

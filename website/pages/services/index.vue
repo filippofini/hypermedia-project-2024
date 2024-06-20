@@ -8,7 +8,7 @@
         Services
         </div>
     </div>
-    <div class="introduction">placeholder</div>
+    <div class="introduction">[Center Name] Anti-Violence Center is dedicated to ending violence against women. We offer refuge, counseling, legal aid, and emergency housing for survivors of domestic violence, sexual assault, and harassment. Through community collaboration and advocacy, we raise awareness and promote change. Join us in empowering survivors and creating a safer world for every woman.</div>
 
     <div id="sorting-selector-services">
         <label for="orderServ">Sort by:</label>

@@ -8,7 +8,7 @@
     Our team
     </div>
   </div>
-  <div class="introduction">placeholder</div>
+  <div class="introduction">At [Center Name] Anti-Violence Center, our team is committed to supporting survivors and combating violence against women. With expertise in counseling, legal advocacy, and community outreach, we work tirelessly to provide compassionate care and empower individuals to reclaim their lives. Join us in our mission to create a safer and more supportive environment for all.</div>
 
   <div id="sorting-selector-team">
     <label for="order">Sort by:</label>
