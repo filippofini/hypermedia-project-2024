@@ -108,7 +108,7 @@ import BreadCrumbs from '~/components/BreadCrumbs.vue';
     align-self: center;
     margin: 1%;
     gap: 1vw;
-    font-size: 1.3vw;
+    font-size: 2vh;
     font-weight: 500;
     min-width: 17vw;
     margin-top: 0vw;

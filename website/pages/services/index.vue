@@ -108,6 +108,7 @@
     gap: 2vw;
     max-width: 90vw;
     }
+    
 
 }
 </style>

@@ -78,6 +78,7 @@
         padding-right: 0;
         padding: 0;
         margin-top: 2%;
+        max-width: 100%;
     }
 
     .containerBandRight{

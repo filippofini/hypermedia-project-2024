@@ -26,17 +26,18 @@
     flex-direction: column;
     justify-content: center;
     font-family: 'Jost';
+    
 }
 
 .text-2 {
-    font-size: 2vw;
+    font-size: 2.5vh;
     font-weight: 600;
     font-family: 'Jost';
     text-align: center;
 }
 
 .map-address {
-    font-size: 1.5vw;
+    font-size: 2.3vh;
     font-weight: 300;
     font-family: 'Jost';
     text-align: center;
@@ -47,10 +48,14 @@
         display: flex;            
         flex-direction: column-reverse;
         justify-content: center;
-        align-items: center;            
+        align-items: center;                  
     }
     .map-description{
         margin-bottom: 2%;
+    }
+    .map{
+        width: 80vw;
+        height: 40vh;
     }
 }
 

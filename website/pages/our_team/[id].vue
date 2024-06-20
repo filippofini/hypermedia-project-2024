@@ -84,6 +84,7 @@ export default {
 
   .person-info{
     padding-top: 3vw;
+    
   }
 
   .image{
@@ -113,7 +114,7 @@ export default {
 
 .link{
     font-family: Jost;
-    font-size: 1.2vw;
+    font-size: 2.3vh;
     font-weight: 300;
     text-align: left;
     color:black;
@@ -138,6 +139,13 @@ export default {
         align-self: center;
         padding-top: 2vw;
     }
+    .person-name-surname{
+        font-size: 2.6vh;
+    }
+
+    .person-info{
+        font-size: 2.3vw;    
+      }
   }
 
 </style>

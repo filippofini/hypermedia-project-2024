@@ -39,8 +39,7 @@
 .right-column{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
- 
+    justify-content: space-between; 
     padding-left: 5vw;
     min-width: 56vw;
     max-width: 56vw;
@@ -69,6 +68,7 @@
         padding-left: 0;
         margin-top: 2%;
         text-align: center ;
+        max-width: 100%;
     }
     .button{
         

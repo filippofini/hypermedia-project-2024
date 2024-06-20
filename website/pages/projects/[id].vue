@@ -277,6 +277,7 @@ export default {
     .ovProject{
         text-align: center;
         justify-content: center;
+        font-size: 2.6vh ;
     }
     .reccomendation{
       display: flex;

@@ -84,7 +84,7 @@ export default {
   margin-top: 1vw;
   font-family: Jost;
   font-weight: 500;
-  font-size: 1.8vw;
+  font-size: 2.3vh;
   display: inline-block;
   position: relative;
   color:black;
@@ -107,6 +107,20 @@ export default {
   bottom: -0.2vw; 
   left: 0;
   transition: width 0.3s ease; 
+}
+@media screen and (max-width: 800px) {
+  .avatar-with-name{
+    width: 30vh;
+    .avatar-container{
+      width: 30vh;
+      height: 30vh;
+    }
+
+  }
+  .role{
+    font-size: 1.5vh;
+  }
+
 }
 
 /* PER AVERE LA SOTTOLINEATURA FIGA CON  LA LINEA CHE ARRIVA DA SINISTRA VERSO DESTRA

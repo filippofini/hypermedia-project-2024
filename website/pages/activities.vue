@@ -72,7 +72,7 @@
     font-family: Jost;
     font-size: 2.3vh;
     font-weight: 400;
-    width: 70%;
+    width: 80%;
     text-align: center;
     margin-top: 0vw;
     padding-bottom: 4vw;

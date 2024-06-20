@@ -56,6 +56,7 @@ html, body {
     font-size: 2.3vh;
     margin-top: 0vw;
     word-break: break-word;
+    text-align: center;
 }
 
 .introduction {
@@ -80,4 +81,20 @@ html, body {
     margin-bottom: 1.0vw;
     background-color: #FFCDDC;
     border: 0vw;
+}
+
+@media screen and (max-width: 800px) {
+    .title-page{
+        font-size: 3vh;
+    }
+    .title-page-1-5{
+        font-size: 2.6vh;
+    }
+    .title-page-2{
+        font-size: 2.4vh;
+    }
+
+    .center-title{
+        font-size: 3vh;
+    }
 }

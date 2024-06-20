@@ -254,4 +254,16 @@ export default {
   cursor: not-allowed;
   transform: scale(1);
 }
+
+@media screen and (max-width: 800px) {
+  .form-button {
+    
+    font-size: 2.1vh;
+  }
+  .form-elem-1 input,
+  .form-elem-2 input, 
+  .form-elem-2 textarea {
+    font-size: 1.5vh;
+  }
+}
 </style>

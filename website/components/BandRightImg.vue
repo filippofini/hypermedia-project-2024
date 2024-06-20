@@ -69,6 +69,7 @@
         padding-right: 0;
         margin-top: 2%;
         text-align: center ;
+        max-width: 100%;
     }
     .buttonBandRight{
         
