@@ -65,7 +65,7 @@ export default {
         position: relative;
         cursor: pointer;
         font-family: Jost;
-        font-size: 1.3vw;
+        font-size: 2.7vh;
         font-weight: 600;
     }
     .list-item:hover {
@@ -99,7 +99,7 @@ export default {
         max-height: 1000px; 
         overflow: hidden;
         font-family: Jost;
-        font-size: 1.3vw;
+        font-size: 2.3vh;
     }
     .expand-enter-active, .expand-leave-active {
     transition: height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;

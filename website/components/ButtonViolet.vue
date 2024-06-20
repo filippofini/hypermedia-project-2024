@@ -22,7 +22,7 @@ export default {
 .buttonViolet{
     background-color: #52417D;
     border: none;
-    font-size: 1.2vw; 
+    font-size: 2.3vh; 
     font-family: 'Jost'; 
     display: flex;
     justify-content: center;
@@ -30,12 +30,19 @@ export default {
     color: white;
     margin: 0;
     transition: background-color 0.3s ease;
-    border-radius: 1vw;  
-    width: 10vw;
-    height: 3.5vw;
+    border-radius: 1vh;  
+    width: 19vh;
+    height: 7vh;
     white-space: normal;
     overflow: hidden;
     line-height: 1.1;
+}
+@media screen and (max-width: 900px) {
+  .buttonViolet{
+    width: 13vh;
+    height: 5.5vh;
+  }
+
 }
 
 .buttonViolet:hover {

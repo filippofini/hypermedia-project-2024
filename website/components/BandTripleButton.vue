@@ -7,12 +7,14 @@
 <template>
     <div class = "containerBandRight">
         <div class = "left-columnBandRight">
+            <div>
             <p class = "description"> {{description}} </p>
+            </div>
             
             <div class="buttonBandRight">
-                <ButtonViolet :name_button = "namebutton1" :link="link1" :aria_label="aria_label"></ButtonViolet>
-                <ButtonViolet :name_button = "namebutton2" :link="link2" :aria_label="aria_label"></ButtonViolet>
-                <ButtonViolet :name_button = "namebutton3" :link="link3" :aria_label="aria_label"></ButtonViolet>
+                <ButtonViolet :name_button = "namebutton1" :link="link1" :aria_label="aria_label" class="button-margin"></ButtonViolet>
+                <ButtonViolet :name_button = "namebutton2" :link="link2" :aria_label="aria_label" class="button-margin"></ButtonViolet>
+                <ButtonViolet :name_button = "namebutton3" :link="link3" :aria_label="aria_label" class="button-margin"></ButtonViolet>
             </div>
 
         </div>
@@ -47,6 +49,7 @@
 }
 .buttonBandRight{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -81,6 +84,9 @@
         display: flex;
         flex-direction: column;
         
+    }
+    .button-margin{
+        margin-top: 4%;
     }
 }
 

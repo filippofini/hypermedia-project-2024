@@ -21,9 +21,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
     .image-container {
         position: relative;
-        width: 28vw;
+        width: 64vh;
         text-align: center;
-        
+        margin-top: 4%;
         cursor: pointer;
         
     }
@@ -41,7 +41,7 @@
         margin-top: 1vw;
         font-family: Jost;
         font-weight: 500;
-        font-size: 1.8vw;
+        font-size:3vh;
         display: inline-block;
         position: relative;
         color:black;
@@ -82,6 +82,11 @@
         justify-content: center;
         align-items: flex-end;
         vertical-align: text-bottom;
+    }
+    @media screen and (max-width: 800px) {
+        .image-container{
+            width: 32vh;
+        }
     }
 
 </style>

@@ -176,14 +176,14 @@ export default {
     flex-direction: column;
     justify-content: space-evenly;
     font-family: Jost;
-    font-size: 1.8vw;
+    font-size: 3.5vh;
     font-weight: 500;
     text-align: left;
     width: 50%;
   }
   
   .info{
-    font-size: 1.8vw;
+    font-size: 3.5vh;
     font-weight: 300;
     text-align: left;
     color:black;
@@ -209,7 +209,7 @@ export default {
     display: flex;
     padding: 5.5vw;
     padding-top: 1vw;
-    font-size: 1.2vw;
+    font-size: 2.3vh;
     font-weight: 300;
     text-align: left;
     font-family: Jost;
@@ -232,21 +232,22 @@ export default {
     flex-direction: column;
     padding-top: 5.5vw;
     gap:2vw;
-    font-size: 1.8vw;
     font-weight: 500;
     text-align: center;
     font-family: Jost;
   }
 
   .reccomendation{
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    align-content: center;
-    align-self: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-self: center;
+      gap: 2vw;
+      max-width: 90vw;
   }
 
-  @media screen and (max-width: 800px) {
+ 
 
     @media screen and (max-width: 800px) {
     .first-band{
@@ -261,10 +262,12 @@ export default {
     }
     .titles{
         text-align: center;
+        font-size: 2.3vh;
         
     }
     .info{
         text-align: center;
+        font-size: 2.3vh;
     }
 
     .second-band{
@@ -275,8 +278,17 @@ export default {
         text-align: center;
         justify-content: center;
     }
+    .reccomendation{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-self: center;
+      gap: 2vw;
+      max-width: 90vw;
+    }
   }
 
-  }
+  
 
 </style>

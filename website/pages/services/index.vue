@@ -69,7 +69,7 @@
         align-self: center;
         margin: 1%;
         gap: 1vw;
-        font-size: 1.3vw;
+        font-size: 2vh;
         font-weight: 500;
         min-width: 17vw;
         margin-top: 0vw;
@@ -89,7 +89,7 @@
     .menu {
         border-radius: 5px;
         border: 1px solid black;
-        font-size: 1.5vw;
+        font-size: 2vh;
         font-family: inherit;
         padding: 0 2vh;
         cursor: pointer;

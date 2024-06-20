@@ -70,7 +70,7 @@
   .quickdescription{
     display: flex;
     font-family: Jost;
-    font-size: 1.5vw;
+    font-size: 2.3vh;
     font-weight: 400;
     width: 70%;
     text-align: center;

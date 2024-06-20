@@ -115,15 +115,15 @@ import BreadCrumbs from '~/components/BreadCrumbs.vue';
 }
 
 .menu {
-      border-radius: 5px;
-      border: 1px solid black;
-      font-size: 1.5vw;
-      font-family: inherit;
-      padding: 0 2vh;
-      cursor: pointer;
-      width: 60%;
-      background-color: rgba(255, 255, 255, 0.9);
-      appearance: auto;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-size: 2vh;
+        font-family: inherit;
+        padding: 0 2vh;
+        cursor: pointer;
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.9);
+        appearance: auto;
 }
 
 @media screen and (max-width: 800px) {
