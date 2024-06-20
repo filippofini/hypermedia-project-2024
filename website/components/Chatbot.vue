@@ -6,8 +6,8 @@
 
     <div v-if="isChatbotVisible" class="chatbot-container">
       <div class="chatbot-header">
-        <span>Chatbot</span>
-        <div class = "circle-close-button"><button @click="toggleChatbot" class="close-button">x</button></div>
+        <span style="margin: 1vh;">Chatbot </span>
+        <div class = "circle-close-button"><button @click="toggleChatbot" class="close-button">&times;</button></div>
       </div>
       <div class="chatbot-messages" ref="chatbotMessages">
         <div v-for="message in messages" :key="message.id" :class=" message.sender === 'You' ? 'user-message' : 'bot-message'">
@@ -69,6 +69,10 @@ export default {
         id: this.messageId++,
         sender: 'You',
         text: input,
+      });
+
+      this.$nextTick(() => {
+        this.$refs.chatbotMessages.scrollTop = this.$refs.chatbotMessages.scrollHeight;
       });
 
       try {
@@ -150,7 +154,7 @@ export default {
     bottom: 3vw;
     right: 3.5vw;
     width: 40vw;
-    height: 90%;
+    height: 85%;
     background-color: white;
     border: 0.1vw solid #ccc;
     border-radius: 1vw;
@@ -162,9 +166,9 @@ export default {
 
   .chatbot-header {
     font-family: Jost;
-    font-size: 1.3vw;
     font-weight: bold;
-    height: 1.5vw;
+    font-size: 100%;
+    height: 1.2vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -172,14 +176,18 @@ export default {
     color: white;
     padding: 1vw;
     border-bottom: 0.1vw solid #ccc;
+    min-height: 20px;
   }
 
   .close-button {
+    font-weight: lighter;
     background: none;
     border: none;
     color: white;
-    font-size: 1.5vw;
+    font-size: 180%;
     cursor: pointer;
+    min-width: 35px;
+    min-height: 35px;
     opacity: 1;
   }
   .close-button:hover {
@@ -187,6 +195,8 @@ export default {
   }
 
   .circle-close-button{
+    text-align: center;
+    align-items: center;
     border-radius: 100%;
     background-color: #52417D;
   }
@@ -195,29 +205,32 @@ export default {
     background-color: #ffffff;
     opacity: 0.5;
   }
+  .circle-close-button:hover .close-button{
+    color: #52417D;
+  }
 
 
   .chatbot-messages {
     font-family: Jost;
     flex: 1;
-    padding: 1vw;
+    padding: 1.5vh;
     overflow-y: auto;
     background-color: #f9f9f9;
   }
 
   .message-sender {
-    margin-top: 0.3vw;
+    margin-top: 0.3vh;
     display: flex;
     font-weight: bold;
   }
 
   .bot-message, .user-message {
-    padding: 0.6vw;
+    padding: 1.3vh;
     width: fit-content;
     display: flex;
-    margin-top: 0.5vw;
-    margin-bottom: 0.3vw;
-    border-radius: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 10px;
     min-width: 10%;
     max-width: 85%;
     word-wrap: break-word;
@@ -231,7 +244,7 @@ export default {
   }
 
   .user-message {
-    background-color: #FFCDDC;
+    background-color: #F6CBCB;
     margin-left: auto;
   }
 
@@ -239,7 +252,7 @@ export default {
     background-color: #52417D;
     color: white;
     border: none;
-    border-radius: 1vw;
+    border-radius: 10px;
     padding: 1.5%;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -260,12 +273,12 @@ export default {
     border: 0.1vw solid #ccc;
     padding: 1.5%;
     width: 85%;
-    border-radius: 1vw;
+    border-radius: 10px;
     margin-right: 1vw;
   }
 
   .user-chat {
-    height: 8vh;
+    height: 7vh;
     display: flex;
     align-items: center;
     padding: 1vw;
@@ -274,15 +287,36 @@ export default {
 
   .loading-indicator {
     text-align: center;
-    padding: 1vw;
-    font-size: 1vw;
+    padding: 3vw;
+    font-size: 1.5vh;
     color: #999;
   }
 
   .error-message {
     color: red;
-    font-size: 1vw;
+    font-size: 1.5vh;
     padding: 1vw;
     text-align: center;
+  }
+
+  @media screen and (max-width: 700px) {
+    .chatbot-container {
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+    }
+
+    .chatbot-header {
+      font-size: 120%;
+      min-height: 40px;
+    }
+
+    .close-button {
+      min-width: 42px;
+      min-height: 42px;
+    }
+
+
   }
 </style>

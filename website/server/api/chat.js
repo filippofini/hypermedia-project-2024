@@ -1,9 +1,10 @@
 import OpenAI from 'openai';
+import { sleep } from 'openai/core.mjs';
 
 const openai = new OpenAI();
 let assistant;
 let thread;
-const bot = process.env.OPENAI_ASSISTANT_ID;
+const bot = "asst_TJ2fXFuzDZoMdu1sLGqK5XqQ";
 
 export default defineEventHandler(async (event) => {
   //return "This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. "
