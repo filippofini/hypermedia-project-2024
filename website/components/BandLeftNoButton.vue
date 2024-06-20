@@ -10,7 +10,7 @@
         <p class = "description"> {{description}} </p>
       </div> 
       <div class="right-columnBandLeftNoButton">
-        <img :src = "imageSrc" width = "400" height = "300" alt="Image">
+        <img :src = "imageName" width = "400" height = "300" alt="Image">
       </div>
     </div>
 </template>

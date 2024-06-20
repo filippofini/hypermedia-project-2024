@@ -6,7 +6,7 @@
 <template>
     <div class="container">
         <div class="left-column">
-            <img :src = "imageSrc" width = "400" height = "300" alt="Image">
+            <img :src = "imageName" width = "400" height = "300" alt="Image">
         </div>
         
         <div class="right-column">

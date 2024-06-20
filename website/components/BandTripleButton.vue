@@ -20,7 +20,7 @@
         </div>
 
         <div class="right-columnBandRight">
-            <img :src = "imageSrc" width = "400" height = "300" alt="Image">
+            <img :src = "imageName" width = "400" height = "300" alt="Image">
         </div>
         
         
