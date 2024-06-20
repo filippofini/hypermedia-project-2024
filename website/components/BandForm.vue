@@ -73,7 +73,7 @@
 
     .title{
         font-family: Jost;
-        font-size: 2.2vw;
+        font-size: 3vh;
         font-weight: 500;
         margin-bottom: 2vw;
     }
@@ -92,6 +92,13 @@
         }
         .contact-info{
             padding-right: 0;
+            width: 100%;
+        }
+        .form{
+            width: 90%;
+        }
+        .instagram-footer, .facebook-footer, .twitter-footer{
+            width: 6vw;
         }       
 
     }

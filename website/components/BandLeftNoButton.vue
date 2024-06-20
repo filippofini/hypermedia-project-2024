@@ -58,6 +58,7 @@
             margin-top: 2%;
             padding-right: 0;
             text-align: center ;
+            max-width: 100%;
         }        
 
     }

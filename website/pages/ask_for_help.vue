@@ -57,7 +57,7 @@
 
     .link{
       font-family: 'Jost';
-      font-size: 1.2vw;
+      font-size: 2.3vh;
       font-weight: 300;
       text-align: left;
       color:black;

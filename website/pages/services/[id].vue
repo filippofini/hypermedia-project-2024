@@ -302,6 +302,7 @@
   .ovService{
       text-align: center;
       justify-content: center;
+      font-size: 2.6vh;
   }
   .testimonials{
       display: flex;
