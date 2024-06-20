@@ -180,7 +180,6 @@ export default {
   }
 
   .close-button {
-    font-weight: lighter;
     background: none;
     border: none;
     color: white;
@@ -275,6 +274,7 @@ export default {
     width: 85%;
     border-radius: 10px;
     margin-right: 1vw;
+    font-size: 2vh;
   }
 
   .user-chat {

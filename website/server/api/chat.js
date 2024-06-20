@@ -4,7 +4,6 @@ import { sleep } from 'openai/core.mjs';
 const openai = new OpenAI();
 let assistant;
 let thread;
-const bot = "asst_TJ2fXFuzDZoMdu1sLGqK5XqQ";
 
 export default defineEventHandler(async (event) => {
   //return "This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. "
@@ -15,7 +14,7 @@ export default defineEventHandler(async (event) => {
       //Get the assistant and create the thread
       if (!assistant || !thread) {
         console.log('Getting assistant');
-        assistant = await openai.beta.assistants.retrieve(bot);
+        assistant = await openai.beta.assistants.retrieve("asst_TJ2fXFuzDZoMdu1sLGqK5XqQ");
         console.log('Creating thread');
         thread = await openai.beta.threads.create();
       }
