@@ -17,9 +17,9 @@
         <div class="icon">
           <i @click="toggleMobileNav" v-show="mobile" class="hamburger-menu" :class="{ 'icon-active': mobileNav }">
             <svg viewBox="0 0 100 67" width="40" height="40">
-              <rect y="00" width="100" height="17" rx="10"></rect>
-              <rect y="33" width="100" height="17" rx="10"></rect>
-              <rect y="66" width="100" height="17" rx="10"></rect>
+              <rect y="00" width="100" height="17" rx="10" fill="#ffffff"></rect>
+              <rect y="33" width="100" height="17" rx="10" fill="#ffffff"></rect>
+              <rect y="66" width="100" height="17" rx="10" fill="#ffffff"></rect>
             </svg>
           </i>
         </div>
@@ -187,7 +187,7 @@
   }
 
   .hamburger-menu:hover {
-    background-color: #ffffff;
+    background-color: #A78BCA;
   }
 
   .hamburger-menu:active {
