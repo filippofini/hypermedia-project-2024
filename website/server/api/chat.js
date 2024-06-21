@@ -1,5 +1,4 @@
 import OpenAI from 'openai';
-import { sleep } from 'openai/core.mjs';
 
 const openai = new OpenAI();
 let assistant;
@@ -14,10 +13,12 @@ export default defineEventHandler(async (event) => {
       //Get the assistant and create the thread
       if (!assistant || !thread) {
         console.log('Getting assistant');
-        assistant = await openai.beta.assistants.retrieve("asst_TJ2fXFuzDZoMdu1sLGqK5XqQ");
+        assistant = await openai.beta.assistants.retrieve(process.env.OPENAI_ASSISTANT_ID);
         console.log('Creating thread');
         thread = await openai.beta.threads.create();
       }
+
+      return "Vercel test"
 
       
       //Add the user message to the thread

@@ -7,7 +7,9 @@
         <!-- Desktop elements -->
         <ul v-if="!mobile" class="navigation">
           <ul v-for="link in links" :key="link.path">
-            <div><NuxtLink class="landmark":to="link.path":aria-label="`Link to ${link.title}`">{{ link.title }}</NuxtLink></div>
+            <div class="landmark-container">
+              <NuxtLink class="landmark" :to="link.path" :aria-label="`Link to ${link.title}`">{{ link.title }}</NuxtLink>
+            </div>
           </ul>
         </ul>
 
@@ -123,7 +125,7 @@
   .topbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Add this line */
+    justify-content: space-between;
     padding-left: 2vw;
     padding-right: 2vw;
     background-color: #643173;
@@ -136,20 +138,40 @@
     align-items: center;
     flex: 1;
     justify-content: space-around;
-    gap: 0.7vw;
+    gap: 1vw;
   }
 
   .navigation a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 2.2vh;
+    font-size: 100%; /*THIS NEEDS TO BE REVIEWED*/
     font-family: "Jost";
     transition: color 0.3s ease;
   }
 
   .navigation a:hover {
-    color: #A78BCA;
+    color: #643173;
     cursor: pointer;
+  }
+
+  .landmark {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landmark-container {
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+    display: block;
+    transition: background-color 0.3s ease, border 0.3s ease;
+  }
+
+  .landmark-container:hover {
+    background-color: #ffffff;
   }
 
   .icon {
@@ -161,15 +183,15 @@
     cursor: pointer;
     transition: 0.5s ease all;
     padding: 7px 10px;
-    border-radius: 50%;
+    border-radius: 10px;
   }
 
   .hamburger-menu:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
   }
 
   .hamburger-menu:active {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #A78BCA;
   }
 
   .dropdown-nav {
@@ -185,7 +207,7 @@
     left: 0;
     margin-top: 0;
     z-index: 500;
-    border-right: 5px solid #643173;
+    border-right: 5px solid #A78BCA;
   }
 
   .mobile-nav-enter-active, .mobile-nav-leave-active {
@@ -207,7 +229,7 @@
   .close-cross {
     font-size: 4vh;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     transition: 0.3s;
     cursor: pointer;
     padding-top: 3vh;
@@ -248,7 +270,7 @@
   }
 
   .landmark-mobile {
-    color: #A78BCA;
+    color: #643173;
     font-family: "Jost";
     font-size: 2.5vh;
     text-decoration: none;

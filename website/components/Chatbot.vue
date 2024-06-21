@@ -111,18 +111,17 @@ export default {
   @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
 
   .chatbot-button {
-    opacity: 0.5;
     z-index: 1;
     position: fixed;
     text-align: center;
     width: 4vw;
     height: 4vw;
-    bottom: 3vw;
-    right: 3.5vw;
-    background-color: #52417D;
+    bottom: 2vw;
+    right: 1vw;
+    background-color: #B6244F;
     color: white;
     border: none;
-    border-radius: 10vw;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
     display: flex;
@@ -145,20 +144,16 @@ export default {
     object-fit: cover;
   }
 
-  .ask-text {
-    font-size: 1.5vw;
-  }
-
   .chatbot-container {
     z-index: 1;
     position: fixed;
-    bottom: 3vw;
-    right: 3.5vw;
+    bottom: 2vw;
+    right: 1vw;
     width: 40vw;
     height: 85%;
     background-color: white;
     border: 0.1vw solid #ccc;
-    border-radius: 1vw;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -173,7 +168,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #52417D;
+    background-color: #B6244F;
     color: white;
     padding: 1vw;
     border-bottom: 0.1vw solid #ccc;
@@ -191,14 +186,14 @@ export default {
     opacity: 1;
   }
   .close-button:hover {
-    color: #52417D;
+    color: #B6244F;
   }
 
   .circle-close-button{
     text-align: center;
     align-items: center;
     border-radius: 100%;
-    background-color: #52417D;
+    background-color: #B6244F;
   }
 
   .circle-close-button:hover{
@@ -206,7 +201,7 @@ export default {
     opacity: 0.5;
   }
   .circle-close-button:hover .close-button{
-    color: #52417D;
+    color: #B6244F;
   }
 
 
@@ -244,12 +239,12 @@ export default {
   }
 
   .user-message {
-    background-color: #F6CBCB;
+    background-color: #A78BCA;
     margin-left: auto;
   }
 
   .send-button {
-    background-color: #52417D;
+    background-color: #B6244F;
     color: white;
     border: none;
     border-radius: 10px;
@@ -265,7 +260,7 @@ export default {
   }
 
   .send-button:hover:not(:disabled) {
-    background-color: #413264;
+    background-color: #8b1c3e;
   }
 
   .chatbot-input {
@@ -276,7 +271,7 @@ export default {
     border-radius: 10px;
     margin-right: 1vw;
   }
-
+  
   .user-chat {
     height: 7vh;
     display: flex;
