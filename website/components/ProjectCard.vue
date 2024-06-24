@@ -21,7 +21,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
     .image-container {
         position: relative;
-        width: 64vh;
+        width: 28vw;
         text-align: center;
         margin-top: 4%;
         cursor: pointer;
