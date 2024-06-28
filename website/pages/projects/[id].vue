@@ -166,7 +166,7 @@
   }
 
   .info-link {
-  font-size: 2.3vh;
+  font-size: 3.5vh;
   font-weight: 300;
   color: #B6244F;
   text-decoration: underline;
