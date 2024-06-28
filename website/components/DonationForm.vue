@@ -197,4 +197,10 @@ export default {
   outline: none;
   font-size: 1.2vw;
 }
+
+@media screen and (max-width: 850px) {
+    .app {
+      width: 100%;
+    }
+}
 </style>

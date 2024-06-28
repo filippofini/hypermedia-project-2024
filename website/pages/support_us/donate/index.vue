@@ -92,32 +92,43 @@
   }
 
   @media screen and (max-width: 850px) {
-    
-    .container-donation{
-      flex-direction: column;
-      align-items: center;
-    } 
-    
-      .img-description{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-          }
-          
-          img{
-            width: 50vw;
-            padding: 5.5vh;
-            padding-right: 0;
-          }
-          
-          .description{
-            width: 50vw;
-            padding: 5.5vh;
-            
-          }
+  .container-donation {
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 5.5vw 2vw 5.5vw;
+  }
 
+  .img-description {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 50%;
+    height: auto;
+    padding-left: 0;
+  }
+
+  .description {
+    width: 50%;
+    height: auto;
+    padding: 1vh;
+    background-color: #643173;
+    color: #ffffff;
+    word-break: break-word;
+  }
+
+  .donation-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
+}
+
+
 
   </style>
