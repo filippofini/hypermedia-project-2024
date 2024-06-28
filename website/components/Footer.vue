@@ -109,6 +109,19 @@
 
         .socials{
             margin-top: 1.5vw;
+            gap: 2vh;
+        }
+
+        b{
+            font-size: 2vh;
+        }
+
+        .instagram-footer, .facebook-footer, .twitter-footer{
+            width: 4vh;
+        }
+
+        footer{
+            font-size: 1.9vh;
         }
     }
 
