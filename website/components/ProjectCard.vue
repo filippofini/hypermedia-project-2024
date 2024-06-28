@@ -41,7 +41,7 @@
         margin-top: 1vw;
         font-family: Jost;
         font-weight: 500;
-        font-size:3vh;
+        font-size:1.6vw;
         display: inline-block;
         position: relative;
         color:black;
@@ -61,14 +61,14 @@
         align-items: center;
         justify-content: center;
         font-family: Jost;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
         position: absolute; 
         color: white; 
         background-color: rgba(0, 0, 0, 0.7); 
         opacity: 0; 
         transition: opacity 0.5s ease; 
         width: 100%;
-        height: 15%; 
+        height: 20%; 
         padding-left:1px;
         
     }
@@ -88,7 +88,11 @@
             width: 32vh;
         }
         .overlay {
-            font-size: 2.3vh;
+            font-size: 2vh;
+            height: 25%;
+        }
+        .title {
+            font-size: 3vh;
         }
     }
 
