@@ -114,7 +114,7 @@
     font-size: 2.3vh;
     font-weight: 300;
     text-align: left;
-    color: black;
+    color: #B6244F;
     text-decoration: underline;
   }
   .link:hover {

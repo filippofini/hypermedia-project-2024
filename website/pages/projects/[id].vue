@@ -22,7 +22,7 @@
       <div>
         Supervisor
         <NuxtLink :to="'/our_team/' + supervisors[0].id" :aria-label="`link to ${supervisors[0].name} ${supervisors[0].surname} page`" class="info">
-          <div class="info">{{ supervisors[0].name }} {{ supervisors[0].surname }}</div>
+          <div class="info-link">{{ supervisors[0].name }} {{ supervisors[0].surname }}</div>
         </NuxtLink>
       </div>
       <div>
@@ -127,7 +127,7 @@
     font-size: 1.2vw;
     font-weight: 300;
     text-align: left;
-    color: black;
+    color: #B6244F;
     text-decoration: underline;
   }
 
@@ -162,6 +162,17 @@
     font-weight: 300;
     text-align: left;
     color: black;
+    text-decoration: none;
+  }
+
+  .info-link {
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  color: #B6244F;
+  text-decoration: underline;
+  }
+  .info-link:hover {
     text-decoration: none;
   }
 

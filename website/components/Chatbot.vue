@@ -134,7 +134,7 @@ export default {
   }
   
   .chatbot-button:hover {
-    background-color: #281e41;
+    background-color: #871b3b;
     opacity: 1.0
   }
 

@@ -22,8 +22,8 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        background-color:  #871b3b; 
-        border-color:#B6244F ;
+        background-color:  #B6244F; 
+        border-color:#871b3b ;
         transition: all 0.2s ease-out;
     }
 
@@ -47,13 +47,13 @@
     }
 
     .button-container:hover {
-        background-color: #281e41;
-        border-color:#281e41 ;
+        background-color: #871b3b;
+        border-color:#871b3b ;
     }
 
     .button-container:active {
-        background-color: #281e41;
-        border-color:#281e41 ;
+        background-color: #871b3b;
+        border-color:#871b3b ;
     }
 </style>
 
