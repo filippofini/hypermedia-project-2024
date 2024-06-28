@@ -36,11 +36,13 @@ export default {
     white-space: normal;
     overflow: hidden;
     line-height: 1.1;
+    padding: 10px;
 }
 @media screen and (max-width: 900px) {
   .buttonViolet{
     width: 13vh;
     height: 5.5vh;
+    font-size: 1.8vh;
   }
 
 }
