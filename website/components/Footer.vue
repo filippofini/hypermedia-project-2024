@@ -108,7 +108,7 @@
         }
 
         .socials{
-            margin-top: 1.5vw;
+            margin-top: 3vw;
             gap: 2vh;
         }
 

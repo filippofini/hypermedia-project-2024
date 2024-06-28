@@ -135,7 +135,7 @@
     text-decoration: none;
   }
 
-  .first-band, .second-band, .third-band {
+  .first-band, .third-band {
     display: flex;
     padding: 5.5vw;
     gap: 2vw;
@@ -184,6 +184,13 @@
     font-weight: 300;
     font-family: Jost;
     background-color: #A78BCA;
+    display: flex;
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    gap: 2vw;
+    margin-top: 1vw;
   }
 
   

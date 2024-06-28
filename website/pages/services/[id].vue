@@ -197,14 +197,17 @@ export default {
 
 /* Style for the second band */
 .second-band {
-  display: flex;
-  padding: 5.5vw;
-  padding-top: 1vw;
   font-size: 2.3vh;
-  font-weight: 300;
-  text-align: left;
-  font-family: Jost;
-  background-color: #A78BCA;
+    font-weight: 300;
+    font-family: Jost;
+    background-color: #A78BCA;
+    display: flex;
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    gap: 2vw;
+    margin-top: 1vw;
 }
 
 
