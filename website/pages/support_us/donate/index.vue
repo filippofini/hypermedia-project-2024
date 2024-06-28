@@ -17,7 +17,7 @@
     <div class="container-donation">
       <div class="img-description">
 
-          <img src="../assets/img/nomeImmagine.jpg" alt="La mia foto personale" />
+          <img src="@/assets/img/nomeImmagine.jpg" alt="La mia foto personale" />
           <!--  <img :src = "imageSrc" alt="Image description"> -->
 
         <div class="description">
@@ -74,7 +74,7 @@
    color: #ffffff;
    padding: 1vw;
    width: 22vw;
-   height: 10vw;
+   height: 100%;
   }
 
   .donation-form{
@@ -92,13 +92,31 @@
   }
 
   @media screen and (max-width: 850px) {
-        .container-donation{
+    
+    .container-donation{
+      flex-direction: column;
+      align-items: center;
+    } 
+    
+      .img-description{
+            width: 100%;
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-        }
+          }
+          
+          img{
+            width: 50vw;
+            padding: 5.5vh;
+            padding-right: 0;
+          }
+          
+          .description{
+            width: 50vw;
+            padding: 5.5vh;
+            
+          }
 
     }
 
