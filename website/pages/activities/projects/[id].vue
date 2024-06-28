@@ -123,8 +123,8 @@
 
 <style scoped>
 
-  .link {
-    font-size: 1.2vw;
+.link {
+    font-size: 1.3vw;
     font-weight: 300;
     text-align: left;
     color: #B6244F;
@@ -135,7 +135,7 @@
     text-decoration: none;
   }
 
-  .first-band, .second-band, .third-band {
+  .first-band, .third-band {
     display: flex;
     padding: 5.5vw;
     gap: 2vw;
@@ -168,7 +168,6 @@
   .info-link {
   font-size: 3.5vh;
   font-weight: 300;
-  text-align: left;
   color: #B6244F;
   text-decoration: underline;
   }
@@ -185,6 +184,13 @@
     font-weight: 300;
     font-family: Jost;
     background-color: #A78BCA;
+    display: flex;
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    gap: 2vw;
+    margin-top: 1vw;
   }
 
   
@@ -221,5 +227,9 @@
       align-self: center;
       max-width: 90vw;
     }
+
+  .link {
+    font-size: 2.3vh;
+  }
   }
 </style>

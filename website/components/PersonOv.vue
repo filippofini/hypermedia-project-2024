@@ -85,7 +85,7 @@ export default {
   margin-top: 1vw;
   font-family: Jost;
   font-weight: 500;
-  font-size: 2.3vh;
+  font-size: 1.5vw;
   display: inline-block;
   position: relative;
   color:black;
@@ -93,6 +93,7 @@ export default {
 
 .role{
   margin-top: 1vw;
+  font-size: 1vw;
   font-family: Jost;
   font-weight: 500;
   color:black;
@@ -120,6 +121,10 @@ export default {
   }
   .role{
     font-size: 1.5vh;
+  }
+
+  .name-container{
+    font-size: 2.5vh;
   }
 
 }

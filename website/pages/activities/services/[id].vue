@@ -141,7 +141,7 @@ export default {
 <style scoped>
 
 .link {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   font-weight: 300;
   text-align: left;
   color: #B6244F;
@@ -173,8 +173,7 @@ export default {
 }
 .info-link {
   font-size: 3.5vh;
-  font-weight: 300;
-  text-align: left;
+  font-weight: 300; 
   color: #B6244F;
   text-decoration: underline;
 }
@@ -198,14 +197,17 @@ export default {
 
 /* Style for the second band */
 .second-band {
-  display: flex;
-  padding: 5.5vw;
-  padding-top: 1vw;
   font-size: 2.3vh;
-  font-weight: 300;
-  text-align: left;
-  font-family: Jost;
-  background-color: #A78BCA;
+    font-weight: 300;
+    font-family: Jost;
+    background-color: #A78BCA;
+    display: flex;
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    gap: 2vw;
+    margin-top: 1vw;
 }
 
 
@@ -249,6 +251,10 @@ export default {
     text-align: center;
     font-size: 2.3vh;
   }
+  
+  .info-link{
+    font-size: 2.3vh;
+  }
 
   .second-band {
     text-align: center;
@@ -264,6 +270,10 @@ export default {
     flex-direction: column;
     gap: 2vw;
     max-width: 90vw;
+  }
+
+  .link {
+    font-size: 2.3vh;
   }
 }
 </style>
