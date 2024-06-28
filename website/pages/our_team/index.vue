@@ -118,7 +118,7 @@
     appearance: auto;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     #people-container {
       display: flex;
       justify-content: center;

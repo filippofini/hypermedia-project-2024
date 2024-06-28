@@ -64,7 +64,7 @@
         margin-top: 2%;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         .container{
             display: flex;
             flex-wrap: wrap;

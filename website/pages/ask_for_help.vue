@@ -64,7 +64,7 @@
       text-decoration: none;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         .button-container{
             margin-top: 3vh;
             margin-bottom: 3vh;

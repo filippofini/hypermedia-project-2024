@@ -43,7 +43,7 @@ export default {
         text-decoration: none;
     } 
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
 
         .links {
             font-size: 2.3vh;

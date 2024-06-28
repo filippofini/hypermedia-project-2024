@@ -43,7 +43,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .map-container{
         display: flex;            
         flex-direction: column-reverse;

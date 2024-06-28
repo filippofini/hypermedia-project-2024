@@ -83,7 +83,7 @@
         align-items: flex-end;
         vertical-align: text-bottom;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         .image-container{
             width: 32vh;
         }
