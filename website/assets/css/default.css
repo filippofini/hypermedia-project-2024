@@ -92,8 +92,14 @@ html, body {
     .title-page-2{
         font-size: 2.4vh;
     }
-
     .center-title{
         font-size: 3.5vh;
+    }
+
+    .description{
+        font-family: Jost;
+        font-size: 2.3vh;
+        word-break: break-word;
+        text-align: center;
     }
 }

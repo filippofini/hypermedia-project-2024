@@ -4,10 +4,10 @@
                 <img :src = "imageName" alt="Image description">
             </div>
 
-            <div>
-                <h3 class="title"> {{title}} </h3>                
-                <p class="text"> {{description}} </p>  
-            </div>   
+
+            <h3 class="title"> {{title}} </h3>                
+            <p class="text"> {{description}} </p>  
+ 
     </div>
 </template>
 
@@ -44,8 +44,7 @@
         font-family: 'Jost';
         max-width: 100%;
         text-align: center;
-        word-break: break-word;
-        
+        word-break: break-word;      
         
     }
 
@@ -55,5 +54,14 @@
         text-align: center;
         font-weight: bold;
         
+    }
+    @media screen and (max-width: 800px) {
+        .content-container p{
+            max-width: 90vw;
+        }
+        .content-container img{
+        max-width: 80vw;
+        max-height: none;    
+        }
     }
 </style>
