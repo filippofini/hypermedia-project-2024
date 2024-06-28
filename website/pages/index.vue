@@ -8,7 +8,7 @@ const route = useRoute()
       <img src = '@/assets/img/nomeImmagine.jpg' width="781" height = "594" class="mainImage" alt = "Image">
     </div>
 
-    <BandTripleButton namebutton1="See all projects" link1 = "/projects/" namebutton2="See all services" link2 = "/services/" namebutton3="Activities" link3 = "/activities/" imageName = "https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/homepage/building.jpg" description="Welcome to [Center Name] Anti-Violence Center, a dedicated refuge for women experiencing abuse. Our center provides comprehensive support services including personalized psychological counseling, legal guidance, and secure emergency housing.
+    <BandTripleButton namebutton1="See all projects" link1 = "/activities/projects/" namebutton2="See all services" link2 = "/activities/services/" namebutton3="Activities" link3 = "/activities/" imageName = "https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/homepage/building.jpg" description="Welcome to [Center Name] Anti-Violence Center, a dedicated refuge for women experiencing abuse. Our center provides comprehensive support services including personalized psychological counseling, legal guidance, and secure emergency housing.
 
 We are actively involved in community projects and international initiatives aimed at raising awareness and combating violence against women. Our commitment is to empower women to reclaim their lives and foster a society where every woman can live free from fear.
 

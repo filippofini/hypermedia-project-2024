@@ -13,7 +13,7 @@
     <BandRightNoButton/>
     <BandLeftNoButton/>
     <div class ="button-container">        
-        <ButtonViolet name_button="Services" link="/services" aria_label="Link to services"/>        
+        <ButtonViolet name_button="Services" link="/activities/services" aria_label="Link to services"/>        
         <ButtonViolet name_button="Contact Us" link="/contact_us" aria_label="Link to contact us"/>       
     </div>
 </template>

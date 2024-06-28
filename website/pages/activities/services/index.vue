@@ -22,7 +22,7 @@
     </select>
   </div>
   <div id="services-container">
-    <ProjectCard v-for="service of sorted" :id="service.id_service" :title="service.title" :link="'/services/' + service.id_service" :year="null" :small_desc="service.small_desc" :image="service.image"/>
+    <ProjectCard v-for="service of sorted" :id="service.id_service" :title="service.title" :link="'/activities/services/' + service.id_service" :year="null" :small_desc="service.small_desc" :image="service.image"/>
   </div>
 </template>
 

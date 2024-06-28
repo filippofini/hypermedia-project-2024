@@ -52,8 +52,8 @@
         isHomePage: true,
         links: [
           { title: "Activities", path: "/activities" },
-          { title: "Projects", path: "/projects" },
-          { title: "Services", path: "/services" },
+          { title: "Projects", path: "/activities/projects" },
+          { title: "Services", path: "/activities/services" },
           { title: "Ask for Help", path: "/ask_for_help" },
           { title: "Our Team", path: "/our_team" },
           { title: "About us", path: "/about_us" },
