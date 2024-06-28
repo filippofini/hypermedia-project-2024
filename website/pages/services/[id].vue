@@ -141,7 +141,7 @@ export default {
 <style scoped>
 
 .link {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   font-weight: 300;
   text-align: left;
   color: #B6244F;
@@ -173,8 +173,7 @@ export default {
 }
 .info-link {
   font-size: 3.5vh;
-  font-weight: 300;
-  text-align: left;
+  font-weight: 300; 
   color: #B6244F;
   text-decoration: underline;
 }
@@ -249,6 +248,10 @@ export default {
     text-align: center;
     font-size: 2.3vh;
   }
+  
+  .info-link{
+    font-size: 2.3vh;
+  }
 
   .second-band {
     text-align: center;
@@ -264,6 +267,10 @@ export default {
     flex-direction: column;
     gap: 2vw;
     max-width: 90vw;
+  }
+
+  .link {
+    font-size: 2.3vh;
   }
 }
 </style>

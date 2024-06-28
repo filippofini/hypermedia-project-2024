@@ -111,7 +111,7 @@
 
   .link {
     font-family: Jost;
-    font-size: 2.3vh;
+    font-size: 1.3vw;
     font-weight: 300;
     text-align: left;
     color: #B6244F;
@@ -142,5 +142,9 @@
     .person-info {
       font-size: 2.3vw;
     }
+
+    .link {
+    font-size: 2.3vh;
+  }
   }
 </style>

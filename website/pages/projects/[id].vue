@@ -124,7 +124,7 @@
 <style scoped>
 
   .link {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     font-weight: 300;
     text-align: left;
     color: #B6244F;
@@ -166,9 +166,8 @@
   }
 
   .info-link {
-  font-size: 3.5vh;
+  font-size: 2.3vh;
   font-weight: 300;
-  text-align: left;
   color: #B6244F;
   text-decoration: underline;
   }
@@ -221,5 +220,9 @@
       align-self: center;
       max-width: 90vw;
     }
+
+  .link {
+    font-size: 2.3vh;
+  }
   }
 </style>

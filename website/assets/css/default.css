@@ -123,4 +123,8 @@ html, body {
     .error-text {
         font-size: 2.5vh;
     }
+
+    .prev-next {
+        margin-top: 5vw;
+    }
 }
