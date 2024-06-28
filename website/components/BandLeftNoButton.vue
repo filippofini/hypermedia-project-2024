@@ -27,7 +27,7 @@
 .left-columnBandLeftNoButton{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding-right: 5vw;
 
     min-width: 56vw;

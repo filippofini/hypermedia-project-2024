@@ -30,7 +30,7 @@
 }
 
 .text-2 {
-    font-size: 2.5vh;
+    font-size: 4vh;
     font-weight: 600;
     font-family: 'Jost';
     text-align: center;

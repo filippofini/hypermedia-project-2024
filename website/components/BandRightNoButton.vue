@@ -29,7 +29,7 @@
 .left-columnBandLeftNoButton{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding-left:5vw;
     min-width: 56vw;
     max-width: 56vw;

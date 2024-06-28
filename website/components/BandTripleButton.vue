@@ -41,10 +41,9 @@
 .left-columnBandRight{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-right: 5vw;
     max-width: 56vw;
-    
     background-color: color;
 }
 .buttonBandRight{

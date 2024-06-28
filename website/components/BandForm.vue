@@ -73,8 +73,8 @@
 
     .title{
         font-family: Jost;
-        font-size: 3vh;
-        font-weight: 500;
+        font-size: 4vh;
+        font-weight: 600;
         margin-bottom: 2vw;
     }
 
