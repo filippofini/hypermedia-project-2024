@@ -11,17 +11,10 @@
     </div>
 
     <div class ="button-container">
-        <NuxtLink class = "link" to="/ask_for_help_for_me" aria-label="Link to ask for help for me">
-            Help for you
-        </NuxtLink>
 
-        <NuxtLink class = "link" to="/ask_for_help_for_another" aria-label="Link to ask for help for me">
-            Help for another
-        </NuxtLink>
-        <!--
-        <ButtonViolet name_button="Help for You" link="/ask_for_help_for_me" aria_label="Link to ask for help for me"/>        
-        <ButtonViolet name_button="Help for Another" link="/ask_for_help_for_another" aria_label="Link to ask for help for another"/>-->
-     </div>
+        <ButtonViolet name_button="Help for You" link="/ask_for_help_for_me" aria_label="Link to ask for help for me"/>      
+        <ButtonViolet name_button="Help for Another" link="/ask_for_help_for_another" aria_label="Link to ask for help for another"/>
+    </div>
 
     <BandRightNoButton description="If you are experiencing violence, it's essential to know that help and support are available. At [Center Name] Anti-Violence Center, we provide resources to empower you to take action. Recognize the signs of abuse, understand your legal rights, and create a safety plan. Reach out to our center for confidential counseling, legal advice, and access to emergency housing." imageName="https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/ask_for_help/askhelp_img1.jpg"/>
     <BandLeftNoButton description="Moreover, you can make a difference in someone else's life. Learn to recognize signs of abuse in others, listen without judgment, and offer support. Direct individuals to resources like ours for professional assistance. Together, we can break the cycle of violence and create a community where everyone feels safe and supported."  imageName="https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/ask_for_help/askhelp_img2.jpg"/>
@@ -52,6 +45,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        margin-bottom: 2%;
          
     }
 
@@ -68,6 +62,13 @@
 
     .link:hover{
       text-decoration: none;
+    }
+
+    @media screen and (max-width: 800px) {
+        .button-container{
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+        }
     }
 
 </style>
