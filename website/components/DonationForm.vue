@@ -164,13 +164,14 @@ export default {
 }
 
 .donate-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: #871B3B;
   color: #ffffff;
 }
 
 .donate-button:disabled {
   background-color: #ccc;
+  color: #ffffff;
   cursor: default;
   transform: scale(1);
 }

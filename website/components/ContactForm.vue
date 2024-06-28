@@ -252,6 +252,7 @@ export default {
 .form-button:disabled {
   font-family: Jost;
   background-color: #ccc;
+  color: #ffffff;
   cursor: not-allowed;
   transform: scale(1);
 }
