@@ -65,6 +65,7 @@ export default {
   width: 15vw;
   height: 15vw; 
   border-radius: 50%;
+  border: 2px solid black;
   overflow: hidden;
   margin: 0 auto;
   

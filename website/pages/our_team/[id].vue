@@ -86,6 +86,7 @@
 
   .image {
     border-radius: 50vw;
+    border: 2px solid black;
     width: 37%;
   }
 
