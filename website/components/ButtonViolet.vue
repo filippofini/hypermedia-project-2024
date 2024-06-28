@@ -12,7 +12,7 @@ export default {
 <template>
  
   <NuxtLink :to="link" :aria-label="aria_label" class="linkStyle">
-    <button class="buttonViolet">{{name_button}}</button>
+    <button class="buttonViolet">{{name_button.toUpperCase()}}</button>
   </NuxtLink>
 
     
@@ -36,11 +36,13 @@ export default {
     white-space: normal;
     overflow: hidden;
     line-height: 1.1;
+    padding: 10px;
 }
 @media screen and (max-width: 900px) {
   .buttonViolet{
     width: 13vh;
     height: 5.5vh;
+    font-size: 1.8vh;
   }
 
 }

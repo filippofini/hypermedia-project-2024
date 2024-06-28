@@ -3,7 +3,7 @@
    
         <span v-for="(crumb, index) in crumbs" :key="index">
             <NuxtLink :to="crumb.url" class="links">{{crumb.label}}</NuxtLink>
-            <span>&gt;</span>        
+            <span class="description">&gt;</span>        
         </span>
     </div>
 </template>
@@ -31,16 +31,23 @@ export default {
         font-weight: bold;
     }
     .links {        
-        color: #000;
-        text-decoration: none;
+        font-family: Jost;
+        font-size: 2.8vh;
+        font-weight: bold;
         margin-right: 5px;
         margin-left: 5px;
-        font-family: 'Jost';
-        transition: 0.3s ease; 
+        color: #B6244F;
+        text-decoration: underline; 
     }
     .links:hover {
-        text-decoration: underline;
-        color: #B96090;
+        text-decoration: none;
     } 
+
+    @media screen and (max-width: 800px) {
+
+        .links {
+            font-size: 2.3vh;
+        }
+    }
     
 </style>
