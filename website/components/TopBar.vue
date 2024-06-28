@@ -2,7 +2,11 @@
   <header>
     <nav>
       <div class="topbar">
-        <div class="logo">MyApp</div>
+        <div class="logo">
+          <NuxtLink to="/" title="Homepage">
+            <img src="../assets/img/logo.png" alt="Logo" id="desktop-logo"/>
+          </NuxtLink>
+        </div>
 
         <!-- Desktop elements -->
         <ul v-if="!mobile" class="navigation">
@@ -27,6 +31,9 @@
 
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav" :class="{ inverted: isHomePage, '': !isHomePage }" ref="dropdownNav">
+          <NuxtLink to="/" title="Homepage">
+            <img src="../assets/img/logo_mobile.png" alt="Logo" id="mobile-logo" @click="toggleMobileNav"/>
+          </NuxtLink>
           <hr class="separator-mobile" />
           <ul v-for="link in links">
             <NuxtLink @click="toggleMobileNav" class="landmark-mobile" :to="link.path" :aria-label="`Link to ${link.title}`" >{{ link.title }}</NuxtLink>
@@ -90,7 +97,7 @@
 
       checkScreen() {
         this.windowWidth = document.documentElement.clientWidth;
-        if (this.windowWidth < 800) {
+        if (this.windowWidth < 850) {
           this.mobile = true;
         } else {
           this.mobile = false;
@@ -133,12 +140,29 @@
     color: #ffffff;
   }
 
+  .logo{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 17vh;
+  }
+
+  #desktop-logo {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #mobile-logo {
+    margin-top: 20px;
+    max-width: 15vh;
+    max-height: 15vh;
+  }
+
   .navigation {
     display: flex;
     align-items: center;
     flex: 1;
     justify-content: space-around;
-    gap: 1vw;
+    gap: 0.3vw;
   }
 
   .navigation a {
@@ -223,7 +247,7 @@
   }
 
   .separator-mobile {
-    margin: 3vh 0;
+    margin: 3vh;
   }
 
   .close-cross {

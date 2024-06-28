@@ -29,9 +29,9 @@
   const props = defineProps(['id','act']);
   
   //fetch di servizi e progetti
-  const { data: services } = await useFetch('/api/serviceofPers');
+  const { data: services } = await useFetch('/api/serviceOfPers');
 
-  const { data: projects } = await useFetch('/api/projectofPers');
+  const { data: projects } = await useFetch('/api/projectOfPers');
 
   var collection = [];
   var isProjectEmpty = true;

@@ -6,17 +6,7 @@ export default defineEventHandler(async (event) => {
   const client = await serverSupabaseClient(event)
   
   // join between works_project and projects
-  const { data: projectData, error: teamError } = await client
-  .from('Works_Project')
-  .select(`
-    is_supervisor,
-    id_worker,
-    Project (
-      title,
-      image,
-      id_project
-    )
-  `)
+  const { data: projectData, error: teamError } = await client.from('Works_Project').select(`is_supervisor, id_worker, Project ( title,  image,  id_project )`)
 
 
    // Structure the response data
