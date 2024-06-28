@@ -8,19 +8,19 @@ html, body {
 .top-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
     margin: 2vw;
     position: relative;
 }
 
 .back-button {
-    
+    position: absolute;
     left: 2vw;
     top: 0.5vw;
 }
 
 .center-title{
-    flex-grow: 1;
     text-align: center;
     font-family: Jost;
     font-size: 3vw;
