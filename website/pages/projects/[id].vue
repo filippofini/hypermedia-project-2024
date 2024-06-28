@@ -202,7 +202,7 @@
     align-self: center;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     .first-band {
       flex-direction: column;
       align-items: center;

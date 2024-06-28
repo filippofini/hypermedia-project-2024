@@ -117,7 +117,7 @@
   text-align: center;
   font-family: Jost;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .mainTitleCarousel{
     font-size: 2.6vh;
   }

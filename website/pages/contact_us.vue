@@ -47,7 +47,7 @@
       align-items: start;
    }
 
-   @media screen and (max-width: 800px) {
+   @media screen and (max-width: 850px) {
         .phone-number{
             display: flex;            
             flex-direction: column;

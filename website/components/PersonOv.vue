@@ -108,7 +108,7 @@ export default {
   left: 0;
   transition: width 0.3s ease; 
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .avatar-with-name{
     width: 30vh;
     .avatar-container{

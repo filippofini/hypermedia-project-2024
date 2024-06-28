@@ -104,7 +104,7 @@ export default {
     background-color: rgba(255, 255, 255, 0.9);
     appearance: auto;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         #services-container {
             display: flex;
             justify-content: center;

@@ -55,7 +55,7 @@
         font-weight: bold;
         
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         .content-container p{
             max-width: 90vw;
         }

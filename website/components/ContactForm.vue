@@ -256,7 +256,7 @@ export default {
   transform: scale(1);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .form-button {
     
     font-size: 2.1vh;

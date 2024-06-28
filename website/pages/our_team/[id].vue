@@ -120,7 +120,7 @@
   .link:hover {
     text-decoration: none;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     .person-container {
       display: flex;
       flex-direction: column;

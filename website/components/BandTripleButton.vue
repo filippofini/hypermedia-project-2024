@@ -64,7 +64,7 @@
   align-self: center;
   width:100%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
 
     .right-columnBandRight img {
         display: none;

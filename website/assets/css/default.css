@@ -97,7 +97,7 @@ html, body {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .title-page{
         font-size: 3.5vh;
     }

@@ -148,7 +148,7 @@
     font-size: 1.3vw;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     .form-container input, .form-container textarea {
       width: 80vw;
     }

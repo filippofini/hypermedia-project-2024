@@ -48,7 +48,7 @@
     width: 100%;
     align-self: center;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .container-bandLeftNoButton{
             display: flex;            
             flex-direction: column;
