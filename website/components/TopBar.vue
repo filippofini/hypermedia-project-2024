@@ -281,7 +281,7 @@
   }
 
   .landmark-mobile:hover {
-    color: #ffffff;
+    color: #A78BCA;
     transform: translateY(-5px);
   }
 </style>
