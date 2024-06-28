@@ -31,7 +31,16 @@ build: {
       title: 'NomeSito',
       meta:[
         { charset: 'utf-8' },
-        { name: 'nome', content: 'esempio content' },
+        { name: 'description', content: 'Helping Hands website, where you can receive help against women abuse' },
+        { name: 'keywords', content: 'Helping Hands,Projects, Services, Help, Support, Contacts, Association' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        //social media meta tags
+        { name: 'og:title', content: 'Helping Hands' },
+        { name: 'og:description', content: 'Helping Hands website, where you can receive help against women abuse' },
+        { name: 'og:url', content: 'https://hypermedia-project-2024.vercel.app/' },
+        { name: 'og:image', content: '' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'author', content: 'Thinking4Heads'}
       ]
     }
   },
