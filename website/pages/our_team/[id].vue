@@ -1,7 +1,7 @@
 <template>
   <BreadCrumbs :crumbs="BCrumbs" />
   <div class="back-button-container">
-    <div class="back-button">
+    <div class="back-button-single">
       <BackButton />
     </div>
   </div>
@@ -67,6 +67,13 @@
     display: flex;
     margin: 2vw;
   }
+
+  .back-button-single {
+    position: relative;
+    left: 2vw;
+    top: 0.5vw;
+}
+
 
   .person-title {
     align-self: start;
