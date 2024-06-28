@@ -7,7 +7,7 @@
     <div class="center-title">Services</div>
   </div>
   <div class="introduction">
-    [Center Name] Anti-Violence Center is dedicated to ending violence against
+    Helping Hands Anti-Violence Center is dedicated to ending violence against
     women. We offer refuge, counseling, legal aid, and emergency housing for
     survivors of domestic violence, sexual assault, and harassment. Through
     community collaboration and advocacy, we raise awareness and promote change.
