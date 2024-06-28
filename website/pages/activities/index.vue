@@ -28,7 +28,7 @@
         tangible impact on the livesof women and girls." 
         namebutton="Projects" 
         imageName ="https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/activities/activities_project.jpg"
-        link = "/projects/"
+        link = "/activities/projects/"
         aria_label="link to projects">
     </BandLeftImg>
 
@@ -43,7 +43,7 @@
         the unique needs of each individual, empowering women to reclaim their lives and move toward a future free from violence."
         namebutton="Services" 
         imageName ="https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/activities/activities_service.jpg" 
-        link = "/services/"
+        link = "/activities/services/"
         aria_label="link to services"/>
     
 </template>

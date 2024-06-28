@@ -9,12 +9,12 @@
 
   <div class="carousel">
     <div class="itemCarousel" v-for="(activity, index) in collection" :key="index">
-      <NuxtLink  v-if = "props.act == '0'" :to="'/services/' + activity.id_service" class = "carousel-link">
+      <NuxtLink  v-if = "props.act == '0'" :to="'/activities/services/' + activity.id_service" class = "carousel-link">
         <img :src="activity.image" alt="Movie Poster"  class="imageCarousel">
         <div class="titleCarousel" >{{ activity.title }}</div>
       </NuxtLink>
 
-      <NuxtLink  v-else :to="'/projects/' + activity.id_project" class = "carousel-link">
+      <NuxtLink  v-else :to="'/activities/projects/' + activity.id_project" class = "carousel-link">
         <img :src="activity.image" alt="Movie Poster" class="imageCarousel">
         <div class="titleCarousel" >{{ activity.title }}</div>
       </NuxtLink>

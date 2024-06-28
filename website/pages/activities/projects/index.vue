@@ -26,7 +26,7 @@
     </select>
   </div>
   <div id="projects-container">
-    <ProjectCard v-for="project of sorted" :id="project.id_project" :title="project.title" :link="'/projects/' + project.id_project" :year="project.year" :small_desc="project.small_desc" :image="project.image"/>
+    <ProjectCard v-for="project of sorted" :id="project.id_project" :title="project.title" :link="'/activities/projects/' + project.id_project" :year="project.year" :small_desc="project.small_desc" :image="project.image"/>
   </div>
 </template>
 

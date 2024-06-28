@@ -7,7 +7,7 @@
             <div class="description">
                 <p>Support our mission by making a donation. Your contribution helps us fund vital projects, expand our reach, and make a difference. Every donation, big or small, matters. Thank you for your generosity!</p>
             </div>
-            <ButtonViolet class="button-spacing" name_button="Donate" link="/donate" aria_label="Link to donate"/>
+            <ButtonViolet class="button-spacing" name_button="Donate" link="/support_us/donate" aria_label="Link to donate"/>
         </div>
         <div class="double-dx">
             <div class="title-page-1-5">
@@ -18,7 +18,7 @@
                     Join us as a volunteer and make a meaningful impact. Your time and skills can help us achieve our goals and support our community. Together, we can make a difference. Sign up today!
                 </p>
             </div>
-            <ButtonViolet class="button-spacing" name_button="Volunteer" link="/volunteer" aria_label="Link to volunteer"/>
+            <ButtonViolet class="button-spacing" name_button="Volunteer" link="/support_us/volunteer" aria_label="Link to volunteer"/>
         </div>
     </div>
 </template>

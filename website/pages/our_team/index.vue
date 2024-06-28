@@ -7,7 +7,7 @@
     <div class="center-title">Our team</div>
   </div>
   <div class="introduction">
-    At [Center Name] Anti-Violence Center, our team is committed to supporting
+    At Helping Hands Anti-Violence Center, our team is committed to supporting
     survivors and combating violence against women. With expertise in
     counseling, legal advocacy, and community outreach, we work tirelessly to
     provide compassionate care and empower individuals to reclaim their lives.

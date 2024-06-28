@@ -15,7 +15,7 @@
     <BandLeftNoButton description = "If you find yourself in any of these situations or if you're feeling unsure or unsafe, please don't hesitate to reach out to us. Our services are here to support you whenever you need assistance. Your safety and well-being are important to us, and we are here to help in any way we can."/>
 
     <div class ="button-container">        
-        <ButtonViolet name_button="Services" link="/services" aria_label="Link to services"/>        
+        <ButtonViolet name_button="Services" link="/activities/services" aria_label="Link to services"/>        
         <ButtonViolet name_button="Contact Us" link="/contact_us" aria_label="Link to contact us"/>       
     </div>
 </template>
