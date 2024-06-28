@@ -87,6 +87,9 @@
         .image-container{
             width: 32vh;
         }
+        .overlay {
+            font-size: 2.3vh;
+        }
     }
 
 </style>

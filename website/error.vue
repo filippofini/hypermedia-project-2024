@@ -9,9 +9,8 @@
                 
                 <div class="dx">                    
                     <div class="error-text">You can visit our website at:</div>
-                    <ButtonViolet name_button = "Homepage" link="/"></ButtonViolet>
-                </div>
-            
+                    <ButtonViolet class="hp-button" name_button = "Homepage" link="/"></ButtonViolet>
+                </div>           
 
         </div> 
     </NuxtLayout>            
@@ -21,6 +20,11 @@
 
 
 <style>
+
+    .hp-button {
+        scale: 1.5;
+        margin-top: 10%;
+    }
 
     .error-header {
         display: flex;

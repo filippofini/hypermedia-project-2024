@@ -12,7 +12,7 @@ export default {
 <template>
  
   <NuxtLink :to="link" :aria-label="aria_label" class="linkStyle">
-    <button class="buttonViolet">{{name_button}}</button>
+    <button class="buttonViolet">{{name_button.toUpperCase()}}</button>
   </NuxtLink>
 
     
