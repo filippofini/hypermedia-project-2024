@@ -1,6 +1,6 @@
 <template>
 
-    <div class ="background-container">
+    <div>
 
         <BreadCrumbs :crumbs="BCrumbs"/>
 
@@ -51,13 +51,9 @@
 
 <style scoped>
 
-    .background-container{        
-        background-color: #FFCDDC;        
-    }
     .container{
         display: flex;        
         flex-direction: row;
-        background-color: #FFCDDC;
         justify-content: space-around;     
         
     }

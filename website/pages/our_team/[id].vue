@@ -1,13 +1,13 @@
 <template>
   <BreadCrumbs :crumbs="BCrumbs" />
-  <div class="top-container">
+  <div class="back-button-container">
     <div class="back-button">
       <BackButton />
     </div>
   </div>
 
   <!--previous and next link-->
-  <div class="prevnext">
+  <div class="prev-next">
     <NuxtLink :to="'/our_team/' + previousLink" :arial-label="`link to previous team member`" class="link" >Previous</NuxtLink>
     <NuxtLink :to="'/our_team/' + nextLink" :arial-label="`link to next team member`" class="link" >Next</NuxtLink>
   </div>
@@ -63,13 +63,9 @@
 </script>
 
 <style scoped>
-  .prevnext {
+  .back-button-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin-top: 50px;
+    margin: 2vw;
   }
 
   .person-title {

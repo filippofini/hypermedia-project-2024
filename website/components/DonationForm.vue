@@ -100,10 +100,10 @@ export default {
 
 <style scoped>
 .app {
-  max-width: 600px;
+  height: 23.3vw;
   padding: 3.5vw 2vw;
   font-family: Arial, sans-serif;
-  background-color: #52417D;
+  background-color: #A78BCA;
 }
 
 .donation-form {
@@ -135,10 +135,10 @@ export default {
 .predefined-amounts1 button:hover,
 .predefined-amounts2 button.selected,
 .predefined-amounts2 button:hover {
-  background-color: #B96090;
-  color: white;
+  background-color: #871B3B;
+  color: #ffffff;
   font-weight: bold;
-  border: 0.1vw solid #B96090;
+  border: 0.1vw solid #871B3B;
 }
 
 .custom-amount {
@@ -153,18 +153,20 @@ export default {
 
 .donate-button {
   padding: 1vw 6vw;
-  background-color: white;
+  background-color: #FFFFFF;
+  color: #871B3B;
   font-weight: bold;
-  color: black;
   font-size:1.2vw;
   border: none;
-  border-radius: 2.5vw;
+  border-radius: 1vw;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 .donate-button:hover {
   transform: scale(1.1);
+  background-color: #871B3B;
+  color: #ffffff;
 }
 
 .donate-button:disabled {

@@ -1,5 +1,5 @@
 <template>
-  <div class="zero-band">
+  <div>
     <BreadCrumbs :crumbs="BCrumbs" />
     <div class="top-container">
       <div class="back-button">
@@ -38,7 +38,7 @@
     </div>
   </div>
 
-  <div class="ovProject">Overview of the project</div>
+  <div class="title-page-2">Overview of the project</div>
   <div class="second-band">{{ project.description }}</div>
 
   <div class="third-band">
@@ -122,9 +122,6 @@
 </script>
 
 <style scoped>
-  .zero-band {
-    background-color: #ffcddc;
-  }
 
   .link {
     font-size: 1.2vw;
@@ -176,15 +173,10 @@
     font-size: 2.3vh;
     font-weight: 300;
     font-family: Jost;
-    background-color: #ffcddc;
+    background-color: #A78BCA;
   }
 
-  .ovProject {
-    font-size: 1.8vw;
-    font-weight: 500;
-    font-family: Jost;
-    background-color: #ffcddc;
-  }
+  
 
   .third-band {
     flex-direction: column;
@@ -194,10 +186,10 @@
 
   .recommendation {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 2vw;
-    max-width: 90vw;
+    align-content: center;
+    align-self: center;
   }
 
   @media screen and (max-width: 800px) {

@@ -1,6 +1,6 @@
 <template>
   <!-- TOP OF THE PAGE -->
-  <div class="zero-band">
+  <div>
     <BreadCrumbs :crumbs="BCrumbs" />
     <div class="top-container">
       <div class="back-button">
@@ -37,7 +37,7 @@
   </div>
 
   <!-- Second band -->
-  <div class="ovService">Overview of the service</div>
+  <div class="title-page-2">Overview of the service</div>
   <div class="second-band">
     {{ service.description }}
   </div>
@@ -139,9 +139,7 @@ export default {
 </script>
 
 <style scoped>
-.zero-band {
-  background-color: #ffcddc;
-}
+
 .link {
   font-size: 1.2vw;
   font-weight: 300;
@@ -197,19 +195,10 @@ export default {
   font-weight: 300;
   text-align: left;
   font-family: Jost;
-  background-color: #ffcddc;
+  background-color: #A78BCA;
 }
 
-.ovService {
-  display: flex;
-  padding: 5.5vw;
-  padding-bottom: 0vw;
-  font-size: 1.8vw;
-  font-weight: 500;
-  text-align: left;
-  font-family: Jost;
-  background-color: #ffcddc;
-}
+
 
 /* Style for the third band and testimonials band */
 .third-band {

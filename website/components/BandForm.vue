@@ -25,7 +25,7 @@
         padding: 2vw 5.5vw 2vw 5.5vw;
         flex-direction: row;
         justify-content: center;
-        background-color: #FFCDDC;
+        background-color: #A78BCA;
     }
 
     .contact-info{
@@ -40,7 +40,7 @@
         font-family: Jost;
         display: flex;
         flex-direction: column;
-        background-color: #52417D;
+        background-color: #643173;
         padding: 1vw;
         border-radius:20px;
         width: 50%;

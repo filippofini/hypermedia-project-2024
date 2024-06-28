@@ -233,8 +233,8 @@ export default {
   display: inline-block;
   margin: 1vw;
   padding: 1vw 3vw;
-  background-color: #b96090;
-  color: white;
+  background-color: #FFFFFF;
+  color: #871B3B;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -244,7 +244,8 @@ export default {
 
 .form-button:hover {
   font-family: Jost;
-  background-color: #a14976;
+  background-color: #871B3B;
+  color: #ffffff;
   transform: scale(1.05);
 }
 

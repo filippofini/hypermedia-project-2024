@@ -91,7 +91,7 @@
   
   <style scoped>
   #app{
-    background-color: #FFCDDC;
+    background-color: #A78BCA;
     margin-top: 4vw;
     display: flex;
     flex-direction: column;
@@ -123,14 +123,16 @@
     margin-top: 2.0vw;
     padding: 1vw 5vw;
     border-radius: 1vw;
-    background-color: #52417D;
-    color: white;
+    background-color: #FFFFFF;
+    color: #871B3B;
+    border: none;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
   .form-container button:hover {
-    background-color: #a14976;
+    background-color: #871B3B;
+    color: #ffffff;
     transform: scale(1.05); 
   }
 

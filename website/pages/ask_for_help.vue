@@ -60,6 +60,7 @@
       font-size: 2.3vh;
       font-weight: 300;
       text-align: left;
+      padding-bottom: 2vw;
       color:black;
       text-decoration: none;
       text-decoration: underline;

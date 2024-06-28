@@ -16,12 +16,12 @@
     </div>
     <div class="container-donation">
       <div class="img-description">
-        <div class="img">
+
           <img src="../assets/img/nomeImmagine.jpg" alt="La mia foto personale" />
           <!--  <img :src = "imageSrc" alt="Image description"> -->
-        </div>
+
         <div class="description">
-          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
           <!--  <p> {{description}} </p> -->
         </div>
       </div>
@@ -64,19 +64,24 @@
   }
 
   img{
-    width: 50%;
-    height: 50%;
+    width: 24vw;
+    padding-left: 50%;
   }
 
   .description{
    word-break: break-word;
-   width: 50%;
+   background-color: #643173;
+   color: #ffffff;
+   padding: 1vw;
+   width: 22vw;
+   height: 10vw;
   }
 
   .donation-form{
     display: flex;
     align-items: center;
     width: 50%;
+    height: 100%;
   }
   
   .container-donation{

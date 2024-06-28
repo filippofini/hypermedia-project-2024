@@ -45,6 +45,7 @@
 .buttonBandRight{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     text-decoration: none;
 
 }
