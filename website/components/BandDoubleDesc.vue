@@ -14,13 +14,9 @@
                 <p>Volunteer</p>
             </div>
             <div class="description">
-                <p>Join us as a volunteer and make a meaningful impact. Your time and skills can help us achieve our goals and support our community. Together, we can make a difference. Sign up today!
-
-
-
-
-
-</p>
+                <p>
+                    Join us as a volunteer and make a meaningful impact. Your time and skills can help us achieve our goals and support our community. Together, we can make a difference. Sign up today!
+                </p>
             </div>
             <ButtonViolet class="button-spacing" name_button="Volunteer" link="/volunteer" aria_label="Link to volunteer"/>
         </div>
@@ -49,8 +45,7 @@
         flex-direction: column;
         justify-content: space-between;
         padding-right: 7vw;
-        padding-left: 7vw;
-        font-size: 1.2vw; 
+        padding-left: 7vw; 
         font-family: 'Jost'; 
         background-color: color;
         align-items: center;   
@@ -67,6 +62,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+        .double-dx{
+            margin-top: 2%;
         }
 
     }
