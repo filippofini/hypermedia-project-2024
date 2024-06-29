@@ -169,7 +169,7 @@
     }
 
     .error-messages {
-      font-size: 1.7vh;
+      font-size: 1.4vh;
     }
 
 
