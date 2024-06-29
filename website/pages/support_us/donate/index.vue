@@ -96,6 +96,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2vw 5.5vw 2vw 5.5vw;
+    margin-bottom: 3vh;
   }
 
   .img-description {

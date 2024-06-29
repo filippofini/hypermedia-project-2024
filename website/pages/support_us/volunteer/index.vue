@@ -69,6 +69,11 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            margin-top: 3vh;
+        }
+
+        .button{
+            margin-bottom: 3vh;
         }
 
     }
