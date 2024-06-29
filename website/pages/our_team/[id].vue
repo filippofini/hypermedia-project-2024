@@ -22,7 +22,9 @@
         <div class="person-role">Role: {{ person.role }}</div>
         <div class="person-email">Email: {{ person.email }}</div>
         <div class="person-phone">Phone number: {{ person.phone_number }}</div>
-        <div class="person-cv">{{ person.cv }}</div>
+        <div class="person-cv">
+          <NuxtLink :to="person.cv" class="cv">See {{ person.name }}'s CV</NuxtLink>
+        </div>
       </div>
     </div>
   </div>
@@ -118,6 +120,7 @@
   }
 
   .link {
+    text-align: center;
     font-family: Jost;
     font-size: 1.3vw;
     font-weight: 300;
@@ -128,7 +131,23 @@
   .link:hover {
     text-decoration: none;
   }
+
+  .cv{
+    font-family: Jost;
+    font-weight: 300;
+    color: #B6244F;
+    text-decoration: underline;
+  }
+
+  .cv:hover {
+    text-decoration: none;
+  }
+
   @media screen and (max-width: 850px) {
+
+    .image{
+      align-items: center
+    }
     .person-container {
       display: flex;
       flex-direction: column;
@@ -141,6 +160,8 @@
     }
     .person-title {
       align-self: center;
+      align-items: center;
+      text-align: center;
       padding-top: 2vw;
     }
     .person-name-surname {
@@ -153,10 +174,16 @@
 
     .link {
     font-size: 2.3vh;
+    text-align: center;
     }
 
     .carousel-container {
       margin-bottom: 3vh;
+    }
+
+    .cv{
+      color: #B6244F;
+      text-align: center;
     }
   }
 </style>

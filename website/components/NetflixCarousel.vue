@@ -1,10 +1,10 @@
 <template>
   <div class = "generalCarousel">
   <div v-if = "props.act ==  '0' && !isServiceEmpty" class = "mainTitleCarousel">
-    Services
+    Services Supervised
   </div>
   <div v-if = "props.act == '1' && !isProjectEmpty" class = "mainTitleCarousel">
-    Projects
+    Projects Supervised
   </div>
 
   <div class="carousel">
