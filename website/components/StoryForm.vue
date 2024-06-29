@@ -156,6 +156,23 @@
     .form-container input, .form-container textarea {
       width: 80vw;
     }
+
+    .form-container label {
+      font-size: 2.3vh;
+    }
+
+    .form-container button {
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      padding: 1.3vh 6vh;
+      font-size: 1.9vh;
+    }
+
+    .error-messages {
+      font-size: 1.7vh;
+    }
+
+
     
   }
   

@@ -267,5 +267,9 @@ export default {
   .form-elem-2 textarea {
     font-size: 1.5vh;
   }
+
+  .error-messages {
+    font-size: 1.7vh;
+  }
 }
 </style>
