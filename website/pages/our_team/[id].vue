@@ -147,8 +147,8 @@
       font-size: 2.6vh;
     }
 
-    .person-info {
-      font-size: 2.3vw;
+    .person-info, .person-role, .person-email, .person-phone, .person-cv {
+      font-size: 2.3vh;
     }
 
     .link {
