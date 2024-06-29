@@ -86,7 +86,6 @@
 
   .donation-form{
     display: flex;
-    align-items: center;
     width: 50%;
     height: 100%;
   }
@@ -112,15 +111,14 @@
   .description {
     width: 100%;
     padding: 2vw;
+    font-size: 2.3vh;
     box-sizing: border-box;
   }
 
   .donation-form {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+    box-sizing: border-box;
+  }
 }
 
 

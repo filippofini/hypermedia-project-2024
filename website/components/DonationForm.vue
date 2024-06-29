@@ -173,7 +173,7 @@ export default {
 .donate-button:disabled {
   background-color: #ccc;
   color: #ffffff;
-  cursor: default;
+  cursor: not-allowed;
   transform: scale(1);
 }
 
@@ -191,7 +191,7 @@ export default {
 }
 
 .input-container input {
-  border: 0.1vw solid #ccc;
+  border: none;
   width: 100%;
   padding: 1vw;
   padding-left: 2vw; /* make room for the currency symbol */
@@ -202,7 +202,7 @@ export default {
 @media screen and (max-width: 850px) {
   .app {
     width: 100%;
-    height: 30vh;
+    height: auto;
   }
 
   .predefined-amounts1, .predefined-amounts2 {
@@ -214,30 +214,30 @@ export default {
 
   .predefined-amounts1 button,
   .predefined-amounts2 button {
-    flex: 0 1 45%; /* Assicura che i pulsanti occupino il 45% della riga */
-    width: 45vw; /* Regola la larghezza */
-    padding: 3vw; /* Aumenta il padding */
-    font-size: 2vw; /* Aumenta la dimensione del font */
-    margin: 1vw 0; /* Aggiunge margine verticale */
+    flex: 0 1 30%;
+    width: 45vh; 
+    padding: 4vh; 
+    font-size: 2.3vh;
+    margin: 2vh 0; 
   }
-
   .custom-amount {
-    width: 100%; /* Full width */
-    padding: 1vw; /* Add padding */
+    margin-top: 2vw;
+    width: 50vh;
+    padding: 1vh;
   }
 
   .donate-button {
-    padding: 3vw 10vw; /* Increase padding */
-    font-size: 2vw; /* Increase font size */
+    padding: 3vh 10vh; /* Increase padding */
+    font-size: 2.3vh; /* Increase font size */
   }
 
   .input-container input {
-    font-size: 2vw; /* Increase font size */
-    padding: 2vw; /* Increase padding */
+    font-size: 2.3vh; /* Increase font size */
+    padding: 3vh; /* Increase padding */
   }
 
   .currency-symbol {
-    font-size: 2vw; /* Increase font size */
+    font-size: 2.3vh; 
   }
 }
 </style>
