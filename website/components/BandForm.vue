@@ -84,7 +84,8 @@
             flex-direction: column;
             flex-wrap:wrap;
             justify-content: center;
-            align-items: center;            
+            align-items: center; 
+
         }
         .title,.description,.title-page-2{
             text-align: center;
@@ -95,7 +96,7 @@
             width: 100%;
         }
         .form{
-            width: 90%;
+            width: 100%;
         }
         .instagram-footer, .facebook-footer, .twitter-footer{
             width: 6vw;

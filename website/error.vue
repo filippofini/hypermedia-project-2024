@@ -19,7 +19,7 @@
 
 
 
-<style>
+<style scoped>
 
     .hp-button {
         scale: 1.5;
