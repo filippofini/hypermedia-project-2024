@@ -129,7 +129,10 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    transition: background-color 0.2s;
+    cursor: pointer;
   }
+
   .form-container button:hover {
     background-color: #871B3B;
     color: #ffffff;
@@ -138,6 +141,7 @@
 
   .form-container button:disabled {
     background-color: #ccc;
+    color:#ffffff;
     cursor: not-allowed;
     transform: scale(1);
   }
