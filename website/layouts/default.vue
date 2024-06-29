@@ -1,7 +1,7 @@
 
 <template>
     <Head>
-        <Title>Nome del sito</Title>
+        <Title>Helping Hands</Title>
     </Head>
     <main>
         <div class = "page">

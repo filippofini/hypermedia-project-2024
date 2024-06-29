@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div class="container">
+    <div class="containerLeft">
         <div class="left-column">
             <img :src = "imageName" width = "400" height = "300" alt="Image">
         </div>
@@ -29,7 +29,7 @@
     text-decoration: none;
 }
 
-.container{
+.containerLeft{
     display: flex;
     flex-direction: row;
     padding: 2vw 5.5vw 2vw 5.5vw;
@@ -57,12 +57,12 @@
 }
 
 @media screen and (max-width: 850px) {
-    .container{
-            display: flex;            
-            flex-direction: column;
-            flex-wrap:wrap;
-            justify-content: center;
-            align-items: center;            
+    .containerLeft{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
     }
     .right-column{
         padding-left: 0;

@@ -28,7 +28,7 @@ build: {
       htmlAttrs:{
         lang: "en",
       },
-      title: 'NomeSito',
+      title: 'Helping Hands',
       meta:[
         { charset: 'utf-8' },
         { name: 'description', content: 'Helping Hands website, where you can receive help against women abuse' },
