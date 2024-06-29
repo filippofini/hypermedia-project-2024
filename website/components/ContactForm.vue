@@ -259,8 +259,10 @@ export default {
 
 @media screen and (max-width: 850px) {
   .form-button {
-    
-    font-size: 2.1vh;
+    margin-top: 2vh;
+      margin-bottom: 2vh;
+      padding: 1.3vh 6vh;
+      font-size: 1.9vh;
   }
   .form-elem-1 input,
   .form-elem-2 input, 
