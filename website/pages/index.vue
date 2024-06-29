@@ -5,7 +5,7 @@ const route = useRoute()
 <template>
   
     <div class="image-container">
-      <img src = '@/assets/img/main.jpeg' width="781" height = "594" class="mainImage" alt = "Image">
+      <img src = '@/assets/img/main.jpeg' width="1280" height = "536" class="mainImage" alt = "Image">
     </div>
 
     <BandTripleButton namebutton1="See all projects" link1 = "/activities/projects/" namebutton2="See all services" link2 = "/activities/services/" namebutton3="Activities" link3 = "/activities/" imageName = "https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/homepage/building.jpg" description="Welcome to Helping Hands Anti-Violence Center, a dedicated refuge for women experiencing abuse. Our center provides comprehensive support services including personalized psychological counseling, legal guidance, and secure emergency housing.

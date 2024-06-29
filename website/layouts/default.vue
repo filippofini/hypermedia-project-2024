@@ -2,6 +2,7 @@
 <template>
     <Head>
         <Title>Helping Hands</Title>
+        <link rel="icon" type="image/png" href="../assets/img/logo.png">
     </Head>
     <main>
         <div class = "page">
