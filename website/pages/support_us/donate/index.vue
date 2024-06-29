@@ -16,10 +16,10 @@
     </div>
     <div class="container-donation">
       <div class="img-description">
-
+        
           <img src="@/assets/img/nomeImmagine.jpg" alt="La mia foto personale" />
           <!--  <img :src = "imageSrc" alt="Image description"> -->
-
+  
         <div class="description">
           <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
           <!--  <p> {{description}} </p> -->
@@ -111,11 +111,8 @@
 
   .description {
     width: 100%;
-    height: auto;
-    padding: 1vh;
-    background-color: #643173;
-    color: #ffffff;
-    word-break: break-word;
+    padding: 2vw;
+    box-sizing: border-box;
   }
 
   .donation-form {

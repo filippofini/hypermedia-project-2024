@@ -99,11 +99,11 @@ export default {
 </script>
 
 <style scoped>
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
 .app {
   height: 23.3vw;
   padding: 3.5vw 2vw;
-  font-family: Arial, sans-serif;
+  font-family: Jost;
   background-color: #A78BCA;
 }
 
@@ -200,31 +200,44 @@ export default {
 }
 
 @media screen and (max-width: 850px) {
- .app {
-  width: 100%;
- }
+  .app {
+    width: 100%;
+    height: 30vh;
+  }
 
- .predefined-amounts1 button, .predefined-amounts2 button {
-  width: 25vw;
-  font-size: 2vw;
- }
+  .predefined-amounts1, .predefined-amounts2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%
+  }
+
+  .predefined-amounts1 button,
+  .predefined-amounts2 button {
+    flex: 0 1 45%; /* Assicura che i pulsanti occupino il 45% della riga */
+    width: 45vw; /* Regola la larghezza */
+    padding: 3vw; /* Aumenta il padding */
+    font-size: 2vw; /* Aumenta la dimensione del font */
+    margin: 1vw 0; /* Aggiunge margine verticale */
+  }
 
   .custom-amount {
-    width: calc(3 * 25vw + 4 * 0.2vw);
+    width: 100%; /* Full width */
+    padding: 1vw; /* Add padding */
   }
 
   .donate-button {
-    padding: 0.5vw 10vw;
-    font-size: 2vw;
+    padding: 3vw 10vw; /* Increase padding */
+    font-size: 2vw; /* Increase font size */
   }
 
   .input-container input {
-    font-size: 2vw;
+    font-size: 2vw; /* Increase font size */
+    padding: 2vw; /* Increase padding */
   }
 
   .currency-symbol {
-    font-size: 2vw;
+    font-size: 2vw; /* Increase font size */
   }
-   
 }
 </style>
