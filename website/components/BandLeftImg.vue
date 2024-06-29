@@ -63,6 +63,7 @@
         flex-wrap:wrap;
         justify-content: center;
         align-items: center;
+        margin-bottom: 3vh;
     }
     .right-column{
         padding-left: 0;

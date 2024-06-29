@@ -245,6 +245,7 @@ export default {
     align-items: center;
     margin: 2% 0;
     padding: 0;
+    margin-bottom: 3vh;
   }
 
   .titles, .info {

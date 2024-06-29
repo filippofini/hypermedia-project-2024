@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 2%;
     font-family: 'Jost';
 }
 .map{
@@ -51,11 +50,12 @@
         align-items: center;                  
     }
     .map-description{
-        margin-bottom: 2%;
+        margin-bottom: 3vh;
     }
     .map{
         width: 80vw;
         height: 40vh;
+        margin-bottom: 3vh;
     }
 }
 

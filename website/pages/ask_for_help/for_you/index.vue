@@ -58,4 +58,11 @@
     .list{
         margin-bottom: 3vw;
     }
+
+    @media screen and (max-width: 850px) {
+        .button-container{
+            margin-bottom: 3vh;
+        }
+        
+    }
   </style>

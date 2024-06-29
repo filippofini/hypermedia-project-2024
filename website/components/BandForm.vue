@@ -85,6 +85,7 @@
             flex-wrap:wrap;
             justify-content: center;
             align-items: center; 
+            margin-bottom: 3vh;
 
         }
         .title,.description,.title-page-2{

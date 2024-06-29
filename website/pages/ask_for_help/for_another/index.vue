@@ -58,4 +58,17 @@
         margin-top: 5vw;
         margin-bottom: 5vw;
     }
+
+    @media screen and (max-width: 850px){
+        .middle-img{
+            
+            margin-bottom: 3vh;
+            margin-top: 0;
+        }
+
+        .button-container{
+            margin-bottom: 3vh;
+        }
+        
+    }
 </style>

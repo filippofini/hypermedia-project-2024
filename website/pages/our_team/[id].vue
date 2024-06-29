@@ -136,7 +136,7 @@
       align-items: center;
       padding-right: 0;
       gap: 0;
-      margin-bottom: 2%;
+      margin-bottom: 3vh;
       padding: 0;
     }
     .person-title {
@@ -153,6 +153,10 @@
 
     .link {
     font-size: 2.3vh;
-  }
+    }
+
+    .carousel-container {
+      margin-bottom: 3vh;
+    }
   }
 </style>
