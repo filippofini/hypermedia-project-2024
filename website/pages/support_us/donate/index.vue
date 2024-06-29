@@ -21,7 +21,7 @@
           <!--  <img :src = "imageSrc" alt="Image description"> -->
 
         <div class="description">
-          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
           <!--  <p> {{description}} </p> -->
         </div>
       </div>
@@ -56,6 +56,13 @@
 
 <style scoped>
 
+  .container-donation{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      
+    }
+
   .img-description{
     display: flex;
     flex-direction: column;
@@ -65,7 +72,6 @@
 
   img{
     width: 24vw;
-    padding-left: 50%;
   }
 
   .description{
@@ -74,6 +80,7 @@
    color: #ffffff;
    padding: 1vw;
    width: 22vw;
+   font-size: 1.2vw;
    height: 100%;
   }
 
@@ -84,12 +91,6 @@
     height: 100%;
   }
   
-  .container-donation{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-  }
 
   @media screen and (max-width: 850px) {
   .container-donation {
@@ -101,20 +102,15 @@
 
   .img-description {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 
   img {
-    width: 50%;
+    width: 100%;
     height: auto;
-    padding-left: 0;
   }
 
   .description {
-    width: 50%;
+    width: 100%;
     height: auto;
     padding: 1vh;
     background-color: #643173;

@@ -99,6 +99,7 @@ export default {
 </script>
 
 <style scoped>
+
 .app {
   height: 23.3vw;
   padding: 3.5vw 2vw;
@@ -199,8 +200,31 @@ export default {
 }
 
 @media screen and (max-width: 850px) {
-    .app {
-      width: 100%;
-    }
+ .app {
+  width: 100%;
+ }
+
+ .predefined-amounts1 button, .predefined-amounts2 button {
+  width: 25vw;
+  font-size: 2vw;
+ }
+
+  .custom-amount {
+    width: calc(3 * 25vw + 4 * 0.2vw);
+  }
+
+  .donate-button {
+    padding: 0.5vw 10vw;
+    font-size: 2vw;
+  }
+
+  .input-container input {
+    font-size: 2vw;
+  }
+
+  .currency-symbol {
+    font-size: 2vw;
+  }
+   
 }
 </style>
