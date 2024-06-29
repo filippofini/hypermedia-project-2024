@@ -30,6 +30,7 @@
     padding: 2vw 5.5vw 2vw 5.5vw;
     flex-direction: row;
     background-color: #FFFFFF;
+    
 }
 
 .left-columnBandRight{
@@ -64,7 +65,8 @@
             flex-direction: column-reverse;
             flex-wrap:wrap;
             justify-content: center;
-            align-items: center;            
+            align-items: center; 
+            margin-bottom: 3vh;           
     }
     .left-columnBandRight{
         padding-right: 0;

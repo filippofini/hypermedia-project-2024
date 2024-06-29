@@ -22,6 +22,7 @@
     padding: 2vw 5.5vw 2vw 5.5vw;
     flex-direction: row;
     background-color: #A78BCA;
+    
 }
 
 
@@ -54,7 +55,8 @@
             flex-direction: column;
             flex-wrap:wrap;
             justify-content: center;
-            align-items: center;            
+            align-items: center;   
+            margin-bottom: 3vh;         
     }
     .left-columnBandLeftNoButton{
         padding-left: 0;

@@ -21,6 +21,7 @@ Join us in our mission to end violence against women and support our efforts tow
 .mainImage{
   height:auto;
   width: 100%;
+  margin-bottom: 2%;
   
 }
 

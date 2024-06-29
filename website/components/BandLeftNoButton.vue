@@ -52,7 +52,8 @@
             flex-direction: column-reverse;
             flex-wrap:wrap;
             justify-content: center;
-            align-items: center;            
+            align-items: center;  
+            margin-bottom: 3vh;          
         }
         .left-columnBandLeftNoButton{
             margin-top: 2%;

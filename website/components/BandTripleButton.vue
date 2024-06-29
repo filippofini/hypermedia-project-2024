@@ -83,6 +83,7 @@
     .containerBandRight{
         display: flex;
         flex-direction: column;
+        margin-bottom: 3vh;
         
     }
     .button-margin{

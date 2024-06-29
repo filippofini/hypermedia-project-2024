@@ -214,6 +214,7 @@
       flex-direction: column;
       align-items: center;
       padding: 0;
+      margin-bottom: 3vh;
     }
     .titles, .info {
       text-align: center;

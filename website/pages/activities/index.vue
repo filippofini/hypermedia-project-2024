@@ -80,4 +80,11 @@
     display: flex;  
     align-self: center;
   }
+
+  @media screen and (max-width: 850px) {
+    .quickdescription{
+      margin-bottom: 3vh;
+    }
+    
+  }
 </style>
