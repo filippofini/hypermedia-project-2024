@@ -1,31 +1,26 @@
 <template>
-    <BreadCrumbs :crumbs="BCrumbs"/>
-    <div class="top-container">
-        <div class="back-button">
-            <BackButton />
-        </div>
-        <div class="center-title">
-        Support Us
-        </div>
+  <BreadCrumbs :crumbs="BCrumbs" />
+  <div class="top-container">
+    <div class="back-button">
+      <BackButton />
     </div>
-    <BandDoubleDesc/>
-    <StoryForm/>  
-
-    
+    <div class="center-title">Support Us</div>
+  </div>
+  <BandDoubleDesc />
+  <StoryForm />
 </template>
+
 <script>
     export default {
-        computed: {
-            BCrumbs() {                
-                return [
-
-                    {
-                        label: 'home',
-                        url: '/'
-                    }
-                    
-                ];
-            }
-        }
-    }
+    computed: {
+        BCrumbs() {
+        return [
+            {
+            label: "home",
+            url: "/",
+            },
+        ];
+        },
+    },
+    };
 </script>

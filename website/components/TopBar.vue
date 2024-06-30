@@ -10,11 +10,11 @@
 
         <!-- Desktop elements -->
         <ul v-if="!mobile" class="navigation">
-          <ul v-for="link in links" :key="link.path">
+          <li v-for="link in links" :key="link.path">
             <div class="landmark-container">
               <NuxtLink class="landmark" :to="link.path" :aria-label="`Link to ${link.title}`">{{ link.title }}</NuxtLink>
             </div>
-          </ul>
+          </li>
         </ul>
 
         <!-- Mobile menu -->
@@ -35,9 +35,9 @@
             <img src="../assets/img/logo_mobile.png" alt="Logo" id="mobile-logo" @click="toggleMobileNav"/>
           </NuxtLink>
           <hr class="separator-mobile" />
-          <ul v-for="link in links">
+          <li v-for="link in links">
             <NuxtLink @click="toggleMobileNav" class="landmark-mobile" :to="link.path" :aria-label="`Link to ${link.title}`" >{{ link.title }}</NuxtLink>
-          </ul>
+          </li>
           <ul @click="toggleMobileNav" class="close-cross"> &#10006; </ul>
         </ul>
       </transition>
@@ -123,6 +123,10 @@
 
   ul{
     padding: 0;
+  }
+
+  li{
+    list-style-type: none;
   }
 
   header {

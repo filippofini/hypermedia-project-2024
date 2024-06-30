@@ -18,6 +18,7 @@
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
     .content-container{
         display: flex;
         flex-direction: column;        
@@ -31,7 +32,6 @@
         max-height: 16vw;
         min-width: 25vw;
         min-height: 12.5vw;
-        border-radius: 5px;
         border: 1px solid black;       
     }
 
@@ -45,7 +45,7 @@
         max-width: 100%;
         text-align: center;
         word-break: break-word;      
-        
+        margin: 1vh;
     }
 
     .title{
@@ -53,7 +53,7 @@
         max-width: 100%;
         text-align: center;
         font-weight: bold;
-        
+        margin: 1vh;
     }
     @media screen and (max-width: 850px) {
         .content-container p{
