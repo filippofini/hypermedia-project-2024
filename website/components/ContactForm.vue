@@ -264,6 +264,12 @@ export default {
       padding: 1.3vh 6vh;
       font-size: 1.9vh;
   }
+
+  .form-elem-1,
+  .form-elem-2 {
+    margin: 2vh 2vh 0vh 2vh;
+    
+  }
   .form-elem-1 input,
   .form-elem-2 input,
   .form-elem-2 textarea {
@@ -278,7 +284,7 @@ export default {
 
   .form-elem-1 input:focus::placeholder,
   .form-elem-2 input:focus::placeholder {
-    transform: translateY(-1.5vh); /* Move placeholder up */
+    transform: translateY(-1.5vh);
   }
 
   .error-messages {
