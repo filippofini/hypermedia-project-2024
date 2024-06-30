@@ -215,10 +215,10 @@ export default {
   .predefined-amounts1 button,
   .predefined-amounts2 button {
     flex: 0 1 30%;
-    width: 45vh; 
-    padding: 4vh; 
+    width: 45vw; 
+    padding: 4vw; 
     font-size: 2.3vh;
-    margin: 2vh 0; 
+    margin: 2vw 0; 
   }
   .custom-amount {
     margin-top: 2vw;
@@ -230,6 +230,8 @@ export default {
   .donate-button {
     padding: 3vh 10vh; /* Increase padding */
     font-size: 2.3vh; /* Increase font size */
+    width: 45vw; 
+    padding: 4vw; 
   }
 
   .input-container input {
