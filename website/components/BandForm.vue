@@ -26,6 +26,7 @@
         flex-direction: row;
         justify-content: center;
         background-color: #A78BCA;
+        margin-bottom: 2%;
     }
 
     .contact-info{
@@ -80,8 +81,7 @@
 
     @media screen and (max-width: 850px) {
         .container{
-            display: flex;            
-            flex-direction: column;
+            display: flex;           
             flex-wrap:wrap;
             justify-content: center;
             align-items: center; 
