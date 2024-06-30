@@ -28,6 +28,12 @@
       </div>
     </div>
   </div>
+  <div class="title-description">Description:</div>
+
+    
+  <div class="person-description">
+    {{ person.description }}
+  </div>
 
   <div class="carousel-container">
     <NetflixCarousel :id="route.params.id" act="0" class="projects-carousel"></NetflixCarousel>
@@ -115,6 +121,27 @@
     font-weight: 1000;
   }
 
+  .person-description {
+    font-family: Jost;
+    font-size: 1.8vw;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+    padding-bottom: 5.5vw;
+  }
+
+  .title-description {
+    font-family: Jost;
+    font-size: 2.5vw;
+    font-weight: 1000;
+    text-align: left;
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+    padding-top: 5.5vw;
+    padding-bottom: 1vw;
+  }
+
   .carousel-container {
     justify-content: center;
   }
@@ -130,6 +157,10 @@
   }
   .link:hover {
     text-decoration: none;
+  }
+
+  .person-cv {
+    padding-top: 1vw;
   }
 
   .cv{
@@ -148,6 +179,7 @@
     .image{
       align-items: center
     }
+
     .person-container {
       display: flex;
       flex-direction: column;
@@ -158,19 +190,29 @@
       margin-bottom: 3vh;
       padding: 0;
     }
+
     .person-title {
       align-self: center;
       align-items: center;
       text-align: center;
       padding-top: 2vw;
     }
+
     .person-name-surname {
       font-size: 2.6vh;
     }
 
-    .person-info, .person-role, .person-email, .person-phone, .person-cv {
+    .person-info, .person-role, .person-email, .person-phone, .person-cv, .person-description {
       font-size: 2.3vh;
     }
+
+    .person-description {
+      text-align: center;
+    }
+
+  .title-description{
+    font-size: 2vh;
+  }
 
     .link {
     font-size: 2.3vh;
