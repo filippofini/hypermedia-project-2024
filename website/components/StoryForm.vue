@@ -155,6 +155,7 @@
   @media screen and (max-width: 850px) {
     .form-container input, .form-container textarea {
       width: 80vw;
+      font-size: 1.7vh;
     }
 
     .form-container label {

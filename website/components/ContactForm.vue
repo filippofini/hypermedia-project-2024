@@ -259,15 +259,22 @@ export default {
 
 @media screen and (max-width: 850px) {
   .form-button {
-    margin-top: 2vh;
+      margin-top: 2vh;
       margin-bottom: 2vh;
       padding: 1.3vh 6vh;
       font-size: 1.9vh;
   }
   .form-elem-1 input,
-  .form-elem-2 input, 
+  .form-elem-2 input,
   .form-elem-2 textarea {
-    font-size: 1.5vh;
+    font-size: 1.7vh;
+  }
+
+  .form-elem-1 input:focus::placeholder,
+  .form-elem-2 input:focus::placeholder,
+  .form-elem-2 textarea:focus::placeholder {
+    font-size: 1.2vh;
+    transform: translateY(-1.5vh); /* Move placeholder up */
   }
 
   .error-messages {
