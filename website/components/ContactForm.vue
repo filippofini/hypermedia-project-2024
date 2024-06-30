@@ -268,12 +268,16 @@ export default {
   .form-elem-2 input,
   .form-elem-2 textarea {
     font-size: 1.7vh;
-  }
+    }
 
   .form-elem-1 input:focus::placeholder,
   .form-elem-2 input:focus::placeholder,
   .form-elem-2 textarea:focus::placeholder {
     font-size: 1.2vh;
+  }
+
+  .form-elem-1 input:focus::placeholder,
+  .form-elem-2 input:focus::placeholder {
     transform: translateY(-1.5vh); /* Move placeholder up */
   }
 
