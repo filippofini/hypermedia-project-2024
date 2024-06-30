@@ -222,7 +222,8 @@ export default {
   }
   .custom-amount {
     margin-top: 2vw;
-    width: 50vh;
+    width: 50vw;
+    height: auto;
     padding: 1vh;
   }
 
