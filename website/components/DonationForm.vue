@@ -44,7 +44,7 @@
         type="submit"
         class="donate-button"
         :disabled="!isFormValid"
-      >Donate</button>
+      >DONATE</button>
     </form>
   </div>
 </template>
@@ -101,7 +101,7 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
 .app {
-  height: 23.3vw;
+  height: 36vw;
   padding: 3.5vw 2vw;
   font-family: Jost;
   background-color: #A78BCA;
@@ -153,7 +153,7 @@ export default {
 }
 
 .donate-button {
-  padding: 1vw 6vw;
+  padding: 2vw 7vw;
   background-color: #FFFFFF;
   color: #871B3B;
   font-weight: bold;
@@ -162,6 +162,7 @@ export default {
   border-radius: 1vw;
   cursor: pointer;
   transition: background-color 0.2s;
+  margin-top: 12vw;
 }
 
 .donate-button:hover {

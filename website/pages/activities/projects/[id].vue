@@ -229,8 +229,11 @@
       max-width: 90vw;
     }
 
-  .link {
-    font-size: 2.3vh;
-  }
+    .info-link {
+      font-size: 2.3vh;
+    }
+    .link {
+      font-size: 2.3vh;
+    }
   }
 </style>

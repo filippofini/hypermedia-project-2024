@@ -35,7 +35,7 @@
           <button
             type="submit"
             :disabled="!isFormValid"
-            >Send</button>
+            >SEND</button>
         </form>
       </div>
     </div>

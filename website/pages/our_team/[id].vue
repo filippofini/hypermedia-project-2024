@@ -28,7 +28,7 @@
       </div>
     </div>
   </div>
-  <div class="title-description">Description:</div>
+  <div class="title-page-2">Description</div>
 
     
   <div class="person-description">
@@ -122,13 +122,17 @@
   }
 
   .person-description {
-    font-family: Jost;
-    font-size: 1.8vw;
+    font-size: 2.3vh;
     font-weight: 300;
-    text-align: left;
+    font-family: Jost;
+    background-color: #A78BCA;
+    display: flex;
     padding-left: 5.5vw;
     padding-right: 5.5vw;
-    padding-bottom: 5.5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    gap: 2vw;
+    margin-top: 1vw;
   }
 
   .title-description {
@@ -144,7 +148,7 @@
 
   .carousel-container {
     justify-content: center;
-  }
+    }
 
   .link {
     text-align: center;

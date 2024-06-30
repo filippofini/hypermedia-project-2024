@@ -71,7 +71,7 @@
         class="form-button" 
         :disabled="!isFormValid"
         type="submit"
-      >Submit</button>
+      >SUBMIT</button>
     </div>    
   </form>
 </template>
