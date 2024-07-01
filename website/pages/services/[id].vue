@@ -20,20 +20,30 @@
     <div class="image">
       <img :src="service.image" alt="Service image" style="width: 100%" />
     </div>
-    <div class="titles">
-      <div>
-        Supervisor
-        <NuxtLink :to="'/our_team/' + supervisors[0].id" :aria-label="`link to ${supervisors[0].name} ${supervisors[0].surname} page`" class="info">
-          <div class="info-link">{{ supervisors[0].name }} {{ supervisors[0].surname }}</div>
-        </NuxtLink>
-      </div>
-      <div>
-        Team
-        <div v-for="(member, index) in nonSupervisors" :key="index" class="info">
-          {{ member.name }} {{ member.surname }}
+      <div class="titles">
+        <div>
+          Supervisor
+          <NuxtLink :to="'/our_team/' + supervisors[0].id" :aria-label="`link to ${supervisors[0].name} ${supervisors[0].surname} page`" class="info">
+            <div class="info-link">{{ supervisors[0].name }} {{ supervisors[0].surname }}</div>
+          </NuxtLink>
+        </div>
+        <div>
+          Team
+          <div v-for="(member, index) in nonSupervisors" :key="index" class="info">
+            {{ member.name }} {{ member.surname }}
+          </div>
+        </div>
+        <div>
+          When:
+        
+        </div>
+        <div>
+          If you are interested in this service, please look at:
+          <ButtonViolet link='/contact_us' name_button="Contact us"></ButtonViolet>
+        
         </div>
       </div>
-    </div>
+      
   </div>
 
   <!-- Second band -->

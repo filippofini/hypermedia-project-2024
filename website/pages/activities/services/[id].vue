@@ -22,17 +22,36 @@
     </div>
     <div class="titles">
       <div>
-        Supervisor
-        <NuxtLink :to="'/our_team/' + supervisors[0].id" :aria-label="`link to ${supervisors[0].name} ${supervisors[0].surname} page`" class="info">
-          <div class="info-link">{{ supervisors[0].name }} {{ supervisors[0].surname }}</div>
-        </NuxtLink>
-      </div>
-      <div class="spacing-title">
-        Team
-        <div v-for="(member, index) in nonSupervisors" :key="index" class="info">
-          {{ member.name }} {{ member.surname }}
+        <div>
+          Supervisor
+          <NuxtLink :to="'/our_team/' + supervisors[0].id" :aria-label="`link to ${supervisors[0].name} ${supervisors[0].surname} page`" class="info">
+            <div class="info-link">{{ supervisors[0].name }} {{ supervisors[0].surname }}</div>
+          </NuxtLink>
         </div>
-      </div>
+        
+          <div class="spacing-title">
+            Team
+            <div v-for="(member, index) in nonSupervisors" :key="index" class="info">
+              {{ member.name }} {{ member.surname }}
+            </div>
+          </div>
+          <div>
+          <div class="spacing-title">
+                When:
+                <div class="info">
+                  orario qui
+                </div>
+              
+            </div>
+              
+          </div>
+        </div>
+        <div class="spacing-title">
+              Want to join? Look at:
+              <div class="buttn">
+              <ButtonViolet link='/contact_us' name_button="Contact us"></ButtonViolet>
+            </div>            
+        </div>    
     </div>
   </div>
 
@@ -148,6 +167,13 @@ export default {
   text-decoration: underline;
 }
 
+.buttn{
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  
+}
+
 .link:hover {
   text-decoration: none;
 }
@@ -155,8 +181,8 @@ export default {
 /* Style for the first band */
 .titles {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   font-family: Jost;
   font-size: 3.5vh;
   font-weight: 500;
@@ -251,6 +277,13 @@ export default {
   .titles, .info {
     text-align: center;
     font-size: 2.3vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .buttn{
+    margin-top: 1vh;
+
   }
   
   .info-link{
