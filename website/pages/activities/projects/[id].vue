@@ -25,13 +25,13 @@
           <div class="info-link">{{ supervisors[0].name }} {{ supervisors[0].surname }}</div>
         </NuxtLink>
       </div>
-      <div>
+      <div class="spacing-title">
         Team
         <div v-for="(supervisor, index) in nonSupervisors" :key="index" class="info">
           {{ supervisor.name }} {{ supervisor.surname }}
         </div>
       </div>
-      <div>
+      <div class="spacing-title">
         Year
         <div class="info">{{ project.year }}</div>
       </div>
@@ -152,7 +152,7 @@
     justify-content: space-evenly;
     font-family: Jost;
     font-size: 3.5vh;
-    font-weight: 500;
+    font-weight: 700;
     text-align: left;
     width: 50%;
   }
@@ -234,6 +234,17 @@
     }
     .link {
       font-size: 2.3vh;
+    }
+
+    .center-title {
+      max-width: 75%;
+    }
+    .image{
+      width: 80%;
+    }
+
+    .spacing-title {
+      margin-top: 1vh;
     }
   }
 </style>

@@ -27,7 +27,7 @@
           <div class="info-link">{{ supervisors[0].name }} {{ supervisors[0].surname }}</div>
         </NuxtLink>
       </div>
-      <div>
+      <div class="spacing-title">
         Team
         <div v-for="(member, index) in nonSupervisors" :key="index" class="info">
           {{ member.name }} {{ member.surname }}
@@ -275,6 +275,15 @@ export default {
 
   .link {
     font-size: 2.3vh;
+  }
+  .center-title {
+      max-width: 75%;
+  }
+  .image{
+    width: 80%;
+  }
+  .spacing-title {
+    margin-top: 1vh;
   }
 }
 </style>
