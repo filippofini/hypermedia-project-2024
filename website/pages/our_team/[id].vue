@@ -95,6 +95,10 @@
     height: 100%;
   }
 
+  .title-page {
+    text-align: left;
+  }
+
   .person-info {
     padding-top: 3vw;
   }
