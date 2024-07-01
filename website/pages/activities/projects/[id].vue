@@ -38,11 +38,11 @@
     </div>
   </div>
 
-  <div class="title-page-2">Overview of the project</div>
+  <div class="title-page-1-5">Overview of the project</div>
   <div class="second-band">{{ project.description }}</div>
 
   <div class="third-band">
-    <div class="title-page-2">See Also</div>
+    <div class="title-page-1-5">See Also</div>
     <div class="recommendation">
       <ProjectCard v-for="id in suggestedProjects" :key="id" :small_desc="findProjectById(id).small_desc" :title="findProjectById(id).title" :id="id" :link="'/activities/projects/' + id" :year="findProjectById(id).year" :image="findProjectById(id).image" />
     </div>
@@ -151,23 +151,23 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-family: Jost;
-    font-size: 3.5vh;
-    font-weight: 700;
+    font-size: 2vw;
+    font-weight: 500;
     text-align: left;
     width: 50%;
   }
 
   .info {
-    font-size: 3.5vh;
-    font-weight: 300;
+    font-size: 2vw;
+    font-weight: 100;
     text-align: left;
     color: black;
     text-decoration: none;
   }
 
   .info-link {
-  font-size: 3.5vh;
-  font-weight: 300;
+  font-size: 2vw;
+  font-weight: 100;
   color: #B6244F;
   text-decoration: underline;
   }
@@ -209,6 +209,10 @@
     align-self: center;
   }
 
+  .spacing-title {
+      margin-top: 1.3vh;
+    }
+
   @media screen and (max-width: 850px) {
     .first-band {
       flex-direction: column;
@@ -218,7 +222,7 @@
     }
     .titles, .info {
       text-align: center;
-      font-size: 2.3vh;
+      font-size: 2.6vh;
     }
     .second-band, .ovProject {
       text-align: center;
@@ -230,7 +234,7 @@
     }
 
     .info-link {
-      font-size: 2.3vh;
+      font-size: 2.6vh;
     }
     .link {
       font-size: 2.3vh;
@@ -244,7 +248,7 @@
     }
 
     .spacing-title {
-      margin-top: 1vh;
+      margin-top: 1.3vh;
     }
   }
 </style>

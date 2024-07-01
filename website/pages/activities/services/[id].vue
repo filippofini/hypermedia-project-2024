@@ -37,9 +37,9 @@
           </div>
           <div>
           <div class="spacing-title">
-                When:
+                Service schedule:
                 <div class="info">
-                  orario qui
+                  {{ service.schedule }}
                 </div>
               
             </div>
@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="spacing-title">
-              Want to join? Look at:
+              Want to join? Get in contact:
               <div class="buttn">
               <ButtonViolet link='/contact_us' name_button="Contact us"></ButtonViolet>
             </div>            
@@ -56,14 +56,14 @@
   </div>
 
   <!-- Second band -->
-  <div class="title-page-2">Overview of the service</div>
+  <div class="title-page-1-5">Overview of the service</div>
   <div class="second-band">
     {{ service.description }}
   </div>
 
   <!-- Testimonials band -->
   <div class="third-band">
-    <div class="title-page-2">Our Testimonials</div>
+    <div class="title-page-1-5">Our Testimonials</div>
     <div class="testimonials">
       <PersonOv v-for="test in testimonials" :key="test.id" :name="test.quote" :role="test.name" :image="test.image" :testimonial="1" />
     </div>
@@ -184,22 +184,22 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   font-family: Jost;
-  font-size: 3.5vh;
+  font-size: 2vw;
   font-weight: 500;
   text-align: left;
   width: 50%;
 }
 
 .info {
-  font-size: 3.5vh;
-  font-weight: 300;
+  font-size: 2vw;
+  font-weight: 100;
   text-align: left;
   color: black;
   text-decoration: none;
 }
 .info-link {
-  font-size: 3.5vh;
-  font-weight: 300; 
+  font-size: 2vw;
+  font-weight: 100; 
   color: #B6244F;
   text-decoration: underline;
 }
@@ -265,6 +265,10 @@ export default {
   align-self: center;
 }
 
+.spacing-title {
+      margin-top: 1.7vh;
+    }
+
 @media screen and (max-width: 850px) {
   .first-band {
     flex-direction: column;
@@ -276,7 +280,7 @@ export default {
 
   .titles, .info {
     text-align: center;
-    font-size: 2.3vh;
+    font-size: 2.6vh;
     flex-direction: column;
     justify-content: space-evenly;
   }
@@ -287,7 +291,7 @@ export default {
   }
   
   .info-link{
-    font-size: 2.3vh;
+    font-size: 2.6vh;
   }
 
   .second-band {
@@ -316,7 +320,7 @@ export default {
     width: 80%;
   }
   .spacing-title {
-    margin-top: 1vh;
+    margin-top: 1.3vh;
   }
 }
 </style>
