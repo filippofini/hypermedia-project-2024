@@ -71,7 +71,7 @@
 
   <!-- Third band -->
   <div class="third-band">
-    <div class="title-page-2">See Also</div>
+    <div class="title-page-1-5">See Also</div>
     <div class="reccomendation">
       <ProjectCard v-for="serviceId in suggestedServices" :key="serviceId" :small_desc="findServiceById(serviceId).small_desc" :title="findServiceById(serviceId).title" :id="serviceId" :link="'/activities/services/' + serviceId" :image="findServiceById(serviceId).image" />
     </div>
