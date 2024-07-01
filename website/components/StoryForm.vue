@@ -122,7 +122,7 @@
   .form-container button {
     margin-top: 2.0vw;
     padding: 1vw 5vw;
-    border-radius: 1vw;
+    border-radius: 10px;
     background-color: #FFFFFF;
     color: #871B3B;
     border: none;

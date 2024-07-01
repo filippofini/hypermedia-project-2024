@@ -159,7 +159,7 @@ export default {
   font-weight: bold;
   font-size:1.2vw;
   border: none;
-  border-radius: 1vw;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.2s;
   margin-top: 12vw;
