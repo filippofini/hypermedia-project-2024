@@ -127,6 +127,7 @@
       align-self: center;
       gap: 2vw;
       max-width: 90vw;
+      margin-top: 3vh;
     }
   }
 </style>
