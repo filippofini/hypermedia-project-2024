@@ -15,7 +15,7 @@
   <div class="person-container">
     <img :src="person.image" class="image" alt="Person image" />
     <div class="person-title">
-      <div class="person-name-surname">
+      <div class="title-page">
         {{ person.name }} {{ person.surname }}
       </div>
       <div class="person-info">
@@ -181,7 +181,8 @@
   @media screen and (max-width: 850px) {
 
     .image{
-      align-items: center
+      align-items: center;
+      width: 70%;
     }
 
     .person-container {
