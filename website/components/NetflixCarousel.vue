@@ -1,9 +1,9 @@
 <template>
   <div class = "generalCarousel">
-  <div v-if = "props.act ==  '0' && !isServiceEmpty" class = "mainTitleCarousel">
+  <div v-if = "props.act ==  '0' && !isServiceEmpty" class = "title-page-2">
     Services Supervised
   </div>
-  <div v-if = "props.act == '1' && !isProjectEmpty" class = "mainTitleCarousel">
+  <div v-if = "props.act == '1' && !isProjectEmpty" class = "title-page-2">
     Projects Supervised
   </div>
 
@@ -11,16 +11,27 @@
     <div class="itemCarousel" v-for="(activity, index) in collection" :key="index">
       <NuxtLink  v-if = "props.act == '0'" :to="'/activities/services/' + activity.id_service" class = "carousel-link">
         <div class="image-container">
-          <img :src="activity.image" alt="Movie Poster"  class="image">
-        </div>
-          <div class="titleCarousel">{{ activity.title }}</div>
+          <div class="center">
+            <img :src="activity.image" alt="Movie Poster"  class="image">   
+            <div class="overlay" >
+              <div >{{ activity.title }}</div>         
+            </div>
+          </div>
+          </div>
+          
       </NuxtLink>
 
       <NuxtLink  v-else :to="'/activities/projects/' + activity.id_project" class = "carousel-link">
         <div class="image-container">
-          <img :src="activity.image" alt="Movie Poster" class="image">
-        </div>  
-        <div class="titleCarousel" >{{ activity.title }}</div>
+          <div class="center">
+            <img :src="activity.image" alt="Movie Poster" class="image">
+            <div class="overlay" >
+              <div >{{ activity.title }}
+              </div>
+            </div>  
+          </div>
+        </div>
+        
       </NuxtLink>
 
     </div>
@@ -75,7 +86,7 @@
 }
 
 .carousel {
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -89,30 +100,35 @@
   margin-right: 1.0;
 }
 
-.titleCarousel {
-  position: absolute;
-  bottom: 4px;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 1.2vw;
-  text-align: center;
-  font-family: Jost;
-  opacity: 0;
+.overlay {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Jost;
+        font-size: 1.2vw;
+        position: absolute; 
+        color: white; 
+        background-color: rgba(0, 0, 0, 0.7); 
+        opacity: 0; 
+        transition: opacity 0.5s ease; 
+        width: 100%;
+        height: 20%; 
+        padding-left:1px;
 }
+.center{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        vertical-align: text-bottom;
+    }
 
-.carousel-link:hover .titleCarousel {
+.carousel-link:hover .overlay {
   opacity: 1; 
 }
 
-.mainTitleCarousel {
-  font-size: 2vw;
-  font-weight: bold;
-  margin-top: 2.0vw;
-  margin-bottom: 2.0vw;
-  text-align: center;
-  font-family: Jost;
+.title-page-2 {
+  margin-top: 2%;
 }
 
 .image-container {
@@ -136,8 +152,12 @@
             width: 32vh;
   }
   
-  .mainTitleCarousel{
-    font-size: 2.6vh;
+  .title-page-2{
+    margin-top: 3vh;
+  }
+  .overlay {
+    font-size: 2vh;
+    height: 25%;
   }
 }
 </style>
