@@ -10,12 +10,16 @@
   <div class="carousel">
     <div class="itemCarousel" v-for="(activity, index) in collection" :key="index">
       <NuxtLink  v-if = "props.act == '0'" :to="'/activities/services/' + activity.id_service" class = "carousel-link">
-        <img :src="activity.image" alt="Movie Poster"  class="imageCarousel">
-        <div class="titleCarousel" >{{ activity.title }}</div>
+        <div class="image-container">
+          <img :src="activity.image" alt="Movie Poster"  class="image">
+        </div>
+          <div class="titleCarousel">{{ activity.title }}</div>
       </NuxtLink>
 
       <NuxtLink  v-else :to="'/activities/projects/' + activity.id_project" class = "carousel-link">
-        <img :src="activity.image" alt="Movie Poster" class="imageCarousel">
+        <div class="image-container">
+          <img :src="activity.image" alt="Movie Poster" class="image">
+        </div>  
         <div class="titleCarousel" >{{ activity.title }}</div>
       </NuxtLink>
 
@@ -61,7 +65,7 @@
 
 </script>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
 
 
@@ -83,13 +87,6 @@
   scroll-snap-align: start;
   position: relative;
   margin-right: 1.0;
-}
-
-.imageCarousel {
-  position: relative;
-  width: 30vw;
-  height: 20vw;
-  object-fit: cover;
 }
 
 .titleCarousel {
@@ -117,7 +114,28 @@
   text-align: center;
   font-family: Jost;
 }
+
+.image-container {
+  position: relative;
+  width: 28vw;
+  text-align: center;
+  margin-top: 4%;
+  cursor: pointer;
+}
+
+.image {
+  border-radius: 10px;
+  border: 1px solid black;
+  width:100%;
+  display: block;
+  transition: transform 0.5s ease, filter 0.5s ease; 
+}
+
 @media screen and (max-width: 850px) {
+  .image-container{
+            width: 32vh;
+  }
+  
   .mainTitleCarousel{
     font-size: 2.6vh;
   }
