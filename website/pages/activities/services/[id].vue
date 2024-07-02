@@ -21,7 +21,7 @@
       <img :src="service.image" alt="Service image" style="width: 100%" />
     </div>
     <div class="titles">
-      <div>
+      <div class="t1">
         <div>
           Supervisor
           <NuxtLink :to="'/our_team/' + supervisors[0].id" :aria-label="`link to ${supervisors[0].name} ${supervisors[0].surname} page`" class="info">
@@ -46,7 +46,7 @@
               
           </div>
         </div>
-        <div class="spacing-title">
+        <div class="spacing-title-2">
               Want to join? Get in contact:
               <div class="buttn">
               <ButtonViolet link='/contact_us' name_button="Contact us"></ButtonViolet>
@@ -190,6 +190,12 @@ export default {
   width: 50%;
 }
 
+.t1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .info {
   font-size: 2vw;
   font-weight: 100;
@@ -265,9 +271,6 @@ export default {
   align-self: center;
 }
 
-.spacing-title {
-      margin-top: 1.7vh;
-    }
 
 @media screen and (max-width: 850px) {
   .first-band {
@@ -319,7 +322,7 @@ export default {
   .image{
     width: 80%;
   }
-  .spacing-title {
+  .spacing-title, .spacing-title-2 {
     margin-top: 1.3vh;
   }
 }

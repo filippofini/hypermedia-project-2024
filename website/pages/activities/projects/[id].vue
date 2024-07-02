@@ -149,7 +149,7 @@
   .titles {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-family: Jost;
     font-size: 2vw;
     font-weight: 500;
@@ -207,11 +207,7 @@
     gap: 2vw;
     align-content: center;
     align-self: center;
-  }
-
-  .spacing-title {
-      margin-top: 1.3vh;
-    }
+  } 
 
   @media screen and (max-width: 850px) {
     .first-band {
