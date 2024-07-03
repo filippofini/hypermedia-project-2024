@@ -10,7 +10,7 @@
                 <TopBar />            
             </div>
             <slot />
-            <Chatbot />
+           
             <Footer></Footer>
         </div>
     </main>
