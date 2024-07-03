@@ -23,7 +23,7 @@
         <div class="person-email">Email: {{ person.email }}</div>
         <div class="person-phone">Phone number: {{ person.phone_number }}</div>
         <div class="person-cv">
-          <NuxtLink :to="person.cv" class="cv">See {{ person.name }}'s CV</NuxtLink>
+          <NuxtLink :to="person.cv" target="_blank" class="cv">See {{ person.name }}'s CV</NuxtLink>
         </div>
       </div>
     </div>
