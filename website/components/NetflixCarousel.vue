@@ -86,7 +86,7 @@
 }
 
 .carousel {
-  justify-content: flex-start;
+  justify-content: center;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
