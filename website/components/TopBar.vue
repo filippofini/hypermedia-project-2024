@@ -34,7 +34,7 @@
           <NuxtLink to="/" title="Homepage">
             <img src="../assets/img/logo_mobile.png" alt="Logo" id="mobile-logo" @click="toggleMobileNav"/>
           </NuxtLink>
-          <hr class="separator-mobile" />
+          <div class="separator-mobile" />
           <li v-for="link in links">
             <NuxtLink @click="toggleMobileNav" class="landmark-mobile" :to="link.path" :aria-label="`Link to ${link.title}`" >{{ link.title }}</NuxtLink>
           </li>
@@ -251,7 +251,7 @@
   }
 
   .separator-mobile {
-    margin: 3vh;
+    margin: 3vh 0;
   }
 
   .close-cross {
@@ -312,4 +312,5 @@
     color: #A78BCA;
     transform: translateY(-5px);
   }
+  
 </style>
