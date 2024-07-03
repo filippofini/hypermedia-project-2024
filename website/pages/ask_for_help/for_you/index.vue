@@ -10,10 +10,12 @@
   <DropdownList class="list" />
 
   <BandRightNoButton
-    description="If you recognize yourself in any of the above cases or are unsure about your situation, please feel free to contact us. You can reach out to us using any of our provided contact methods. We're here to help and support you." image-name="https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/ask_for_help/for_you/1.jpg"
+    description="If you recognize these situations in your life or feel unsafe, it's important to take action for your safety and well-being. Don’t hesitate to seek help; our team is ready to support you in finding a path to safety and recovery.
+                Immediate and compassionate help is available, and we can guide you through your options. You can also visit our headquarters at 32, Piazza Leonardo da Vinci for face-to-face assistance and resources tailored to your needs." image-name="https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/ask_for_help/for_you/1.jpg"
   />
   <BandLeftNoButton
-    description="If you find yourself in any of these situations or if you're feeling unsure or unsafe, please don't hesitate to reach out to us. Our services are here to support you whenever you need assistance. Your safety and well-being are important to us, and we are here to help in any way we can." image-name="https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/ask_for_help/for_you/2.jpg"
+    description="If you are experiencing any form of violence or abuse, such as physical, emotional, psychological, sexual, financial, or social isolation, it is crucial to seek help immediately. Abuse can have long-term effects on your well-being, but support is available. Reach out to us confidentially at 123-456-7890, or send an email to contact.mail@mail.com. 
+                You are not alone, and we are here to provide the assistance you need." image-name="https://lbxvjvepkckcqdeigtxg.supabase.co/storage/v1/object/public/all_img/ask_for_help/for_you/2.jpg"
   />
 
   <div class="button-container">
