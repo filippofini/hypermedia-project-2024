@@ -50,13 +50,12 @@
 </template>
 
 <script setup>
-
   // Fetch the specific project
   const route = useRoute();
   const projectId = route.params.id;
   const { data: projectData } = await useFetch("/api/projects/" + projectId);
   const project = ref(projectData.value.Project);
-  const peopleForProject = ref(projectData.value.People);
+  const peopleForProject = ref(projectData.value.Project.People);
 
   // Fetch all projects
   const { data: allProjects } = await useFetch('/api/projects');
@@ -158,7 +157,7 @@
   }
 
   .info {
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-weight: 100;
     text-align: left;
     color: black;
@@ -216,9 +215,14 @@
       padding: 0;
       margin-bottom: 3vh;
     }
-    .titles, .info {
+    .titles {
       text-align: center;
       font-size: 2.6vh;
+    }
+
+    .info {
+      text-align: center;
+      font-size: 2.4vh;
     }
     .second-band, .ovProject {
       text-align: center;

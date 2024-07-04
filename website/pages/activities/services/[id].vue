@@ -79,13 +79,12 @@
 </template>
 
 <script setup>
-
   // Fetch the specific service
   const route = useRoute();
   const serviceId = route.params.id;
   const { data: serviceData } = await useFetch("/api/services/" + serviceId);
   const service = ref(serviceData.value.Service);
-  const peopleForService = ref(serviceData.value.People);
+  const peopleForService = ref(serviceData.value.Service.People);
 
   // Fetch all services
   const { data: allServices } = await useFetch('/api/services');
@@ -140,21 +139,20 @@
     } while (excluded.includes(randomNumber));
     return randomNumber;
   }
-
 </script>
 
 <script>
-export default {
-  computed: {
-    BCrumbs() {
-      return [
-        { label: 'home', url: '/' },
-        { label: 'all activities', url: '/activities' },
-        { label: 'all services', url: '/activities/services' },
-      ];
+  export default {
+    computed: {
+      BCrumbs() {
+        return [
+          { label: "home", url: "/" },
+          { label: "all activities", url: "/activities" },
+          { label: "all services", url: "/activities/services" },
+        ];
+      },
     },
-  },
-};
+  };
 </script>
 
 <style scoped>
@@ -197,7 +195,7 @@ export default {
 }
 
 .info {
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight: 100;
   text-align: left;
   color: black;
@@ -281,12 +279,19 @@ export default {
     margin-bottom: 3vh;
   }
 
-  .titles, .info {
+  .titles {
     text-align: center;
     font-size: 2.6vh;
     flex-direction: column;
     justify-content: space-evenly;
   }
+
+  .info {
+    text-align: center;
+    font-size: 2.4vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
 
   .buttn{
     margin-top: 1vh;

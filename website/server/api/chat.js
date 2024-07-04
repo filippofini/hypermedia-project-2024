@@ -5,7 +5,6 @@ let assistant;
 let thread;
 
 export default defineEventHandler(async (event) => {
-  //return "This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. "
     
     const userInput = await readBody(event);
 
