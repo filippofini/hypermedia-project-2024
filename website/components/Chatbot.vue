@@ -26,6 +26,7 @@
           placeholder="Type a message..."
           :disabled="isSending"
           ref="chatbotInput"
+          aria-label="Chatbot input field"
         />
         <button @click="sendMessage" class="send-button" :disabled="isSending">Send</button>
       </div>
