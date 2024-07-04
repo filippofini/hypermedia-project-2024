@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="spacing-title">
-        Year
+        Start Date
         <div class="info">{{ project.year }}</div>
       </div>
     </div>
