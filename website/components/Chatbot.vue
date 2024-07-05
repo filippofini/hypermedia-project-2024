@@ -132,6 +132,7 @@ export default {
     flex-direction: column;
     min-width: 60px;
     min-height: 60px;
+    border: 0.7px solid #ffffff;
   }
   
   .chatbot-button:hover {
