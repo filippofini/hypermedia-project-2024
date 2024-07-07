@@ -23,6 +23,8 @@ build: {
     }
   ],
 
+  ssr: true,
+
   app: {
     head:{
       htmlAttrs:{
