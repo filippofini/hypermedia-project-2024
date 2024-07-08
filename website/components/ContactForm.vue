@@ -97,8 +97,6 @@ export default {
         !this.numberErrors.length &&
         !this.emailErrors.length &&
         !this.textErrors.length &&
-        this.name &&
-        this.surname &&
         this.number &&
         this.email &&
         this.text

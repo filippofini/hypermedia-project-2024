@@ -148,7 +148,7 @@
   
   .error-messages {
     font-family: Jost;
-    color: red;
+    color: #871B3B;
     font-size: 1.3vw;
   }
 
