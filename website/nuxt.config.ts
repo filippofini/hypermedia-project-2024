@@ -40,7 +40,7 @@ build: {
         { name: 'og:title', content: 'Helping Hands' },
         { name: 'og:description', content: 'Helping Hands website, where you can receive help against women abuse' },
         { name: 'og:url', content: 'https://hypermedia-project-2024.vercel.app/' },
-        { name: 'og:image', content: 'https://imgur.com/7VRkK7K' },
+        { name: 'og:image', content: 'https://imgur.com/7VRkK7K.png' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'author', content: 'Thinking4Heads'}
       ]
