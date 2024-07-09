@@ -176,7 +176,6 @@
   text-decoration: none;
 }
 
-/* Style for the first band */
 .titles {
   display: flex;
   flex-direction: row;
@@ -225,7 +224,6 @@
   background-color: #ffffff;
 }
 
-/* Style for the second band */
 .second-band {
   font-size: 2.3vh;
     font-weight: 300;
@@ -241,8 +239,6 @@
 }
 
 
-
-/* Style for the third band and testimonials band */
 .third-band {
   display: flex;
   flex-direction: column;

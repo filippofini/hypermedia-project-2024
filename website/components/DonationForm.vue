@@ -145,7 +145,7 @@ export default {
 .custom-amount {
   margin-bottom: 7vw;
   margin-top:0.5vw;
-  width: calc(3 * 6vw + 4 * 0.2vw); /* width of 3 buttons plus 4 margins */
+  width: calc(3 * 6vw + 4 * 0.2vw);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,7 +195,7 @@ export default {
   border: none;
   width: 100%;
   padding: 1vw;
-  padding-left: 2vw; /* make room for the currency symbol */
+  padding-left: 2vw;
   outline: none;
   font-size: 1.2vw;
 }
@@ -223,21 +223,22 @@ export default {
   }
   .custom-amount {
     margin-top: 2vw;
-    width: 50vw;
+    width: 60vw;
     height: auto;
-    padding: 1vh;
+    padding: 4vw;
   }
 
   .donate-button {
-    padding: 3vh 10vh; /* Increase padding */
-    font-size: 2.3vh; /* Increase font size */
+    padding: 3vh 10vh; 
+    font-size: 2.3vh; 
     width: 45vw; 
     padding: 4vw; 
   }
 
   .input-container input {
-    font-size: 2.3vh; /* Increase font size */
-    padding: 3vh; /* Increase padding */
+    font-size: 2.3vh;
+    padding: 0;
+    padding-left: 5vw;
   }
 
   .currency-symbol {

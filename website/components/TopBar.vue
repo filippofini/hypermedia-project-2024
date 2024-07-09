@@ -172,7 +172,7 @@
   .navigation a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 100%; /*THIS NEEDS TO BE REVIEWED*/
+    font-size: 100%;
     font-family: "Jost";
     transition: color 0.3s ease;
   }

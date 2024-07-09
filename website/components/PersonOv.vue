@@ -129,8 +129,4 @@ export default {
 
 }
 
-/* PER AVERE LA SOTTOLINEATURA FIGA CON  LA LINEA CHE ARRIVA DA SINISTRA VERSO DESTRA
-.name-container:hover::before {
-  width: 100%;
-}*/
 </style>

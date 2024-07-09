@@ -201,7 +201,7 @@ export default {
 .form-elem-2 textarea:focus::placeholder {
   font-family: Jost;
   font-size: 0.8vw;
-  transform: translateY(-1.4vw); /* Move placeholder up */
+  transform: translateY(-1.4vw);
   opacity: 0.7;
 }
 

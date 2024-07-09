@@ -74,7 +74,7 @@
     }
 
     .image-container:hover .overlay-text {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .center{
