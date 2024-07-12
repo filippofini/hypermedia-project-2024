@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Title>{{ service.title }} - Helping Hands</Title>
+  </Head>
   <!-- TOP OF THE PAGE -->
   <div>
     <BreadCrumbs :crumbs="BCrumbs" />

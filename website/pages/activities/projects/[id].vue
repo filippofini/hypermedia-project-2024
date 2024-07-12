@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Title>{{ project.title }} - Helping Hands</Title>
+  </Head>
   <div>
     <BreadCrumbs :crumbs="BCrumbs" />
     <div class="top-container">

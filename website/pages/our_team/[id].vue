@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Title>Team member - Helping Hands</Title>
+  </Head>
   <BreadCrumbs :crumbs="BCrumbs" />
   <div class="back-button-container">
     <div class="back-button-single">

@@ -3,7 +3,9 @@ const route = useRoute()
 </script>
 
 <template>
-  
+    <Head>
+      <Title>Helping Hands</Title>
+    </Head>
     <div class="image-container">
       <img src = '@/assets/img/main.jpeg' width="1280" height = "536" class="mainImage" alt = "Image">
     </div>

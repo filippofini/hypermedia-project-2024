@@ -1,5 +1,7 @@
 <template>
-
+    <Head>
+      <Title>Activities - Helping Hands</Title>
+    </Head>
     <BreadCrumbs :crumbs="BCrumbs"/>
 
     <div class="top-container">

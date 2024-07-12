@@ -1,4 +1,7 @@
 <template>
+    <Head>
+      <Title>Ask for help - Helping Hands</Title>
+    </Head>
     <BreadCrumbs :crumbs="BCrumbs"/>
 
     <div class="top-container">
