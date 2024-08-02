@@ -15,7 +15,7 @@ This repository contains the final tests of **"Hypermedia Applications (Web and 
 
 ## Usability Evaulation Review
 
-This [_report_](https://github.com/filippofini/hypermedia-project-2024/blob/c485735530e3f373cb22bebca15c00d3d2fdeb62/Usability%20Project/Usabilty%20Report.pdf) shows the usability evaluation of the website [_unicef.com_](https://www.unicef.org/).\
+This [_report_](https://github.com/filippofini/hypermedia-project-2024/blob/c485735530e3f373cb22bebca15c00d3d2fdeb62/Usability%20Project/Usabilty%20Report.pdf) shows the usability evaluation of the website [_unicef.org_](https://www.unicef.org/).\
 Usability evaluation aims at giving the client some clues to improve the product’s quality and to fix possible issues.
 
 ## Web Technology Project
