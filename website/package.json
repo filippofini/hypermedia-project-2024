@@ -11,8 +11,7 @@
   },
   "dependencies": {
     "nuxt": "^3.11.2",
-    "openai": "^4.54.0",
-    "sass": "^1.77.2"
+    "openai": "^4.54.0"
   },
   "devDependencies": {
     "@nuxtjs/supabase": "^1.2.2"

@@ -1,14 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  
   css: [
     '~/assets/css/default.css'
 ],
 
+  build: {
 
-build: {
-
-},
+  },
 
   devtools: { enabled: true },
   modules: ['@nuxtjs/supabase'],
@@ -46,4 +44,6 @@ build: {
       ]
     }
   },
+
+  compatibilityDate: '2024-09-05'
 })
