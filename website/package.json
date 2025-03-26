@@ -10,7 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+<<<<<<< HEAD
     "nuxt": "^3.16.0",
+=======
+    "nuxt": "^3.11.2",
+>>>>>>> parent of 2e93f94 (Merge pull request #15 from filippofini/dependabot/npm_and_yarn/website/multi-9ec23a8865)
     "openai": "^4.54.0"
   },
   "devDependencies": {
