@@ -10,13 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.2.0",
     "nuxt": "^3.16.2",
-    "openai": "^4.94.0"
+    "openai": "^4.97.0"
   },
   "devDependencies": {
     "@nuxtjs/supabase": "^1.5.0"
   },
   "optionalDependencies": {
-        "@rollup/rollup-linux-x64-gnu": "*"
-    }
+    "@rollup/rollup-linux-x64-gnu": "*"
+  }
 }
