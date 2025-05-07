@@ -1,5 +1,9 @@
+<script setup>
+    import { SpeedInsights } from "@vercel/speed-insights/nuxt"
+</script>
 
 <template>
+    <SpeedInsights />
     <Head>
         <Title>Helping Hands</Title>
     </Head>
