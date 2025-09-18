@@ -5,6 +5,8 @@ let assistant;
 let thread;
 
 export default defineEventHandler(async (event) => {
+
+  return "Bot is deactivated, it will not respond to messages.";
     
     const userInput = await readBody(event);
 
@@ -16,9 +18,6 @@ export default defineEventHandler(async (event) => {
         console.log('Creating thread');
         thread = await openai.beta.threads.create();
       }
-
-     // return "Vercel test"
-
       
       //Add the user message to the thread
       console.log("Adding user message")
