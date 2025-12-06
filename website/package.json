@@ -11,8 +11,12 @@
   },
   "dependencies": {
     "@vercel/speed-insights": "^1.2.0",
+    "eslint-config-next": "^16.0.7",
+    "next": "^16.0.7",
     "nuxt": "^4.2.1",
-    "openai": "^4.104.0"
+    "openai": "^4.104.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
   },
   "devDependencies": {
     "@nuxtjs/supabase": "^1.6.2"
