@@ -23,8 +23,5 @@
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "*"
-  },
-  "overrides": {
-    "serialize-javascript": "^7.0.3"
   }
 }
