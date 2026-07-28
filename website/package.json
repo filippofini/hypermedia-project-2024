@@ -10,17 +10,20 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "eslint-config-next": "^16.0.7",
-    "next": "^16.0.7",
-    "nuxt": "^4.4.2",
-    "openai": "^4.104.0",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1"
+    "nuxt": "^4.5.0",
+    "openai": "^7.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/supabase": "^1.6.2"
+    "@nuxtjs/supabase": "^2.0.9"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "*"
+  },
+  "overrides": {
+    "brace-expansion": "^5.0.8"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "fsevents@2.3.3": true
   }
 }
